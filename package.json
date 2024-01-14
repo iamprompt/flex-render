@@ -1,0 +1,26 @@
+{
+  "name": "flex-render",
+  "version": "0.0.18",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "exports": {
+    "./css": "./dist/main.css",
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "@line/bot-sdk": "^8.2.0",
+    "esbuild-sass-plugin": "^2.16.1",
+    "linkedom": "^0.16.6",
+    "tsup": "^8.0.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

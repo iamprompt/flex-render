@@ -1,0 +1,188 @@
+{
+  "type": "bubble",
+  "size": "giga",
+  "header": {
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Q",
+            "color": "#FFFFFF",
+            "size": "xl",
+            "weight": "bold"
+          },
+          {
+            "type": "text",
+            "text": "Fiji Restaurants",
+            "color": "#FFFFFF",
+            "wrap": true
+          }
+        ],
+        "paddingTop": "30px"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://i.pinimg.com/564x/42/93/05/429305229f4b907a56b8a24a448830ed.jpg",
+            "size": "full",
+            "align": "center"
+          }
+        ],
+        "cornerRadius": "200px"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "บัตรจองคิว",
+            "align": "end",
+            "size": "xl",
+            "color": "#FFFFFF",
+            "weight": "bold"
+          }
+        ],
+        "paddingTop": "40px"
+      }
+    ],
+    "spacing": "md"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "คิวที่",
+                    "size": "3xl",
+                    "align": "center",
+                    "weight": "bold"
+                  }
+                ],
+                "paddingAll": "10px"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "A 10",
+                    "align": "center",
+                    "size": "5xl",
+                    "weight": "bold"
+                  }
+                ],
+                "backgroundColor": "#f0bc11",
+                "cornerRadius": "20px"
+              },
+              {
+                "type": "text",
+                "text": "จำนวนคิวที่รอ: 999 คิว",
+                "wrap": true,
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "เวลารอโดยประมาณ: 3 ปี",
+                "align": "center"
+              }
+            ],
+            "spacing": "md"
+          }
+        ],
+        "borderWidth": "3px",
+        "borderColor": "#000000",
+        "cornerRadius": "20px",
+        "paddingAll": "20px"
+      },
+      {
+        "type": "text",
+        "text": "ระบบจะแจ้งเตือนก่อนถึงคิวของท่าน 5 คิว",
+        "wrap": true,
+        "align": "center",
+        "color": "#11b1f0"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "กรุณาเดินทางมาถึงที่หน้าร้านค้าก่อนถึงคิวของท่าน หากระบบเรียกคิวของท่าน 3 ครั้งแล้วท่านไม่อยู่ ทางร้านจะขอสงวนสิทธิในการข้ามคิวของท่าน",
+            "wrap": true,
+            "color": "#FFFFFF",
+            "align": "center"
+          }
+        ],
+        "backgroundColor": "#FF0000",
+        "cornerRadius": "10px",
+        "paddingAll": "10px"
+      }
+    ],
+    "paddingAll": "20px",
+    "spacing": "md"
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "ยกเลิกคิว",
+              "text": "ยกเลิกคิว"
+            },
+            "style": "primary",
+            "color": "#f07911"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "สั่งอาหารก่อน",
+              "text": "สั่งอาหารก่อน"
+            },
+            "style": "primary",
+            "color": "#4c11f0"
+          }
+        ],
+        "spacing": "lg"
+      }
+    ]
+  },
+  "styles": {
+    "header": {
+      "backgroundColor": "#29914f"
+    },
+    "footer": {
+      "separator": true
+    }
+  }
+}
