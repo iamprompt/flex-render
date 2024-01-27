@@ -1,0 +1,103 @@
+{
+  "type": "bubble",
+  "hero": {
+    "type": "image",
+    "url": "https://wallpaperforu.com/wp-content/uploads/2020/12/hip-hop-wallpaper-20123102314831.jpg",
+    "size": "full",
+    "aspectMode": "cover",
+    "margin": "none",
+    "aspectRatio": "16:9"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "THIS IS MF DOOM",
+        "weight": "bold",
+        "align": "center",
+        "size": "xl"
+      },
+      {
+        "type": "text",
+        "text": "10 songs | 28min",
+        "align": "center",
+        "size": "md"
+      },
+      { "type": "separator", "margin": "md", "color": "#505050" },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              { "type": "text", "text": "1" },
+              { "type": "text", "text": "2" },
+              { "type": "text", "text": "3" },
+              { "type": "text", "text": "4" },
+              { "type": "text", "text": "5" },
+              { "type": "text", "text": "6" },
+              { "type": "text", "text": "7" },
+              { "type": "text", "text": "8" },
+              { "type": "text", "text": "9" },
+              { "type": "text", "text": "10" }
+            ],
+            "width": "20px",
+            "margin": "none",
+            "spacing": "sm"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              { "type": "text", "text": "All Caps" },
+              { "type": "text", "text": "Rapp Snitch" },
+              { "type": "text", "text": "Coffin Nails" },
+              { "type": "text", "text": "One Beer" },
+              { "type": "text", "text": "Rhymes Like Dimes" },
+              { "type": "text", "text": "Hoe Cakes" },
+              { "type": "text", "text": "Meat Grinder" },
+              { "type": "text", "text": "Cookie Chips" },
+              { "type": "text", "text": "Raid" },
+              { "type": "text", "text": "Doomsday" }
+            ],
+            "margin": "md",
+            "spacing": "sm"
+          }
+        ],
+        "margin": "md"
+      },
+      { "type": "separator", "margin": "md", "color": "#505050" }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "Spotify",
+          "uri": "http://linecorp.com/"
+        },
+        "margin": "md",
+        "style": "primary"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "Youtube",
+          "uri": "http://linecorp.com/"
+        },
+        "margin": "md",
+        "style": "primary",
+        "color": "#ed0909"
+      }
+    ]
+  }
+}

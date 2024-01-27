@@ -1,0 +1,38 @@
+{
+  "name": "flex-render",
+  "version": "0.0.20",
+  "private": true,
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "exports": {
+    "./css": "./dist/main.css",
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "dev": "tsup --watch --dts --sourcemap --clean",
+    "build": "tsup",
+    "prepublish": "tsup",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/"
+  },
+  "devDependencies": {
+    "@line/bot-sdk": "^8.2.0",
+    "esbuild-sass-plugin": "^2.16.1",
+    "linkedom": "^0.16.6",
+    "tsup": "^8.0.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.iamprompt.me/"
+  }
+}

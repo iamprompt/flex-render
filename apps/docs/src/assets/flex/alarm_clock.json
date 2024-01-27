@@ -1,0 +1,165 @@
+{
+  "type": "bubble",
+  "hero": {
+    "type": "image",
+    "url": "https://media.istockphoto.com/id/1072637448/th/รูปถ่าย/นาฬิกาปลุกสีแดงบนพื้นหลังสีฟ้า.jpg?s=612x612&w=0&k=20&c=VaW4mZLWEctUxP8KL0xeLx9wNprh_uieoZLvITBesgg=",
+    "size": "full",
+    "aspectRatio": "20:13",
+    "aspectMode": "cover",
+    "action": {
+      "type": "uri",
+      "label": "Action",
+      "uri": "https://linecorp.com"
+    }
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "md",
+    "action": {
+      "type": "uri",
+      "label": "Action",
+      "uri": "https://linecorp.com"
+    },
+    "contents": [
+      {
+        "type": "text",
+        "text": "Alarm Clock",
+        "weight": "bold",
+        "size": "xl",
+        "align": "start",
+        "style": "normal",
+        "contents": []
+      },
+      {
+        "type": "text",
+        "text": "Time Zone Thailand (GMT+7)",
+        "color": "#AAAAAA",
+        "contents": []
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "8:00",
+                "weight": "bold",
+                "size": "3xl",
+                "align": "start",
+                "gravity": "bottom",
+                "contents": []
+              },
+              {
+                "type": "icon",
+                "url": "https://cdn1.iconfinder.com/data/icons/new-year-jumpicon-line/32/-_Alarm_Countdown_Celebration_New_Year_Time_Clock-512.png",
+                "size": "3xl"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "settings",
+            "size": "sm",
+            "color": "#AAAAAA",
+            "align": "end",
+            "contents": []
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "8:30",
+                "weight": "bold",
+                "size": "3xl",
+                "align": "start",
+                "contents": []
+              },
+              {
+                "type": "icon",
+                "url": "https://cdn1.iconfinder.com/data/icons/new-year-jumpicon-line/32/-_Alarm_Countdown_Celebration_New_Year_Time_Clock-512.png",
+                "size": "3xl"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "settings",
+            "size": "sm",
+            "color": "#AAAAAA",
+            "align": "end",
+            "contents": []
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "9:00",
+                "weight": "bold",
+                "size": "3xl",
+                "align": "start",
+                "gravity": "bottom",
+                "contents": []
+              },
+              {
+                "type": "icon",
+                "url": "https://cdn1.iconfinder.com/data/icons/new-year-jumpicon-line/32/-_Clock_Midnight_New_Year_Celebration_Time_Countdown_-512.png",
+                "size": "3xl"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "settings",
+            "size": "sm",
+            "color": "#AAAAAA",
+            "align": "end",
+            "contents": []
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "+ Add",
+          "uri": "https://linecorp.com"
+        },
+        "color": "#ABDEE6",
+        "margin": "xxl",
+        "height": "md",
+        "style": "secondary",
+        "gravity": "center"
+      }
+    ]
+  }
+}

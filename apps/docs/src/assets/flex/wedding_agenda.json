@@ -12,13 +12,29 @@
     "type": "box",
     "layout": "vertical",
     "contents": [
-      { "type": "text", "text": "SEOKHYUN & YEOLMAE", "color": "#666666", "size": "lg", "weight": "bold" },
-      { "type": "text", "text": "ARE GETTING MARRIED", "size": "sm", "color": "#8c8c8c" },
+      {
+        "type": "text",
+        "text": "SEOKHYUN & YEOLMAE",
+        "color": "#666666",
+        "size": "lg",
+        "weight": "bold"
+      },
+      {
+        "type": "text",
+        "text": "ARE GETTING MARRIED",
+        "size": "sm",
+        "color": "#8c8c8c"
+      },
       {
         "type": "box",
         "layout": "horizontal",
         "contents": [
-          { "type": "text", "text": "2:00 PM.", "size": "xxs", "gravity": "center" },
+          {
+            "type": "text",
+            "text": "2:00 PM.",
+            "size": "xxs",
+            "gravity": "center"
+          },
           {
             "type": "box",
             "layout": "vertical",
@@ -38,7 +54,13 @@
             ],
             "flex": 0
           },
-          { "type": "text", "text": "Wedding Ceremony", "gravity": "center", "flex": 4, "size": "sm" }
+          {
+            "type": "text",
+            "text": "Wedding Ceremony",
+            "gravity": "center",
+            "flex": 4,
+            "size": "sm"
+          }
         ],
         "spacing": "lg",
         "cornerRadius": "30px",
@@ -48,7 +70,12 @@
         "type": "box",
         "layout": "horizontal",
         "contents": [
-          { "type": "box", "layout": "baseline", "contents": [{ "type": "filler" }], "flex": 1 },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [{ "type": "filler" }],
+            "flex": 1
+          },
           {
             "type": "box",
             "layout": "vertical",
@@ -58,7 +85,13 @@
                 "layout": "horizontal",
                 "contents": [
                   { "type": "filler" },
-                  { "type": "box", "layout": "vertical", "contents": [], "width": "2px", "backgroundColor": "#B7B7B7" },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [],
+                    "width": "2px",
+                    "backgroundColor": "#B7B7B7"
+                  },
                   { "type": "filler" }
                 ],
                 "flex": 1
@@ -85,7 +118,14 @@
           {
             "type": "box",
             "layout": "horizontal",
-            "contents": [{ "type": "text", "text": "5:00 PM.", "gravity": "center", "size": "xxs" }],
+            "contents": [
+              {
+                "type": "text",
+                "text": "5:00 PM.",
+                "gravity": "center",
+                "size": "xxs"
+              }
+            ],
             "flex": 1
           },
           {
@@ -107,7 +147,13 @@
             ],
             "flex": 0
           },
-          { "type": "text", "text": "Dinner", "gravity": "center", "flex": 4, "size": "sm" }
+          {
+            "type": "text",
+            "text": "Dinner",
+            "gravity": "center",
+            "flex": 4,
+            "size": "sm"
+          }
         ],
         "spacing": "lg",
         "cornerRadius": "30px"
@@ -116,7 +162,12 @@
         "type": "box",
         "layout": "horizontal",
         "contents": [
-          { "type": "box", "layout": "baseline", "contents": [{ "type": "filler" }], "flex": 1 },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [{ "type": "filler" }],
+            "flex": 1
+          },
           {
             "type": "box",
             "layout": "vertical",
@@ -126,7 +177,13 @@
                 "layout": "horizontal",
                 "contents": [
                   { "type": "filler" },
-                  { "type": "box", "layout": "vertical", "contents": [], "width": "2px", "backgroundColor": "#6486E3" },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [],
+                    "width": "2px",
+                    "backgroundColor": "#6486E3"
+                  },
                   { "type": "filler" }
                 ],
                 "flex": 1
@@ -150,7 +207,12 @@
         "type": "box",
         "layout": "horizontal",
         "contents": [
-          { "type": "text", "text": "7:00 PM.", "gravity": "center", "size": "xxs" },
+          {
+            "type": "text",
+            "text": "7:00 PM.",
+            "gravity": "center",
+            "size": "xxs"
+          },
           {
             "type": "box",
             "layout": "vertical",
@@ -170,7 +232,13 @@
             ],
             "flex": 0
           },
-          { "type": "text", "text": "After Party", "gravity": "center", "flex": 4, "size": "sm" }
+          {
+            "type": "text",
+            "text": "After Party",
+            "gravity": "center",
+            "flex": 4,
+            "size": "sm"
+          }
         ],
         "spacing": "lg",
         "cornerRadius": "30px"

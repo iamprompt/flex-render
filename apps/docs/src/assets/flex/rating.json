@@ -1,0 +1,136 @@
+{
+  "type": "bubble",
+  "size": "mega",
+  "hero": {
+    "type": "image",
+    "url": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*1IVlLgp7ymrrrO54BvHYtA.png",
+    "align": "center",
+    "size": "xl",
+    "aspectRatio": "20:13",
+    "aspectMode": "cover",
+    "action": { "type": "uri", "label": "Line", "uri": "https://linecorp.com/" }
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Botnoi Voice",
+        "weight": "bold",
+        "size": "xl",
+        "color": "#322663B7",
+        "contents": []
+      },
+      {
+        "type": "box",
+        "layout": "baseline",
+        "margin": "md",
+        "contents": [
+          {
+            "type": "icon",
+            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+            "size": "sm"
+          },
+          {
+            "type": "icon",
+            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+            "size": "sm"
+          },
+          {
+            "type": "icon",
+            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+            "size": "sm"
+          },
+          {
+            "type": "icon",
+            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+            "size": "sm"
+          },
+          {
+            "type": "icon",
+            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+            "size": "sm"
+          },
+          {
+            "type": "text",
+            "text": "5.0",
+            "size": "sm",
+            "color": "#999999",
+            "flex": 0,
+            "margin": "md",
+            "contents": []
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "spacing": "sm",
+        "margin": "lg",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://cdn4.iconfinder.com/data/icons/news-journal-jumpicon-line/32/-_Microphone_Recorder_Sound_Voice_Mic_Podcast_Audio-512.png",
+                "size": "3xl"
+              },
+              {
+                "type": "text",
+                "text": "Speak :",
+                "size": "sm",
+                "color": "#AAAAAA",
+                "flex": 1,
+                "align": "center",
+                "contents": []
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "margin": "none",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://cdn2.iconfinder.com/data/icons/user-interface-jumpicon-line/32/-_Ear_Hearing_Listen_Sound_Audio_Speech-512.png",
+                "size": "3xl"
+              },
+              {
+                "type": "text",
+                "text": "Listen :",
+                "size": "sm",
+                "color": "#AAAAAA",
+                "flex": 1,
+                "align": "center",
+                "contents": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "flex": 0,
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "Website",
+          "uri": "https://voice.botnoi.ai/"
+        },
+        "color": "#32266375",
+        "style": "primary"
+      }
+    ]
+  }
+}

@@ -1,31 +1,20 @@
 {
-  "name": "flex-render",
-  "version": "0.0.20",
-  "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "/dist"
-  ],
-  "exports": {
-    "./css": "./dist/main.css",
-    ".": "./dist/index.js"
-  },
+  "private": true,
   "scripts": {
-    "dev": "tsup --watch --dts --sourcemap --clean",
-    "build": "tsup",
-    "prepublish": "pnpm build"
+    "build": "turbo run build",
+    "clean": "turbo run clean",
+    "dev": "turbo run dev",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck"
   },
   "devDependencies": {
-    "@line/bot-sdk": "^8.2.0",
-    "esbuild-sass-plugin": "^2.16.1",
-    "linkedom": "^0.16.6",
-    "tsup": "^8.0.1"
+    "prettier": "^3.2.4",
+    "turbo": "^1.11.3"
   },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
-  "publishConfig": {
-    "registry": "https://npm.iamprompt.me/"
+  "packageManager": "pnpm@8.12.1",
+  "engines": {
+    "node": ">=20"
   }
 }

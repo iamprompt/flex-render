@@ -1,0 +1,62 @@
+{
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://sv1.picz.in.th/images/2020/02/29/x8qxLa.jpg",
+            "aspectRatio": "341:148",
+            "size": "full"
+          }
+        ],
+        "position": "absolute",
+        "height": "110px",
+        "width": "260px",
+        "offsetTop": "22px",
+        "offsetStart": "22px"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "3 กก xxxx",
+                "align": "center",
+                "size": "4xl",
+                "weight": "bold"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "กรุงเทพมหานคร",
+                "align": "center",
+                "size": "xl"
+              }
+            ]
+          }
+        ],
+        "borderWidth": "5px",
+        "borderColor": "#000000",
+        "cornerRadius": "10px",
+        "paddingAll": "5px"
+      }
+    ],
+    "borderColor": "#000000"
+  }
+}

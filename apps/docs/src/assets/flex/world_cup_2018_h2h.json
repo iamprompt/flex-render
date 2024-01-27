@@ -1,0 +1,879 @@
+{
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "md",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Head 2 Head",
+        "wrap": true,
+        "weight": "bold",
+        "gravity": "center",
+        "size": "lg"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Portugal",
+                "flex": 5,
+                "align": "start"
+              },
+              {
+                "type": "text",
+                "text": "1 : 0",
+                "flex": 2,
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "Morocco",
+                "flex": 5,
+                "align": "end"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Recent Match",
+            "weight": "bold",
+            "align": "center"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Portugal",
+                    "weight": "bold",
+                    "align": "center"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 2,
+                        "color": "#111111",
+                        "margin": "md",
+                        "text": "W"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 7,
+                        "text": "Morocco"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "1"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "-"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "0"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 2,
+                        "color": "#111111",
+                        "margin": "md",
+                        "text": "D"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 7,
+                        "text": "Spain"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "3"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "-"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "3"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 2,
+                        "color": "#111111",
+                        "margin": "md",
+                        "text": "D"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 7,
+                        "text": "Romania"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "1"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "-"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "1"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 2,
+                        "color": "#111111",
+                        "margin": "md",
+                        "text": "L"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 7,
+                        "text": "Italy"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "3"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "-"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "0"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 2,
+                        "color": "#111111",
+                        "margin": "md",
+                        "text": "W"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 7,
+                        "text": "Algeria"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "3"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "-"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "0"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 2,
+                        "color": "#111111",
+                        "margin": "md",
+                        "text": "D"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 7,
+                        "text": "Belgium"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "0"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "-"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "0"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 2,
+                        "color": "#111111",
+                        "margin": "md",
+                        "text": "D"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 7,
+                        "text": "Tunisia"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "2"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "-"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "2"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 2,
+                        "color": "#111111",
+                        "margin": "md",
+                        "text": "D"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 7,
+                        "text": "Belgium"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "1"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "-"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "1"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 2,
+                        "color": "#111111",
+                        "margin": "md",
+                        "text": "L"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 7,
+                        "text": "Netherlands"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "0"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "-"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "3"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 2,
+                        "color": "#111111",
+                        "margin": "md",
+                        "text": "W"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 7,
+                        "text": "Egypt"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "2"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "-"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "1"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "separator",
+                "margin": "md"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "margin": "md",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Morocco",
+                    "weight": "bold",
+                    "align": "center"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 2,
+                        "color": "#111111",
+                        "margin": "md",
+                        "text": "L"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 7,
+                        "text": "Portugal"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "1"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "-"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "0"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 2,
+                        "color": "#111111",
+                        "margin": "md",
+                        "text": "L"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 7,
+                        "text": "Iran"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "0"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "-"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "1"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 2,
+                        "color": "#111111",
+                        "margin": "md",
+                        "text": "W"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 7,
+                        "text": "Estonia"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "1"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "-"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "3"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 2,
+                        "color": "#111111",
+                        "margin": "md",
+                        "text": "W"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 7,
+                        "text": "Slovakia"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "2"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "-"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "1"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 2,
+                        "color": "#111111",
+                        "margin": "md",
+                        "text": "D"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 7,
+                        "text": "Ukraine"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "0"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "-"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "0"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 2,
+                        "color": "#111111",
+                        "margin": "md",
+                        "text": "W"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 7,
+                        "text": "Uzbekistan"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "2"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "-"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "0"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 2,
+                        "color": "#111111",
+                        "margin": "md",
+                        "text": "W"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 7,
+                        "text": "Serbia"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "1"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "-"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "2"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 2,
+                        "color": "#111111",
+                        "margin": "md",
+                        "text": "W"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 7,
+                        "text": "Ivory Coast"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "0"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "-"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "2"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 2,
+                        "color": "#111111",
+                        "margin": "md",
+                        "text": "W"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 7,
+                        "text": "South Korea"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "3"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "-"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "1"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 2,
+                        "color": "#111111",
+                        "margin": "md",
+                        "text": "L"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 7,
+                        "text": "Cameroon"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "1"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "-"
+                      },
+                      {
+                        "type": "text",
+                        "size": "xs",
+                        "flex": 1,
+                        "text": "0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "separator",
+        "margin": "xxl"
+      },
+      {
+        "type": "button",
+        "margin": "sm",
+        "action": {
+          "type": "uri",
+          "label": "View Source",
+          "uri": "https://sitthi.me:3807/downloaded/0684f93b053b4f0089b22fb2b8122f82.json"
+        },
+        "style": "secondary"
+      }
+    ]
+  }
+}

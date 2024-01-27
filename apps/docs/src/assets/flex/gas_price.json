@@ -1,0 +1,237 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "header": {
+        "type": "box",
+        "layout": "horizontal",
+        "backgroundColor": "#37B34A",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://bucket.ex10.tech/images/95e5e2ce-b2d8-11ee-97d4-0242ac12000b/originalContentUrl.png",
+            "aspectRatio": "137:40",
+            "size": "md",
+            "align": "start"
+          },
+          {
+            "type": "text",
+            "text": "ราคาน้ำมันวันนี้",
+            "weight": "bold",
+            "size": "md",
+            "gravity": "center",
+            "align": "end",
+            "color": "#FFFFFF"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "margin": "md",
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "filler"
+              },
+              {
+                "type": "text",
+                "text": "วันนี้",
+                "color": "#111111",
+                "weight": "bold",
+                "size": "sm",
+                "align": "end"
+              },
+              {
+                "type": "text",
+                "text": "พรุ่งนี้",
+                "color": "#111111",
+                "weight": "bold",
+                "size": "sm",
+                "align": "end"
+              }
+            ]
+          },
+          {
+            "type": "separator",
+            "color": "#cccccc",
+            "margin": "md"
+          },
+          {
+            "margin": "md",
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://oil-price.bangchak.co.th/ApiGetImages?FileName=HiDieselS.jpg",
+                "aspectRatio": "120:48"
+              },
+              {
+                "type": "text",
+                "text": "25.49",
+                "color": "#111111",
+                "weight": "bold",
+                "size": "sm",
+                "align": "end",
+                "gravity": "center"
+              },
+              {
+                "type": "text",
+                "text": "25.49",
+                "color": "#111111",
+                "weight": "bold",
+                "size": "sm",
+                "align": "end",
+                "gravity": "center"
+              }
+            ]
+          },
+          {
+            "margin": "md",
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://oil-price.bangchak.co.th/ApiGetImages?FileName=E20evoWeb1-120.jpg",
+                "aspectRatio": "120:48"
+              },
+              {
+                "type": "text",
+                "text": "22.34",
+                "color": "#111111",
+                "weight": "bold",
+                "size": "sm",
+                "align": "end",
+                "gravity": "center"
+              },
+              {
+                "type": "text",
+                "text": "22.34",
+                "color": "#111111",
+                "weight": "bold",
+                "size": "sm",
+                "align": "end",
+                "gravity": "center"
+              }
+            ]
+          },
+          {
+            "margin": "md",
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://oil-price.bangchak.co.th/ApiGetImages?FileName=GSH91evoWeb1-120.jpg",
+                "aspectRatio": "120:48"
+              },
+              {
+                "type": "text",
+                "text": "25.08",
+                "color": "#111111",
+                "weight": "bold",
+                "size": "sm",
+                "align": "end",
+                "gravity": "center"
+              },
+              {
+                "type": "text",
+                "text": "25.08",
+                "color": "#111111",
+                "weight": "bold",
+                "size": "sm",
+                "align": "end",
+                "gravity": "center"
+              }
+            ]
+          },
+          {
+            "margin": "md",
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://oil-price.bangchak.co.th/ApiGetImages?FileName=GSH95evoWeb1-120.jpg",
+                "aspectRatio": "120:48"
+              },
+              {
+                "type": "text",
+                "text": "25.35",
+                "color": "#111111",
+                "weight": "bold",
+                "size": "sm",
+                "align": "end",
+                "gravity": "center"
+              },
+              {
+                "type": "text",
+                "text": "25.35",
+                "color": "#111111",
+                "weight": "bold",
+                "size": "sm",
+                "align": "end",
+                "gravity": "center"
+              }
+            ]
+          },
+          {
+            "margin": "md",
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "หมายเหตุ: ราคาขายปลีก กทม. ที่ยังไม่รวมภาษีบำรุงท้องถิ่น กทม. *ราคามีผล ณ วันที่ 29 ก.พ. 63 เวลา 05.00 น.",
+                "weight": "bold",
+                "color": "#999999",
+                "size": "xxs",
+                "flex": 1,
+                "wrap": true
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Source : bangchak.co.th",
+                "color": "#999999",
+                "size": "xs",
+                "align": "end",
+                "flex": 1
+              }
+            ],
+            "margin": "xs"
+          }
+        ]
+      },
+      "styles": {
+        "header": {
+          "backgroundColor": "#6486E3"
+        },
+        "body": {
+          "backgroundColor": "#FEFEFE"
+        },
+        "footer": {
+          "separator": true
+        }
+      }
+    }
+  ]
+}

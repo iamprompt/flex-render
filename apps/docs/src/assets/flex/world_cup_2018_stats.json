@@ -1,0 +1,298 @@
+{
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "md",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Statistics",
+        "wrap": true,
+        "weight": "bold",
+        "gravity": "center",
+        "size": "lg"
+      },
+      {
+        "type": "box",
+        "layout": "baseline",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "icon",
+            "url": "https://sitthi.me:3807/static/flag/Portugal.png",
+            "size": "sm"
+          },
+          {
+            "type": "text",
+            "text": "Portugal",
+            "flex": 5,
+            "align": "start"
+          },
+          {
+            "type": "text",
+            "text": "1 : 0",
+            "flex": 2,
+            "align": "center"
+          },
+          {
+            "type": "text",
+            "text": "Morocco",
+            "flex": 5,
+            "align": "end"
+          },
+          {
+            "type": "icon",
+            "url": "https://sitthi.me:3807/static/flag/Morocco.png",
+            "size": "sm"
+          }
+        ]
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "flex": 2,
+                "align": "center",
+                "text": "2"
+              },
+              {
+                "type": "text",
+                "flex": 5,
+                "align": "center",
+                "text": "shots on target"
+              },
+              {
+                "type": "text",
+                "flex": 2,
+                "align": "center",
+                "text": "4"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "flex": 2,
+                "align": "center",
+                "text": "4"
+              },
+              {
+                "type": "text",
+                "flex": 5,
+                "align": "center",
+                "text": "shots off target"
+              },
+              {
+                "type": "text",
+                "flex": 2,
+                "align": "center",
+                "text": "11"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "flex": 2,
+                "align": "center",
+                "text": "47"
+              },
+              {
+                "type": "text",
+                "flex": 5,
+                "align": "center",
+                "text": "possession (%)"
+              },
+              {
+                "type": "text",
+                "flex": 2,
+                "align": "center",
+                "text": "53"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "flex": 2,
+                "align": "center",
+                "text": "5"
+              },
+              {
+                "type": "text",
+                "flex": 5,
+                "align": "center",
+                "text": "corners"
+              },
+              {
+                "type": "text",
+                "flex": 2,
+                "align": "center",
+                "text": "7"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "flex": 2,
+                "align": "center",
+                "text": "1"
+              },
+              {
+                "type": "text",
+                "flex": 5,
+                "align": "center",
+                "text": "offsides"
+              },
+              {
+                "type": "text",
+                "flex": 2,
+                "align": "center",
+                "text": "1"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "flex": 2,
+                "align": "center",
+                "text": "19"
+              },
+              {
+                "type": "text",
+                "flex": 5,
+                "align": "center",
+                "text": "fouls"
+              },
+              {
+                "type": "text",
+                "flex": 2,
+                "align": "center",
+                "text": "23"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "flex": 2,
+                "align": "center",
+                "text": "1"
+              },
+              {
+                "type": "text",
+                "flex": 5,
+                "align": "center",
+                "text": "yellow cards"
+              },
+              {
+                "type": "text",
+                "flex": 2,
+                "align": "center",
+                "text": "1"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "flex": 2,
+                "align": "center",
+                "text": "11"
+              },
+              {
+                "type": "text",
+                "flex": 5,
+                "align": "center",
+                "text": "goal kicks"
+              },
+              {
+                "type": "text",
+                "flex": 2,
+                "align": "center",
+                "text": "3"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "flex": 2,
+                "align": "center",
+                "text": "0"
+              },
+              {
+                "type": "text",
+                "flex": 5,
+                "align": "center",
+                "text": "treatments"
+              },
+              {
+                "type": "text",
+                "flex": 2,
+                "align": "center",
+                "text": "3"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "separator",
+        "margin": "xxl"
+      },
+      {
+        "type": "button",
+        "margin": "sm",
+        "action": {
+          "type": "uri",
+          "label": "View Source",
+          "uri": "https://sitthi.me:3807/downloaded/7d84fabaf2494d7bb9e4693637df374b.json"
+        },
+        "style": "secondary"
+      }
+    ]
+  }
+}

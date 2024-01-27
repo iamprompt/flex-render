@@ -1,0 +1,134 @@
+{
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "image",
+        "url": "https://www.aromathailand.com/wp-content/uploads/2023/04/Cover-Mocha-1080x675.jpg",
+        "size": "full",
+        "action": { "type": "uri", "uri": "http://linecorp.com/" },
+        "aspectMode": "cover",
+        "aspectRatio": "20:13",
+        "margin": "none"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Mocha",
+                "margin": "none",
+                "size": "xxl",
+                "color": "#000000"
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "margin": "none",
+                "contents": [
+                  {
+                    "type": "icon",
+                    "size": "sm",
+                    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                  },
+                  {
+                    "type": "icon",
+                    "size": "sm",
+                    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                  },
+                  {
+                    "type": "icon",
+                    "size": "sm",
+                    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                  },
+                  {
+                    "type": "icon",
+                    "size": "sm",
+                    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                  },
+                  {
+                    "type": "icon",
+                    "size": "sm",
+                    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png"
+                  },
+                  {
+                    "type": "text",
+                    "text": "4.0",
+                    "size": "sm",
+                    "color": "#000000",
+                    "margin": "md",
+                    "flex": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "margin": "none",
+            "spacing": "none",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Price",
+                    "color": "#000000",
+                    "size": "md",
+                    "flex": 2,
+                    "margin": "none",
+                    "decoration": "underline"
+                  }
+                ]
+              },
+              { "type": "text", "text": "฿120.00", "color": "#000000" }
+            ],
+            "offsetBottom": "none",
+            "offsetTop": "lg"
+          }
+        ],
+        "margin": "md"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "height": "sm",
+            "action": {
+              "type": "uri",
+              "label": "Add to cart",
+              "uri": "https://linecorp.com"
+            },
+            "margin": "md",
+            "color": "#8F5C07"
+          }
+        ],
+        "flex": 0
+      }
+    ],
+    "borderWidth": "3px",
+    "borderColor": "#000000",
+    "cornerRadius": "xl",
+    "background": {
+      "type": "linearGradient",
+      "angle": "0deg",
+      "startColor": "#f7cc8b",
+      "endColor": "#905001"
+    }
+  }
+}

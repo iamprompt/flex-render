@@ -1,0 +1,190 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover",
+        "url": "https://bk-review.com/wp-content/uploads/2022/09/รีวิว-ทองเหลืองหมูกะทะ-1-1024x1024.jpg"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "ค่าหมูกระทะ",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Name :",
+                "size": "lg",
+                "weight": "bold"
+              },
+              {
+                "type": "text",
+                "text": "Bam",
+                "flex": 3,
+                "size": "lg",
+                "weight": "bold"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Total :",
+                "size": "lg",
+                "weight": "bold"
+              },
+              {
+                "type": "text",
+                "text": "278 Bath",
+                "flex": 3,
+                "weight": "bold",
+                "size": "lg"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/linecorp_code_withborder.png",
+            "aspectMode": "fit",
+            "size": "xl"
+          },
+          {
+            "type": "text",
+            "text": "You can pay by PromptPay",
+            "align": "center",
+            "margin": "md",
+            "size": "sm",
+            "color": "#002B5B"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover",
+        "url": "https://supplychainguru.co.th/wp-content/uploads/2021/06/Starbuck.png"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "ค่า Starbucks",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Name :",
+                "size": "lg",
+                "weight": "bold"
+              },
+              {
+                "type": "text",
+                "text": "Toon",
+                "flex": 3,
+                "size": "lg",
+                "weight": "bold"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Total :",
+                "size": "lg",
+                "weight": "bold"
+              },
+              {
+                "type": "text",
+                "text": "180 bath",
+                "flex": 3,
+                "size": "lg",
+                "weight": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/linecorp_code_withborder.png",
+            "size": "xl",
+            "aspectMode": "fit"
+          },
+          {
+            "type": "text",
+            "text": "You can pay by PromptPay",
+            "margin": "md",
+            "size": "sm",
+            "align": "center",
+            "color": "#002B5B"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "flex": 1,
+            "gravity": "center",
+            "action": {
+              "type": "uri",
+              "label": "See more",
+              "uri": "https://linecorp.com"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

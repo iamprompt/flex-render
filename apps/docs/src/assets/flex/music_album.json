@@ -87,14 +87,24 @@
                       {
                         "type": "text",
                         "contents": [
-                          { "type": "span", "text": "2 Brianstorm", "weight": "bold", "color": "#000000", "size": "md" }
+                          {
+                            "type": "span",
+                            "text": "2 Brianstorm",
+                            "weight": "bold",
+                            "color": "#000000",
+                            "size": "md"
+                          }
                         ],
                         "size": "sm",
                         "wrap": true,
                         "align": "start",
                         "margin": "md"
                       },
-                      { "type": "separator", "color": "#000000", "margin": "lg" }
+                      {
+                        "type": "separator",
+                        "color": "#000000",
+                        "margin": "lg"
+                      }
                     ]
                   },
                   {
@@ -121,7 +131,11 @@
                             "align": "start",
                             "margin": "md"
                           },
-                          { "type": "separator", "color": "#000000", "margin": "lg" }
+                          {
+                            "type": "separator",
+                            "color": "#000000",
+                            "margin": "lg"
+                          }
                         ]
                       },
                       {
@@ -140,7 +154,11 @@
                         "align": "start",
                         "margin": "md"
                       },
-                      { "type": "separator", "color": "#000000", "margin": "lg" }
+                      {
+                        "type": "separator",
+                        "color": "#000000",
+                        "margin": "lg"
+                      }
                     ]
                   },
                   {
@@ -163,7 +181,11 @@
                         "align": "start",
                         "margin": "md"
                       },
-                      { "type": "separator", "color": "#000000", "margin": "lg" },
+                      {
+                        "type": "separator",
+                        "color": "#000000",
+                        "margin": "lg"
+                      },
                       {
                         "type": "box",
                         "layout": "vertical",
@@ -186,7 +208,11 @@
                           }
                         ]
                       },
-                      { "type": "separator", "color": "#000000", "margin": "lg" },
+                      {
+                        "type": "separator",
+                        "color": "#000000",
+                        "margin": "lg"
+                      },
                       {
                         "type": "box",
                         "layout": "vertical",
@@ -207,7 +233,11 @@
                             "align": "start",
                             "margin": "md"
                           },
-                          { "type": "separator", "color": "#000000", "margin": "lg" },
+                          {
+                            "type": "separator",
+                            "color": "#000000",
+                            "margin": "lg"
+                          },
                           {
                             "type": "box",
                             "layout": "vertical",
@@ -228,7 +258,11 @@
                                 "align": "start",
                                 "margin": "md"
                               },
-                              { "type": "separator", "color": "#000000", "margin": "lg" },
+                              {
+                                "type": "separator",
+                                "color": "#000000",
+                                "margin": "lg"
+                              },
                               {
                                 "type": "box",
                                 "layout": "vertical",
@@ -249,7 +283,11 @@
                                     "align": "start",
                                     "margin": "md"
                                   },
-                                  { "type": "separator", "color": "#000000", "margin": "lg" }
+                                  {
+                                    "type": "separator",
+                                    "color": "#000000",
+                                    "margin": "lg"
+                                  }
                                 ]
                               },
                               {
@@ -272,7 +310,11 @@
                                     "align": "start",
                                     "margin": "md"
                                   },
-                                  { "type": "separator", "color": "#000000", "margin": "lg" }
+                                  {
+                                    "type": "separator",
+                                    "color": "#000000",
+                                    "margin": "lg"
+                                  }
                                 ]
                               }
                             ]
@@ -298,7 +340,11 @@
     "contents": [
       {
         "type": "button",
-        "action": { "type": "uri", "label": "Listen Now", "uri": "http://linecorp.com/" },
+        "action": {
+          "type": "uri",
+          "label": "Listen Now",
+          "uri": "http://linecorp.com/"
+        },
         "style": "secondary"
       }
     ]
