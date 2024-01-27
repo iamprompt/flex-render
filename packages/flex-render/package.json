@@ -1,6 +1,10 @@
 {
   "name": "flex-render",
   "version": "0.0.23",
+  "author": {
+    "name": "Supakarn Laorattanakul",
+    "url": "https://github.com/iamprompt"
+  },
   "license": "MIT",
   "sideEffects": false,
   "type": "module",
