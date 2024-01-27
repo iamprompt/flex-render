@@ -40,6 +40,9 @@ import {
   injectFontStyle,
   injectFontDecoration,
   injectSectionStyle,
+  isSizeKeyword,
+  isSizeValue,
+  isHorizontalLayout,
 } from './utils'
 import {
   FlexBoxLayoutClassName,
@@ -264,7 +267,9 @@ export const renderImage = (imageJSON: FlexImage, parent?: FlexComponent) => {
   image = injectMargin(image, imageJSON.margin, parent)
   image = injectAlign(image, imageJSON.align)
   image = injectGravity(image, imageJSON.gravity)
-  image = injectSize(image, imageJSON.size || 'md')
+  if (isSizeKeyword(imageJSON.size || 'md')) {
+    image = injectSize(image, imageJSON.size || 'md')
+  }
   image = injectAspectMode(image, imageJSON.aspectMode || 'fit')
   image = injectOffset(image, imageJSON)
 
@@ -278,6 +283,9 @@ export const renderImage = (imageJSON: FlexImage, parent?: FlexComponent) => {
   imageInner.appendChild(imageContent)
 
   let imageWrapper = document.createElement('div')
+  if (isSizeValue(imageJSON.size || 'md')) {
+    imageWrapper = injectSize(imageWrapper, imageJSON.size, isHorizontalLayout(parent) ? 'width' : 'height')
+  }
   imageWrapper.appendChild(imageInner)
   image.appendChild(imageWrapper)
 

@@ -1,0 +1,262 @@
+{
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "image",
+        "url": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ioY9jnR7w52Y/v0/1200x-1.jpg",
+        "size": "full",
+        "aspectRatio": "15:10",
+        "aspectMode": "cover",
+        "gravity": "top"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Boarding pass",
+            "align": "center",
+            "size": "xl",
+            "weight": "bold",
+            "color": "#13637B"
+          }
+        ],
+        "paddingTop": "xl"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Flight",
+                "color": "#13637B",
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": "FCDG224",
+                "color": "#000000",
+                "weight": "bold"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Boarding",
+                "color": "#13637B",
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": "11:30",
+                "color": "#000000",
+                "weight": "bold"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Depart",
+                "color": "#13637B",
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": "11:50",
+                "color": "#000000",
+                "weight": "bold"
+              }
+            ]
+          }
+        ],
+        "paddingStart": "xxl",
+        "paddingTop": "xl",
+        "offsetStart": "xl"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Gate",
+                "color": "#13637B",
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": "21",
+                "color": "#000000",
+                "weight": "bold"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Seat",
+                "color": "#13637B",
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": "14",
+                "color": "#000000",
+                "weight": "bold"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Arrive",
+                "color": "#13637B",
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": "13:00",
+                "color": "#000000",
+                "weight": "bold"
+              }
+            ]
+          }
+        ],
+        "paddingStart": "xxl",
+        "paddingTop": "lg",
+        "offsetStart": "xl"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Class",
+                "size": "sm",
+                "color": "#13637B"
+              },
+              {
+                "type": "text",
+                "text": "First",
+                "weight": "bold",
+                "color": "#000000"
+              }
+            ],
+            "width": "90px"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Passenger",
+                "size": "sm",
+                "color": "#13637B"
+              },
+              {
+                "type": "text",
+                "text": "Ariana Grande",
+                "weight": "bold",
+                "color": "#000000"
+              }
+            ]
+          }
+        ],
+        "paddingStart": "xxl",
+        "paddingTop": "lg",
+        "offsetStart": "xl"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "text",
+            "text": "BKK",
+            "color": "#ffffff",
+            "weight": "bold",
+            "size": "xxl",
+            "offsetStart": "md"
+          },
+          {
+            "type": "image",
+            "url": "https://www.freeiconspng.com/uploads/description-white-plane-icon-2-27.png",
+            "size": "20px",
+            "align": "center",
+            "gravity": "center"
+          },
+          {
+            "type": "text",
+            "text": "HKT",
+            "size": "xxl",
+            "color": "#ffffff",
+            "align": "end",
+            "weight": "bold"
+          }
+        ],
+        "offsetTop": "150px",
+        "position": "absolute",
+        "offsetStart": "xxl",
+        "width": "250px"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": " Jun 9,2023",
+            "color": "#ffffff",
+            "size": "xxs"
+          }
+        ],
+        "position": "absolute",
+        "offsetStart": "120px",
+        "offsetTop": "15px"
+      },
+      {
+        "type": "image",
+        "url": "https://static.vecteezy.com/system/resources/previews/017/059/171/original/barcode-sign-free-png.png",
+        "size": "5xl",
+        "aspectRatio": "7:3",
+        "offsetTop": "none"
+      }
+    ],
+    "paddingAll": "none",
+    "backgroundColor": "#ffffff",
+    "paddingBottom": "xs"
+  }
+}

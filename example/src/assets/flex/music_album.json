@@ -1,0 +1,306 @@
+{
+  "type": "bubble",
+  "size": "mega",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://i.ibb.co/64NSV7y/IMG-7514.jpg",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "150:196",
+            "gravity": "center",
+            "flex": 1
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "contents": [
+                  {
+                    "type": "span",
+                    "text": "Arctic Monkeys ( Greatest Hits )",
+                    "weight": "bold",
+                    "color": "#000000",
+                    "size": "md"
+                  }
+                ],
+                "size": "sm",
+                "wrap": true,
+                "align": "center"
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Arctic Monkeys",
+                    "size": "sm",
+                    "color": "#bcbcbc",
+                    "align": "center",
+                    "margin": "sm"
+                  }
+                ],
+                "spacing": "sm",
+                "margin": "md"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "contents": [
+                      {
+                        "type": "span",
+                        "text": "1 Do I Wanna Know?",
+                        "weight": "bold",
+                        "color": "#000000",
+                        "size": "md"
+                      }
+                    ],
+                    "size": "sm",
+                    "wrap": true,
+                    "align": "start",
+                    "margin": "md"
+                  },
+                  { "type": "separator", "color": "#000000", "margin": "lg" },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "contents": [
+                          { "type": "span", "text": "2 Brianstorm", "weight": "bold", "color": "#000000", "size": "md" }
+                        ],
+                        "size": "sm",
+                        "wrap": true,
+                        "align": "start",
+                        "margin": "md"
+                      },
+                      { "type": "separator", "color": "#000000", "margin": "lg" }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "text",
+                            "contents": [
+                              {
+                                "type": "span",
+                                "text": "3 Why'd you only call me when you're high",
+                                "weight": "bold",
+                                "color": "#000000",
+                                "size": "md"
+                              }
+                            ],
+                            "size": "sm",
+                            "wrap": true,
+                            "align": "start",
+                            "margin": "md"
+                          },
+                          { "type": "separator", "color": "#000000", "margin": "lg" }
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "contents": [
+                          {
+                            "type": "span",
+                            "text": "4 Suck It And See",
+                            "weight": "bold",
+                            "color": "#000000",
+                            "size": "md"
+                          }
+                        ],
+                        "size": "sm",
+                        "wrap": true,
+                        "align": "start",
+                        "margin": "md"
+                      },
+                      { "type": "separator", "color": "#000000", "margin": "lg" }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "contents": [
+                          {
+                            "type": "span",
+                            "text": "5 Crying Lightning",
+                            "weight": "bold",
+                            "color": "#000000",
+                            "size": "md"
+                          }
+                        ],
+                        "size": "sm",
+                        "wrap": true,
+                        "align": "start",
+                        "margin": "md"
+                      },
+                      { "type": "separator", "color": "#000000", "margin": "lg" },
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "text",
+                            "contents": [
+                              {
+                                "type": "span",
+                                "text": "6 R U Mine?",
+                                "weight": "bold",
+                                "color": "#000000",
+                                "size": "md"
+                              }
+                            ],
+                            "size": "sm",
+                            "wrap": true,
+                            "align": "start",
+                            "margin": "md"
+                          }
+                        ]
+                      },
+                      { "type": "separator", "color": "#000000", "margin": "lg" },
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "text",
+                            "contents": [
+                              {
+                                "type": "span",
+                                "text": "7 Teddy Picker",
+                                "weight": "bold",
+                                "color": "#000000",
+                                "size": "md"
+                              }
+                            ],
+                            "size": "sm",
+                            "wrap": true,
+                            "align": "start",
+                            "margin": "md"
+                          },
+                          { "type": "separator", "color": "#000000", "margin": "lg" },
+                          {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "contents": [
+                                  {
+                                    "type": "span",
+                                    "text": "8 Knee Socks",
+                                    "weight": "bold",
+                                    "color": "#000000",
+                                    "size": "md"
+                                  }
+                                ],
+                                "size": "sm",
+                                "wrap": true,
+                                "align": "start",
+                                "margin": "md"
+                              },
+                              { "type": "separator", "color": "#000000", "margin": "lg" },
+                              {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                  {
+                                    "type": "text",
+                                    "contents": [
+                                      {
+                                        "type": "span",
+                                        "text": "9 Arabella",
+                                        "weight": "bold",
+                                        "color": "#000000",
+                                        "size": "md"
+                                      }
+                                    ],
+                                    "size": "sm",
+                                    "wrap": true,
+                                    "align": "start",
+                                    "margin": "md"
+                                  },
+                                  { "type": "separator", "color": "#000000", "margin": "lg" }
+                                ]
+                              },
+                              {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                  {
+                                    "type": "text",
+                                    "contents": [
+                                      {
+                                        "type": "span",
+                                        "text": "10 I Bet You Look Good On The Dancefloor",
+                                        "weight": "bold",
+                                        "color": "#000000",
+                                        "size": "md"
+                                      }
+                                    ],
+                                    "size": "sm",
+                                    "wrap": true,
+                                    "align": "start",
+                                    "margin": "md"
+                                  },
+                                  { "type": "separator", "color": "#000000", "margin": "lg" }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "spacing": "xl",
+        "paddingAll": "20px"
+      }
+    ],
+    "paddingAll": "0px"
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "button",
+        "action": { "type": "uri", "label": "Listen Now", "uri": "http://linecorp.com/" },
+        "style": "secondary"
+      }
+    ]
+  }
+}

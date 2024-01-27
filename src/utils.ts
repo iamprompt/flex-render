@@ -40,7 +40,7 @@ export const getDocument = () => {
   return document
 }
 
-export const FlexElementSizeKeyword = ['xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl', '3xl', '4xl', '5xl', 'full']
+export const FlexElementSizeKeyword = ['none', 'xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl', '3xl', '4xl', '5xl', 'full']
 export const FlexElementSizePxRegex = /^(-?[\d\.]+)px$/
 export const FlexElementSizePercentRegex = /^(-?[\d\.]+)%$/
 
@@ -62,7 +62,7 @@ export const injectMargin = <T extends HTMLElement>(
 ) => {
   if (!margin) return element
 
-  const direction = parentElement?.type === 'box' && parentElement?.layout === 'vertical' ? 'T' : 'L'
+  const direction = isHorizontalLayout(parentElement) ? 'L' : 'T'
   const sizeClassName = FlexElementSizeKeywordClassName[margin] || undefined
   if (sizeClassName) {
     element.classList.add(`ExMgn${direction}${sizeClassName}`)
@@ -193,7 +193,7 @@ export const injectOffset = <T extends HTMLElement>(
 
   if (offsetBottom) {
     if (FlexElementSizeKeyword.includes(offsetBottom)) {
-      element.classList.add(`ExB${offsetBottom.toUpperCase()}`)
+      element.classList.add(`ExB${FlexElementSizeKeywordClassName[offsetBottom]}`)
     } else {
       const pxMatch = offsetBottom.match(FlexElementSizePxRegex)
       const percentMatch = offsetBottom.match(FlexElementSizePercentRegex)
@@ -205,7 +205,7 @@ export const injectOffset = <T extends HTMLElement>(
 
   if (offsetTop) {
     if (FlexElementSizeKeyword.includes(offsetTop)) {
-      element.classList.add(`ExT${offsetTop.toUpperCase()}`)
+      element.classList.add(`ExT${FlexElementSizeKeywordClassName[offsetTop]}`)
     } else {
       const pxMatch = offsetTop.match(FlexElementSizePxRegex)
       const percentMatch = offsetTop.match(FlexElementSizePercentRegex)
@@ -217,7 +217,7 @@ export const injectOffset = <T extends HTMLElement>(
 
   if (offsetEnd) {
     if (FlexElementSizeKeyword.includes(offsetEnd)) {
-      element.classList.add(`ExT${offsetEnd.toUpperCase()}`)
+      element.classList.add(`ExR${FlexElementSizeKeywordClassName[offsetEnd]}`)
     } else {
       const pxMatch = offsetEnd.match(FlexElementSizePxRegex)
       const percentMatch = offsetEnd.match(FlexElementSizePercentRegex)
@@ -229,7 +229,7 @@ export const injectOffset = <T extends HTMLElement>(
 
   if (offsetStart) {
     if (FlexElementSizeKeyword.includes(offsetStart)) {
-      element.classList.add(`ExT${offsetStart.toUpperCase()}`)
+      element.classList.add(`ExL${FlexElementSizeKeywordClassName[offsetStart]}`)
     } else {
       const pxMatch = offsetStart.match(FlexElementSizePxRegex)
       const percentMatch = offsetStart.match(FlexElementSizePercentRegex)
@@ -250,7 +250,7 @@ export const injectPadding = <T extends HTMLElement>(
 
   if (paddingAll) {
     if (FlexElementSizeKeyword.includes(paddingAll)) {
-      element.classList.add(`ExPadA${paddingAll.toUpperCase()}`)
+      element.classList.add(`ExPadA${FlexElementSizeKeywordClassName[paddingAll]}`)
     } else {
       const pxMatch = paddingAll.match(FlexElementSizePxRegex)
       const percentMatch = paddingAll.match(FlexElementSizePercentRegex)
@@ -262,7 +262,7 @@ export const injectPadding = <T extends HTMLElement>(
 
   if (paddingBottom) {
     if (FlexElementSizeKeyword.includes(paddingBottom)) {
-      element.classList.add(`ExT${paddingBottom.toUpperCase()}`)
+      element.classList.add(`ExPadB${FlexElementSizeKeywordClassName[paddingBottom]}`)
     } else {
       const pxMatch = paddingBottom.match(FlexElementSizePxRegex)
       const percentMatch = paddingBottom.match(FlexElementSizePercentRegex)
@@ -274,7 +274,7 @@ export const injectPadding = <T extends HTMLElement>(
 
   if (paddingEnd) {
     if (FlexElementSizeKeyword.includes(paddingEnd)) {
-      element.classList.add(`ExT${paddingEnd.toUpperCase()}`)
+      element.classList.add(`ExPadR${FlexElementSizeKeywordClassName[paddingEnd]}`)
     } else {
       const pxMatch = paddingEnd.match(FlexElementSizePxRegex)
       const percentMatch = paddingEnd.match(FlexElementSizePercentRegex)
@@ -286,7 +286,7 @@ export const injectPadding = <T extends HTMLElement>(
 
   if (paddingStart) {
     if (FlexElementSizeKeyword.includes(paddingStart)) {
-      element.classList.add(`ExT${paddingStart.toUpperCase()}`)
+      element.classList.add(`ExPadL${FlexElementSizeKeywordClassName[paddingStart]}`)
     } else {
       const pxMatch = paddingStart.match(FlexElementSizePxRegex)
       const percentMatch = paddingStart.match(FlexElementSizePercentRegex)
@@ -298,7 +298,7 @@ export const injectPadding = <T extends HTMLElement>(
 
   if (paddingTop) {
     if (FlexElementSizeKeyword.includes(paddingTop)) {
-      element.classList.add(`ExT${paddingTop.toUpperCase()}`)
+      element.classList.add(`ExPadT${FlexElementSizeKeywordClassName[paddingTop]}`)
     } else {
       const pxMatch = paddingTop.match(FlexElementSizePxRegex)
       const percentMatch = paddingTop.match(FlexElementSizePercentRegex)
@@ -448,4 +448,16 @@ export const injectSectionStyle = <T extends HTMLElement, U extends HTMLElement 
     }
   }
   return [element, parentHTMLElement]
+}
+
+export const isSizeKeyword = (size?: string) => {
+  return size && FlexElementSizeKeyword.includes(size)
+}
+
+export const isSizeValue = (size?: string) => {
+  return size && (FlexElementSizePxRegex.test(size) || FlexElementSizePercentRegex.test(size))
+}
+
+export const isHorizontalLayout = (layout?: FlexComponent) => {
+  return layout?.type === 'box' && (layout.layout === 'horizontal' || layout.layout === 'baseline')
 }

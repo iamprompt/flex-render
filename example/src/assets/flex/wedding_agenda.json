@@ -1,0 +1,180 @@
+{
+  "type": "bubble",
+  "size": "mega",
+  "hero": {
+    "type": "image",
+    "url": "https://i.pinimg.com/564x/f5/8c/b3/f58cb3095fe7d100d3704a99982cfea0.jpg",
+    "size": "full",
+    "aspectMode": "cover",
+    "aspectRatio": "20:13"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      { "type": "text", "text": "SEOKHYUN & YEOLMAE", "color": "#666666", "size": "lg", "weight": "bold" },
+      { "type": "text", "text": "ARE GETTING MARRIED", "size": "sm", "color": "#8c8c8c" },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          { "type": "text", "text": "2:00 PM.", "size": "xxs", "gravity": "center" },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              { "type": "filler" },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [],
+                "cornerRadius": "30px",
+                "height": "12px",
+                "width": "12px",
+                "borderColor": "#EF454D",
+                "borderWidth": "2px"
+              },
+              { "type": "filler" }
+            ],
+            "flex": 0
+          },
+          { "type": "text", "text": "Wedding Ceremony", "gravity": "center", "flex": 4, "size": "sm" }
+        ],
+        "spacing": "lg",
+        "cornerRadius": "30px",
+        "margin": "xl"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          { "type": "box", "layout": "baseline", "contents": [{ "type": "filler" }], "flex": 1 },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  { "type": "filler" },
+                  { "type": "box", "layout": "vertical", "contents": [], "width": "2px", "backgroundColor": "#B7B7B7" },
+                  { "type": "filler" }
+                ],
+                "flex": 1
+              }
+            ],
+            "width": "12px"
+          },
+          {
+            "type": "text",
+            "text": "Exchange of wedding rings",
+            "gravity": "center",
+            "flex": 4,
+            "size": "xs",
+            "color": "#8c8c8c"
+          }
+        ],
+        "spacing": "lg",
+        "height": "64px"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [{ "type": "text", "text": "5:00 PM.", "gravity": "center", "size": "xxs" }],
+            "flex": 1
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              { "type": "filler" },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [],
+                "cornerRadius": "30px",
+                "width": "12px",
+                "height": "12px",
+                "borderWidth": "2px",
+                "borderColor": "#6486E3"
+              },
+              { "type": "filler" }
+            ],
+            "flex": 0
+          },
+          { "type": "text", "text": "Dinner", "gravity": "center", "flex": 4, "size": "sm" }
+        ],
+        "spacing": "lg",
+        "cornerRadius": "30px"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          { "type": "box", "layout": "baseline", "contents": [{ "type": "filler" }], "flex": 1 },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  { "type": "filler" },
+                  { "type": "box", "layout": "vertical", "contents": [], "width": "2px", "backgroundColor": "#6486E3" },
+                  { "type": "filler" }
+                ],
+                "flex": 1
+              }
+            ],
+            "width": "12px"
+          },
+          {
+            "type": "text",
+            "text": "Congratulations with Groom & Bride",
+            "gravity": "center",
+            "flex": 4,
+            "size": "xs",
+            "color": "#8c8c8c"
+          }
+        ],
+        "spacing": "lg",
+        "height": "64px"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          { "type": "text", "text": "7:00 PM.", "gravity": "center", "size": "xxs" },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              { "type": "filler" },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [],
+                "cornerRadius": "30px",
+                "width": "12px",
+                "height": "12px",
+                "borderColor": "#6486E3",
+                "borderWidth": "2px"
+              },
+              { "type": "filler" }
+            ],
+            "flex": 0
+          },
+          { "type": "text", "text": "After Party", "gravity": "center", "flex": 4, "size": "sm" }
+        ],
+        "spacing": "lg",
+        "cornerRadius": "30px"
+      }
+    ]
+  }
+}
