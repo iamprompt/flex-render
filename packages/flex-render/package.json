@@ -1,7 +1,6 @@
 {
   "name": "flex-render",
-  "version": "0.0.20",
-  "private": true,
+  "version": "0.0.22",
   "license": "MIT",
   "sideEffects": false,
   "type": "module",
@@ -24,6 +23,8 @@
     "lint": "eslint src/"
   },
   "devDependencies": {
+    "@iamprompt/eslint-config": "workspace:^",
+    "@iamprompt/typescript-config": "workspace:^",
     "@line/bot-sdk": "^8.2.0",
     "esbuild-sass-plugin": "^2.16.1",
     "linkedom": "^0.16.6",

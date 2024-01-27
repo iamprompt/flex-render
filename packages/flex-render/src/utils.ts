@@ -1,7 +1,6 @@
 import type {
   FlexBlockStyle,
   FlexBox,
-  FlexBubble,
   FlexButton,
   FlexComponent,
   FlexIcon,
@@ -10,6 +9,7 @@ import type {
   Offset,
 } from '@line/bot-sdk'
 import { parseHTML } from 'linkedom'
+
 import {
   FlexBoxAlignItemsClassName,
   FlexBoxBorderWidthClassName,
@@ -18,7 +18,6 @@ import {
   FlexElementAlignClassName,
   FlexElementFlexClassName,
   FlexElementGravityClassName,
-  FlexElementMarginClassName,
   FlexElementPositionClassName,
   FlexElementSizeKeywordClassName,
   FlexElementSpacingClassName,
@@ -49,7 +48,6 @@ export const injectSpacing = <T extends HTMLElement>(element: T, spacing: FlexBo
   const className = FlexElementSpacingClassName[spacing] || undefined
   if (className) {
     element.classList.add(className)
-  } else {
   }
 
   return element
@@ -58,7 +56,7 @@ export const injectSpacing = <T extends HTMLElement>(element: T, spacing: FlexBo
 export const injectMargin = <T extends HTMLElement>(
   element: T,
   margin: FlexBox['margin'],
-  parentElement?: FlexComponent
+  parentElement?: FlexComponent,
 ) => {
   if (!margin) return element
 
@@ -92,7 +90,7 @@ export const injectAspectMode = <T extends HTMLElement>(element: T, aspectMode: 
 export const injectSize = <T extends HTMLElement>(
   element: T,
   size?: string,
-  type: 'fontSize' | 'height' | 'width' | 'maxHeight' | 'maxWidth' | 'lineHeight' = 'height'
+  type: 'fontSize' | 'height' | 'width' | 'maxHeight' | 'maxWidth' | 'lineHeight' = 'height',
 ) => {
   if (!size) return element
   const className = FlexImageSizeClassName[size] || undefined
@@ -119,7 +117,7 @@ export const injectWeight = <T extends HTMLElement>(element: T, weight?: string)
 export const injectAspectRatio = <T extends HTMLElement>(element: T, aspectRatio: FlexImage['aspectRatio']) => {
   let value = 100
 
-  const match = aspectRatio?.match(/^([\d\.]+):([\d\.]+)$/)
+  const match = aspectRatio?.match(/^([\d.]+):([\d.]+)$/)
 
   if (match) {
     value = (Number(match[2]) / Number(match[1])) * 100
@@ -135,7 +133,6 @@ export const injectAlign = <T extends HTMLElement>(element: T, align: FlexText['
   const className = FlexElementAlignClassName[align] || undefined
   if (className) {
     element.classList.add(className)
-  } else {
   }
 
   return element
@@ -146,7 +143,6 @@ export const injectGravity = <T extends HTMLElement>(element: T, gravity: FlexTe
   const className = FlexElementGravityClassName[gravity] || undefined
   if (className) {
     element.classList.add(className)
-  } else {
   }
 
   return element
@@ -157,7 +153,6 @@ export const injectPosition = <T extends HTMLElement>(element: T, position: Flex
   const className = FlexElementPositionClassName[position] || undefined
   if (className) {
     element.classList.add(className)
-  } else {
   }
 
   return element
@@ -168,7 +163,6 @@ export const injectAlignItems = <T extends HTMLElement>(element: T, alignItems: 
   const className = FlexBoxAlignItemsClassName[alignItems] || undefined
   if (className) {
     element.classList.add(className)
-  } else {
   }
 
   return element
@@ -179,7 +173,6 @@ export const injectJustifyContent = <T extends HTMLElement>(element: T, justifyC
   const className = FlexBoxJustifyContentClassName[justifyContent] || undefined
   if (className) {
     element.classList.add(className)
-  } else {
   }
 
   return element
@@ -187,7 +180,7 @@ export const injectJustifyContent = <T extends HTMLElement>(element: T, justifyC
 
 export const injectOffset = <T extends HTMLElement>(
   element: T,
-  { offsetBottom, offsetEnd, offsetStart, offsetTop }: Offset
+  { offsetBottom, offsetEnd, offsetStart, offsetTop }: Offset,
 ) => {
   if (!offsetBottom && !offsetEnd && !offsetStart && !offsetTop) return element
 
@@ -244,7 +237,7 @@ export const injectOffset = <T extends HTMLElement>(
 
 export const injectPadding = <T extends HTMLElement>(
   element: T,
-  { paddingAll, paddingBottom, paddingEnd, paddingStart, paddingTop }: FlexBox
+  { paddingAll, paddingBottom, paddingEnd, paddingStart, paddingTop }: FlexBox,
 ) => {
   if (!paddingAll && !paddingBottom && !paddingEnd && !paddingStart && !paddingTop) return element
 
@@ -337,7 +330,7 @@ const colorRegex = /^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6}|[0-9a-fA-F]{8})$/
 export const injectColor = <T extends HTMLElement>(
   element: T,
   color?: string,
-  type: 'backgroundColor' | 'color' | 'borderColor' = 'color'
+  type: 'backgroundColor' | 'color' | 'borderColor' = 'color',
 ) => {
   if (!color) return element
   const match = color.match(colorRegex)
@@ -355,7 +348,7 @@ export const injectBackground = <T extends HTMLElement>(element: T, background?:
     const matchStartColor = startColor?.match(colorRegex)
     const matchEndColor = endColor?.match(colorRegex)
     const matchCenterColor = centerColor?.match(colorRegex)
-    const matchCenterPosition = centerPosition?.match(/^([\d\.]+)%$/)
+    const matchCenterPosition = centerPosition?.match(/^([\d.]+)%$/)
     if (!centerColor || !centerPosition) {
       if (matchAngle && matchStartColor && matchEndColor) {
         element.style.background = `linear-gradient(${angle}deg, ${startColor}, ${endColor})`
@@ -408,7 +401,7 @@ export const injectCornerRadius = <T extends HTMLElement>(element: T, cornerRadi
 export const injectIconAspectRatio = <T extends HTMLElement>(element: T, aspectRatio: FlexIcon['aspectRatio']) => {
   let value = 1
 
-  const match = aspectRatio?.match(/^([\d\.]+):([\d\.]+)$/)
+  const match = aspectRatio?.match(/^([\d.]+):([\d.]+)$/)
 
   if (match) {
     value = Number(match[1]) / Number(match[2])
@@ -437,13 +430,16 @@ export const injectSectionStyle = <T extends HTMLElement, U extends HTMLElement 
   element: T,
   style: FlexBlockStyle | undefined,
   type: 'header' | 'hero' | 'body' | 'footer',
-  parentHTMLElement: U
+  parentHTMLElement: U,
 ): [T, U] => {
   if (style) {
     const { separator, separatorColor, backgroundColor } = style
     element = injectColor(element, backgroundColor, 'backgroundColor')
     if (type !== 'header' && separator) {
-      const separator = renderSeparator({ type: 'separator', color: separatorColor })
+      const separator = renderSeparator({
+        type: 'separator',
+        color: separatorColor,
+      })
       parentHTMLElement?.appendChild(separator)
     }
   }

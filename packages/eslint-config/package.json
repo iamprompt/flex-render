@@ -1,0 +1,21 @@
+{
+  "name": "@iamprompt/eslint-config",
+  "license": "MIT",
+  "version": "0.0.0",
+  "private": true,
+  "files": [
+    "index.js",
+    "react.js"
+  ],
+  "devDependencies": {
+    "@typescript-eslint/parser": "^6.19.1",
+    "@vercel/style-guide": "^5.1.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-turbo": "^1.11.3",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-only-warn": "^1.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-unused-imports": "^3.0.0"
+  }
+}

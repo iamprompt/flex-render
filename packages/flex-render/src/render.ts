@@ -14,36 +14,7 @@ import type {
   FlexText,
   FlexVideo,
 } from '@line/bot-sdk'
-import {
-  getDocument,
-  injectAlign,
-  injectAlignItems,
-  injectAspectMode,
-  injectFlex,
-  injectGravity,
-  injectAspectRatio,
-  injectSize,
-  injectJustifyContent,
-  injectMargin,
-  injectOffset,
-  injectPadding,
-  injectPosition,
-  injectSpacing,
-  injectWeight,
-  injectButtonStyle,
-  injectColor,
-  injectWrap,
-  injectBorderWidth,
-  injectCornerRadius,
-  injectBackground,
-  injectIconAspectRatio,
-  injectFontStyle,
-  injectFontDecoration,
-  injectSectionStyle,
-  isSizeKeyword,
-  isSizeValue,
-  isHorizontalLayout,
-} from './utils'
+
 import {
   FlexBoxLayoutClassName,
   FlexBubbleDirectionClassName,
@@ -51,6 +22,36 @@ import {
   FlexElementClassName,
   FlexSectionClassName,
 } from './className'
+import {
+  getDocument,
+  injectAlign,
+  injectAlignItems,
+  injectAspectMode,
+  injectAspectRatio,
+  injectBackground,
+  injectBorderWidth,
+  injectButtonStyle,
+  injectColor,
+  injectCornerRadius,
+  injectFlex,
+  injectFontDecoration,
+  injectFontStyle,
+  injectGravity,
+  injectIconAspectRatio,
+  injectJustifyContent,
+  injectMargin,
+  injectOffset,
+  injectPadding,
+  injectPosition,
+  injectSectionStyle,
+  injectSize,
+  injectSpacing,
+  injectWeight,
+  injectWrap,
+  isHorizontalLayout,
+  isSizeKeyword,
+  isSizeValue,
+} from './utils'
 
 export const render = (flexJSON: FlexContainer) => {
   const document = getDocument()
@@ -233,7 +234,7 @@ export const renderButton = (buttonJSON: FlexButton, parent?: FlexComponent) => 
     actionWrapper = injectColor(
       actionWrapper,
       buttonJSON.color,
-      buttonJSON.style === 'primary' || buttonJSON.style === 'secondary' ? 'backgroundColor' : 'color'
+      buttonJSON.style === 'primary' || buttonJSON.style === 'secondary' ? 'backgroundColor' : 'color',
     )
     const actionContent = document.createElement('div')
     actionContent.textContent = buttonJSON.action.label

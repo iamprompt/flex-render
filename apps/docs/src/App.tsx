@@ -1,28 +1,28 @@
 import '@/styles/globals.css'
 
+import ViewJSONButton from './components/ViewJSONButton'
 import { FlexModules } from '@/utils/flex'
 import FlexPreview from '@/components/FlexPreview'
-import ViewJSONButton from './components/ViewJSONButton'
 
 function App() {
   return (
     <div className="m-8">
       {FlexModules.map(({ id, title, json, author, authorUrl }) => (
-        <div key={id} data-id={id}>
+        <div data-id={id} key={id}>
           <div className="flex mt-8 mb-4 flex-col sm:flex-row sm:items-baseline">
             <div className="flex flex-row space-x-4">
-              <ViewJSONButton id={id} title={title} json={json} />
+              <ViewJSONButton id={id} json={json} title={title} />
               <h2 className="font-bold text-3xl text-white">{title || id}</h2>
             </div>
-            {author && (
+            {author ? (
               <span className="sm:ml-4 text-white text-sm">
                 (By{' '}
-                <a href={authorUrl || '#'} target="_blank" rel="noreferrer">
+                <a href={authorUrl || '#'} rel="noreferrer" target="_blank">
                   {author}
                 </a>
                 )
               </span>
-            )}
+            ) : null}
           </div>
           <FlexPreview json={json} />
         </div>

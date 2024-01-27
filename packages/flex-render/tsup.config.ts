@@ -1,5 +1,5 @@
-import { defineConfig, type Options } from 'tsup'
 import { sassPlugin } from 'esbuild-sass-plugin'
+import { defineConfig, type Options } from 'tsup'
 
 export default defineConfig((options: Options) => ({
   entry: ['src/index.ts', 'src/main.scss'],
