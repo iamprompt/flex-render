@@ -22,8 +22,9 @@ import {
   FlexElementClassName,
   FlexSectionClassName,
 } from './className'
+import { Element } from './dom'
 import {
-  getDocument,
+  injectAction,
   injectAlign,
   injectAlignItems,
   injectAspectMode,
@@ -54,9 +55,8 @@ import {
 } from './utils'
 
 export const render = (flexJSON: FlexContainer) => {
-  const document = getDocument()
-  const preview = document.createElement('div')
-  preview.classList.add('flex-preview')
+  const preview = new Element('div')
+  preview.addClassNames('flex-preview')
 
   if (flexJSON.type === 'carousel') {
     const carousel = renderCarousel(flexJSON)
@@ -66,34 +66,30 @@ export const render = (flexJSON: FlexContainer) => {
     preview.appendChild(bubble)
   }
 
-  return preview.outerHTML
+  return preview.render()
 }
 
 export const renderCarousel = (flexJSON: FlexCarousel) => {
-  const document = getDocument()
-
-  const carousel = document.createElement('div')
-  carousel.classList.add('lyInner')
+  const carousel = new Element('div')
+  carousel.addClassName('lyInner')
 
   for (const bubbleJSON of flexJSON.contents) {
     const bubble = renderBubble(bubbleJSON)
-    bubble.classList.add('lyItem')
+    bubble.addClassNames('lyItem')
     carousel.appendChild(bubble)
   }
 
-  const carouselWrapper = document.createElement('div')
-  carouselWrapper.className = 'LySlider'
+  const carouselWrapper = new Element('div')
+  carouselWrapper.addClassName('LySlider')
   carouselWrapper.appendChild(carousel)
 
   return carouselWrapper
 }
 
 export const renderBubble = (flexJSON: FlexBubble) => {
-  const document = getDocument()
-
-  let bubble = document.createElement('div')
-  bubble.classList.add('T1', FlexBubbleDirectionClassName[flexJSON.direction || 'ltr'])
-  bubble.dir = flexJSON.direction || 'ltr'
+  let bubble = new Element('div')
+  bubble.addClassNames('T1', FlexBubbleDirectionClassName[flexJSON.direction || 'ltr'])
+  bubble.setAttribute('dir', flexJSON.direction || 'ltr')
 
   if (flexJSON.header) {
     let header = renderSection('header', flexJSON.header)
@@ -112,7 +108,7 @@ export const renderBubble = (flexJSON: FlexBubble) => {
 
   if (flexJSON.body) {
     let body = renderSection('body', flexJSON.body)
-    flexJSON.footer && body.classList.add('ExHasFooter')
+    flexJSON.footer && body.addClassNames('ExHasFooter')
     const [bodyWithStyle, bodyBubbleStyled] = injectSectionStyle(body, flexJSON.styles?.body, 'body', bubble)
     body = bodyWithStyle
     bubble = bodyBubbleStyled
@@ -127,18 +123,16 @@ export const renderBubble = (flexJSON: FlexBubble) => {
     bubble.appendChild(footer)
   }
 
-  const bubbleWrapper = document.createElement('div')
-  bubbleWrapper.classList.add(FlexBubbleSizeClassName[flexJSON.size || 'mega'])
+  const bubbleWrapper = new Element('div')
+  bubbleWrapper.addClassName(FlexBubbleSizeClassName[flexJSON.size || 'mega'])
   bubbleWrapper.appendChild(bubble)
 
   return bubbleWrapper
 }
 
 export const renderSection = (section: 'header' | 'body' | 'footer', sectionJSON: FlexBox) => {
-  const document = getDocument()
-
-  const sectionWrapper = document.createElement('div')
-  sectionWrapper.classList.add(FlexSectionClassName[section])
+  const sectionWrapper = new Element('div')
+  sectionWrapper.addClassNames(FlexSectionClassName[section])
 
   const boxContent = renderBox(sectionJSON)
   sectionWrapper.appendChild(boxContent)
@@ -147,10 +141,8 @@ export const renderSection = (section: 'header' | 'body' | 'footer', sectionJSON
 }
 
 export const renderHero = (heroJSON: FlexBox | FlexImage | FlexVideo) => {
-  const document = getDocument()
-
-  const hero = document.createElement('div')
-  hero.classList.add(FlexSectionClassName['hero'])
+  const hero = new Element('div')
+  hero.addClassNames(FlexSectionClassName['hero'])
 
   const heroContent = renderContent(heroJSON)
   if (heroContent) {
@@ -161,9 +153,7 @@ export const renderHero = (heroJSON: FlexBox | FlexImage | FlexVideo) => {
 }
 
 export const renderBox = (boxJSON: FlexBox, parent?: FlexComponent) => {
-  const document = getDocument()
-
-  let box = document.createElement('div')
+  let box = new Element('div')
 
   if (boxJSON.contents) {
     for (const contentJSON of boxJSON.contents) {
@@ -173,7 +163,7 @@ export const renderBox = (boxJSON: FlexBox, parent?: FlexComponent) => {
     }
   }
 
-  box.classList.add(FlexElementClassName.box, ...FlexBoxLayoutClassName[boxJSON.layout || 'vertical'].split(' '))
+  box.addClassNames(FlexElementClassName.box, ...FlexBoxLayoutClassName[boxJSON.layout || 'vertical'].split(' '))
 
   box = injectPosition(box, boxJSON.position)
   box = boxJSON.height || boxJSON.width ? injectFlex(box, 0) : injectFlex(box, boxJSON.flex)
@@ -224,25 +214,20 @@ export const renderContent = (contentJSON: FlexBox['contents'][number], parent?:
 }
 
 export const renderButton = (buttonJSON: FlexButton, parent?: FlexComponent) => {
-  const document = getDocument()
-
-  let button = document.createElement('div')
-  button.classList.add(FlexElementClassName.button)
+  let button = new Element('div')
+  button.addClassNames(FlexElementClassName.button)
 
   if (buttonJSON.action) {
-    let actionWrapper = document.createElement('a')
+    let actionWrapper = new Element('a')
     actionWrapper = injectColor(
       actionWrapper,
       buttonJSON.color,
       buttonJSON.style === 'primary' || buttonJSON.style === 'secondary' ? 'backgroundColor' : 'color',
     )
-    const actionContent = document.createElement('div')
-    actionContent.textContent = buttonJSON.action.label
+    const actionContent = new Element('div')
+    actionContent.setTextContent(buttonJSON.action.label)
     actionWrapper.appendChild(actionContent)
-    if (buttonJSON.action.type === 'uri') {
-      actionWrapper.target = '_blank'
-      actionWrapper.href = buttonJSON.action.uri
-    }
+    actionWrapper = injectAction(actionWrapper, buttonJSON.action)
     button.appendChild(actionWrapper)
   }
 
@@ -258,10 +243,8 @@ export const renderButton = (buttonJSON: FlexButton, parent?: FlexComponent) => 
 }
 
 export const renderImage = (imageJSON: FlexImage, parent?: FlexComponent) => {
-  const document = getDocument()
-
-  let image = document.createElement('div')
-  image.classList.add(FlexElementClassName.image)
+  let image = new Element('div')
+  image.addClassNames(FlexElementClassName.image)
 
   image = injectFlex(image, imageJSON.flex)
   image = injectPosition(image, imageJSON.position)
@@ -274,33 +257,34 @@ export const renderImage = (imageJSON: FlexImage, parent?: FlexComponent) => {
   image = injectAspectMode(image, imageJSON.aspectMode || 'fit')
   image = injectOffset(image, imageJSON)
 
-  let imageContent = document.createElement('span')
-  imageContent.style.setProperty('background-image', `url("${imageJSON.url}")`)
+  let imageContent = new Element('span')
+  imageContent.setStyle('background-image', `url("${imageJSON.url}")`)
   imageContent = injectColor(imageContent, imageJSON.backgroundColor, 'backgroundColor')
 
-  let imageInner = document.createElement('a')
+  let imageInner = new Element('a')
   imageInner = injectAspectRatio(imageInner, imageJSON.aspectRatio)
+  imageInner = injectAction(imageInner, imageJSON.action)
 
   imageInner.appendChild(imageContent)
 
-  let imageWrapper = document.createElement('div')
+  let imageWrapper = new Element('div')
   if (isSizeValue(imageJSON.size || 'md')) {
     imageWrapper = injectSize(imageWrapper, imageJSON.size, isHorizontalLayout(parent) ? 'width' : 'height')
   }
   imageWrapper.appendChild(imageInner)
   image.appendChild(imageWrapper)
 
+  // console.log(image)
+
   return image
 }
 
 export const renderIcon = (iconJSON: FlexIcon, parent?: FlexComponent) => {
-  const document = getDocument()
+  let icon = new Element('div')
+  icon.addClassNames(FlexElementClassName.icon)
 
-  let icon = document.createElement('div')
-  icon.classList.add(FlexElementClassName.icon)
-
-  let iconContent = document.createElement('span')
-  iconContent.style.setProperty('background-image', `url(${iconJSON.url})`)
+  let iconContent = new Element('span')
+  iconContent.setStyle('background-image', `url(${iconJSON.url})`)
 
   icon = injectPosition(icon, iconJSON.position)
   icon = injectMargin(icon, iconJSON.margin, parent)
@@ -309,7 +293,7 @@ export const renderIcon = (iconJSON: FlexIcon, parent?: FlexComponent) => {
   icon = injectOffset(icon, iconJSON)
   icon = injectFlex(icon, 0)
 
-  let iconInner = document.createElement('div')
+  let iconInner = new Element('div')
   iconInner.appendChild(iconContent)
   icon.appendChild(iconInner)
 
@@ -317,10 +301,8 @@ export const renderIcon = (iconJSON: FlexIcon, parent?: FlexComponent) => {
 }
 
 export const renderText = (textJSON: FlexText, parent?: FlexComponent) => {
-  const document = getDocument()
-
-  let text = document.createElement('div')
-  text.classList.add(FlexElementClassName.text)
+  let text = new Element('div')
+  text.addClassNames(FlexElementClassName.text)
 
   if (textJSON.contents && textJSON.contents.length > 0) {
     for (const contentJSON of textJSON.contents) {
@@ -329,9 +311,16 @@ export const renderText = (textJSON: FlexText, parent?: FlexComponent) => {
       text.appendChild(content)
     }
   } else if (textJSON.text) {
-    const textContent = document.createElement('p')
-    textContent.textContent = textJSON.text
-    text.appendChild(textContent)
+    const textContent = new Element('p')
+    textContent.setTextContent(textJSON.text)
+    if (textJSON.action) {
+      let actionWrapper = new Element('a')
+      actionWrapper = injectAction(actionWrapper, textJSON.action)
+      actionWrapper.appendChild(textContent)
+      text.appendChild(actionWrapper)
+    } else {
+      text.appendChild(textContent)
+    }
   }
 
   text = injectFlex(text, textJSON.flex)
@@ -352,11 +341,9 @@ export const renderText = (textJSON: FlexText, parent?: FlexComponent) => {
 }
 
 export const renderSpan = (spanJSON: FlexSpan, parent?: FlexComponent) => {
-  const document = getDocument()
-
-  let span = document.createElement('span')
-  span.classList.add(FlexElementClassName.span)
-  span.textContent = spanJSON.text
+  let span = new Element('span')
+  span.addClassNames(FlexElementClassName.span)
+  span.setTextContent(spanJSON.text)
 
   span = injectSize(span, spanJSON.size, 'fontSize')
   span = injectColor(span, spanJSON.color, 'color')
@@ -368,10 +355,8 @@ export const renderSpan = (spanJSON: FlexSpan, parent?: FlexComponent) => {
 }
 
 export const renderSeparator = (separatorJSON: FlexSeparator, parent?: FlexComponent) => {
-  const document = getDocument()
-
-  let separator = document.createElement('div')
-  separator.classList.add(FlexElementClassName.separator)
+  let separator = new Element('div')
+  separator.addClassNames(FlexElementClassName.separator)
 
   separator = injectMargin(separator, separatorJSON.margin, parent)
   separator = injectColor(separator, separatorJSON.color, 'borderColor')
@@ -380,18 +365,15 @@ export const renderSeparator = (separatorJSON: FlexSeparator, parent?: FlexCompo
 }
 
 export const renderFiller = (fillerJSON: FlexFiller, parent?: FlexComponent) => {
-  const document = getDocument()
-  let filler = document.createElement('div')
-  filler.classList.add(FlexElementClassName.filler)
+  let filler = new Element('div')
+  filler.addClassNames(FlexElementClassName.filler)
   filler = injectFlex(filler, fillerJSON.flex)
   return filler
 }
 
 export const renderVideo = (videoJSON: FlexVideo, parent?: FlexComponent) => {
-  const document = getDocument()
-
-  const video = document.createElement('div')
-  video.classList.add(FlexElementClassName.video)
+  const video = new Element('div')
+  video.addClassNames(FlexElementClassName.video)
 
   if (videoJSON.altContent) {
     const altContent = renderContent(videoJSON.altContent)
@@ -404,10 +386,8 @@ export const renderVideo = (videoJSON: FlexVideo, parent?: FlexComponent) => {
 }
 
 export const renderSpacer = (spacerJSON: FlexSpacer, parent?: FlexComponent) => {
-  const document = getDocument()
-
-  let spacer = document.createElement('div')
-  spacer.classList.add(FlexElementClassName.spacer)
+  let spacer = new Element('div')
+  spacer.addClassNames(FlexElementClassName.spacer)
 
   spacer = injectFlex(spacer, 0)
   spacer = injectSpacing(spacer, spacerJSON.size || 'md')

@@ -15,7 +15,7 @@
     "dist/**"
   ],
   "exports": {
-    "./css": "./dist/main.css",
+    "./css": "./dist/index.css",
     ".": "./dist/index.js"
   },
   "scripts": {
@@ -30,8 +30,7 @@
     "@iamprompt/eslint-config": "workspace:^",
     "@iamprompt/typescript-config": "workspace:^",
     "@line/bot-sdk": "^8.2.0",
-    "esbuild-sass-plugin": "^2.16.1",
-    "linkedom": "^0.16.6",
+    "esbuild-sass-plugin": "^3.0.0",
     "tsup": "^8.0.1"
   },
   "peerDependencies": {

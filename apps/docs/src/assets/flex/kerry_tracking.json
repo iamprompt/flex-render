@@ -25,9 +25,9 @@
             "flex": 0,
             "margin": "sm",
             "action": {
-              "type": "uri",
+              "type": "clipboard",
               "label": "action",
-              "uri": "http://linecorp.com/"
+              "clipboardText": "SHP5385308630"
             }
           }
         ],
