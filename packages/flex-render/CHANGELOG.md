@@ -1,5 +1,11 @@
 # flex-render
 
+## 0.1.0
+
+### Minor Changes
+
+- Custom DOM Logic and Remove DOM Lib to minify lib size
+
 ## 0.0.24
 
 ### Patch Changes
