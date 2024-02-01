@@ -1,18 +1,23 @@
 {
   "name": "@iamprompt/flex-render",
-  "version": "0.1.2",
-  "author": {
-    "name": "Supakarn Laorattanakul",
-    "url": "https://github.com/iamprompt"
+  "version": "0.1.0",
+  "homepage": "https://github.com/iamprompt/flex-render",
+  "bugs": {
+    "url": "https://github.com/iamprompt/flex-render/issues",
+    "email": "osissue@iamprompt.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https//github.com/iamprompt/flex-render.git"
   },
   "license": "MIT",
+  "author": {
+    "name": "Supakarn Laorattanakul",
+    "email": "opensource@iamprompt.me",
+    "url": "https://github.com/iamprompt"
+  },
   "sideEffects": false,
   "type": "module",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "files": [
-    "dist/**"
-  ],
   "exports": {
     "./css": "./dist/index.css",
     ".": {
@@ -31,13 +36,17 @@
       "types": "./dist/components/vue/FlexPreview.d.ts"
     }
   },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
   "scripts": {
-    "dev": "tsup --watch --dts --sourcemap --clean",
     "build": "tsup",
-    "prepublish": "tsup",
     "clean": "rm -rf dist",
-    "typecheck": "tsc --noEmit",
-    "lint": "eslint src/"
+    "dev": "tsup --watch --dts --sourcemap --clean",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@iamprompt/eslint-config": "workspace:^",
@@ -53,6 +62,6 @@
     "vue": "^3.4.15"
   },
   "publishConfig": {
-    "registry": "https://npm.iamprompt.me/"
+    "access": "public"
   }
 }

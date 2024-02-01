@@ -1,4 +1,4 @@
-# @iamprompt/flex-render-api
+# @iamprompt/flex-render-react
 
 ## 0.0.1
 

@@ -1,7 +1,7 @@
 {
   "name": "@iamprompt/flex-render-api",
   "private": true,
-  "version": "0.0.3",
+  "version": "0.0.1",
   "scripts": {
     "dev": "tsup --watch --clean --onSuccess 'node dist/index.js'",
     "build": "tsup",

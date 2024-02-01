@@ -1,4 +1,4 @@
-# @iamprompt/flex-render-api
+# @iampromt/flex-render-vue
 
 ## 0.0.1
 
