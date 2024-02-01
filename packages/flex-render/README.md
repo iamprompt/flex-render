@@ -54,7 +54,7 @@ import { FlexPreview } from '@iamprompt/flex-render/vue';
 <FlexPreview :json="flexJSON" />
 ```
 
-You can see the example in [apps](./apps/) directory.
+You can see the example in [apps](../../apps/) directory.
 
 ## Bugs
 
