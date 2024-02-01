@@ -1,0 +1,194 @@
+{
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "ผลคะแนนการเลือกตั้ง 2566",
+        "weight": "bold",
+        "color": "#1DB446",
+        "size": "lg"
+      },
+      {
+        "type": "text",
+        "text": "อย่างไม่เป็นทางการ",
+        "size": "md",
+        "color": "#aaaaaa",
+        "wrap": true
+      },
+      {
+        "type": "text",
+        "text": "500 ที่นั่ง",
+        "weight": "bold",
+        "size": "lg",
+        "margin": "md",
+        "style": "italic"
+      },
+      { "type": "separator", "margin": "xxl" },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "margin": "xxl",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "พรรคก้าวไกล",
+                "size": "sm",
+                "color": "#FC6000",
+                "flex": 0
+              },
+              {
+                "type": "text",
+                "text": "115 คน",
+                "size": "sm",
+                "color": "#111111",
+                "align": "end"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "พรรคเพื่อไทย",
+                "size": "sm",
+                "color": "#D30000",
+                "flex": 0
+              },
+              {
+                "type": "text",
+                "text": "113 คน",
+                "size": "sm",
+                "color": "#111111",
+                "align": "end"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "พรรคภูมิใจไทย",
+                "size": "sm",
+                "color": "#5D8D73",
+                "flex": 0
+              },
+              {
+                "type": "text",
+                "text": "65 คน",
+                "size": "sm",
+                "color": "#111111",
+                "align": "end"
+              }
+            ]
+          },
+          { "type": "separator", "margin": "xxl" },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "margin": "xxl",
+            "contents": [
+              {
+                "type": "text",
+                "text": "พรรคพลังประชารัฐ",
+                "size": "sm",
+                "color": "#0018F9"
+              },
+              {
+                "type": "text",
+                "text": "39 คน",
+                "size": "sm",
+                "color": "#111111",
+                "align": "end"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "พรรครวมไทยสร้างชาติ",
+                "size": "sm",
+                "color": "#4E98B8"
+              },
+              {
+                "type": "text",
+                "text": "25 คน",
+                "size": "sm",
+                "color": "#111111",
+                "align": "end"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "พรรคประชาธิปัตย์",
+                "size": "sm",
+                "color": "#0F52B1"
+              },
+              {
+                "type": "text",
+                "text": "25 คน",
+                "size": "sm",
+                "color": "#111111",
+                "align": "end"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "อื่น ๆ",
+                "size": "sm",
+                "color": "#72A5B5"
+              },
+              {
+                "type": "text",
+                "text": "21 คน",
+                "size": "sm",
+                "color": "#111111",
+                "align": "end"
+              }
+            ]
+          }
+        ]
+      },
+      { "type": "separator", "margin": "xxl" },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "margin": "md",
+        "contents": [
+          {
+            "type": "text",
+            "text": "ณ เวลา 01.22 น.",
+            "size": "xs",
+            "color": "#aaaaaa",
+            "flex": 0
+          }
+        ]
+      }
+    ]
+  },
+  "styles": { "footer": { "separator": true } }
+}

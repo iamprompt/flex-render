@@ -1,0 +1,12 @@
+{
+  "extends": "@iamprompt/typescript-config/vite.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+    },
+    "skipLibCheck": true,
+  },
+  "include": ["tailwind.config.ts", "vite.config.ts", ".eslintrc.cjs", "src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
+}

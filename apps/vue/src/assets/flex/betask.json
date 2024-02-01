@@ -1,0 +1,163 @@
+{
+  "type": "bubble",
+  "hero": {
+    "type": "video",
+    "url": "https://firebasestorage.googleapis.com/v0/b/betask-linked/o/video%2FMotion-L_BeLink_Draft2.mp4?alt=media&token=8ab07860-7e66-4758-a47f-277aed20730d",
+    "previewUrl": "https://firebasestorage.googleapis.com/v0/b/betask-linked/o/video%2FScreen%20Shot%202566-06-16%20at%2009.40.03.png?alt=media&token=320e7e5b-dd27-46ee-875c-d0f18ca6c8ea",
+    "altContent": {
+      "type": "image",
+      "size": "full",
+      "aspectRatio": "20:13",
+      "aspectMode": "cover",
+      "url": "https://firebasestorage.googleapis.com/v0/b/betask-linked/o/video%2FScreen%20Shot%202566-06-16%20at%2009.40.03.png?alt=media&token=320e7e5b-dd27-46ee-875c-d0f18ca6c8ea"
+    }
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          { "type": "text", "text": "Be Linked", "weight": "bold", "size": "xl", "color": "#1B437C" },
+          { "type": "text", "text": "ระบบจองคิวผ่าน LINE OA" },
+          { "type": "text", "text": "ครอบคลุมทุกธุรกิจ" }
+        ],
+        "paddingStart": "30px",
+        "paddingTop": "20px"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "margin": "xl",
+        "spacing": "lg",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "spacing": "none",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/betask-linked/o/video%2F_Group_%20(4).png?alt=media&token=d8950d64-4b71-4a5c-8a60-8ba9850f8aef",
+                "margin": "none",
+                "gravity": "center"
+              },
+              {
+                "type": "text",
+                "text": "จองคิวนัดหมาย",
+                "wrap": true,
+                "color": "#666666",
+                "size": "md",
+                "flex": 5,
+                "gravity": "center",
+                "margin": "xl"
+              }
+            ],
+            "backgroundColor": "#eeeeee",
+            "paddingStart": "20px",
+            "margin": "none",
+            "height": "50px"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "margin": "xs",
+        "spacing": "lg",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "spacing": "none",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/betask-linked/o/video%2F_Group_%20(5).png?alt=media&token=8640a1ad-989d-47a9-a3a5-a73560ef74a6",
+                "margin": "none",
+                "gravity": "center"
+              },
+              {
+                "type": "text",
+                "text": "นัดหมาย นอกสถานที่ (Onsite)",
+                "wrap": true,
+                "color": "#666666",
+                "size": "md",
+                "flex": 5,
+                "gravity": "center",
+                "margin": "xl"
+              }
+            ],
+            "backgroundColor": "#eeeeee",
+            "paddingStart": "20px",
+            "margin": "none",
+            "height": "50px"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "margin": "xs",
+        "spacing": "lg",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "spacing": "none",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/betask-linked/o/video%2F_Group_%20(6).png?alt=media&token=f88306db-460b-449f-90a6-6824e03da14d",
+                "margin": "none",
+                "gravity": "center"
+              },
+              {
+                "type": "text",
+                "text": "ระบบบัตรคิว หน้าร้าน",
+                "wrap": true,
+                "color": "#666666",
+                "size": "md",
+                "flex": 5,
+                "gravity": "center",
+                "margin": "xl"
+              }
+            ],
+            "backgroundColor": "#eeeeee",
+            "paddingStart": "20px",
+            "margin": "none",
+            "height": "50px"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "margin": "md",
+        "spacing": "none",
+        "contents": [{ "type": "separator" }]
+      }
+    ],
+    "paddingAll": "0px"
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "none",
+    "contents": [
+      {
+        "type": "button",
+        "style": "link",
+        "height": "sm",
+        "action": { "type": "uri", "label": "WEBSITE", "uri": "https://betaskthai.com/" },
+        "color": "#ffffff"
+      },
+      { "type": "box", "layout": "vertical", "contents": [], "margin": "sm" }
+    ],
+    "flex": 0,
+    "backgroundColor": "#1B437C",
+    "margin": "none"
+  }
+}

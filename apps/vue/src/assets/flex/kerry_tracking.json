@@ -1,0 +1,247 @@
+{
+  "type": "bubble",
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "text",
+            "text": "ติดตามพัสดุ",
+            "color": "#FFFFFF",
+            "weight": "bold",
+            "style": "normal",
+            "size": "lg",
+            "flex": 0
+          },
+          {
+            "type": "image",
+            "url": "https://bucket.ex10.tech/images/f7bccaf5-bc09-11ee-97d4-0242ac12000b/originalContentUrl.png",
+            "size": "20px",
+            "aspectRatio": "1:1",
+            "flex": 0,
+            "margin": "sm",
+            "action": {
+              "type": "clipboard",
+              "label": "action",
+              "clipboardText": "SHP5385308630"
+            }
+          }
+        ],
+        "alignItems": "center"
+      },
+      {
+        "type": "text",
+        "text": "SHP5385308630",
+        "color": "#FFFFFF",
+        "style": "normal",
+        "weight": "bold",
+        "size": "xxl"
+      }
+    ],
+    "backgroundColor": "#F37024",
+    "paddingAll": "xxl"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://th.kerryexpress.com/th/track/v2/assets/resource/status/300_C.png",
+            "aspectRatio": "1:1",
+            "size": "xs",
+            "flex": 0
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "กำลังจัดส่งพัสดุ",
+                "weight": "bold",
+                "size": "xl",
+                "color": "#F37024",
+                "flex": 1
+              },
+              {
+                "type": "text",
+                "text": "ต้นโพธิ์, สิงห์บุรี",
+                "color": "#999999"
+              },
+              {
+                "type": "text",
+                "text": "26 ม.ค. 2567 08:20 น.",
+                "size": "xxs",
+                "margin": "sm",
+                "color": "#999999"
+              }
+            ],
+            "paddingStart": "lg"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://th.kerryexpress.com/th/track/v2/assets/resource/point_default.png",
+                    "aspectRatio": "1:1",
+                    "size": "16px",
+                    "flex": 0
+                  },
+                  {
+                    "type": "text",
+                    "text": "พัสดุถึงคลังสินค้าปลายทาง",
+                    "weight": "bold",
+                    "margin": "md"
+                  }
+                ],
+                "alignItems": "center"
+              },
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [],
+                    "backgroundColor": "#C9C9C9",
+                    "width": "2px",
+                    "margin": "7px"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "ต้นโพธิ์, สิงห์บุรี",
+                        "color": "#999999",
+                        "margin": "xs",
+                        "size": "sm"
+                      },
+                      {
+                        "type": "text",
+                        "text": "26 ม.ค. 2567 07:45 น.",
+                        "size": "xxs",
+                        "margin": "none",
+                        "color": "#999999"
+                      }
+                    ],
+                    "margin": "xl",
+                    "paddingBottom": "lg"
+                  }
+                ],
+                "position": "relative"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://th.kerryexpress.com/th/track/v2/assets/resource/point_default.png",
+                    "aspectRatio": "1:1",
+                    "size": "16px",
+                    "flex": 0
+                  },
+                  {
+                    "type": "text",
+                    "text": "พัสดุถึงคลังสินค้าปลายทาง",
+                    "weight": "bold",
+                    "margin": "md"
+                  }
+                ],
+                "alignItems": "center"
+              },
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [],
+                    "width": "2px",
+                    "margin": "6.8px"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "ต้นโพธิ์, สิงห์บุรี",
+                        "color": "#999999",
+                        "margin": "xs",
+                        "size": "sm"
+                      },
+                      {
+                        "type": "text",
+                        "text": "26 ม.ค. 2567 07:45 น.",
+                        "size": "xxs",
+                        "margin": "none",
+                        "color": "#999999"
+                      }
+                    ],
+                    "margin": "xl",
+                    "paddingBottom": "lg"
+                  }
+                ],
+                "position": "relative"
+              }
+            ]
+          }
+        ],
+        "margin": "xl"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "height": "sm",
+            "action": {
+              "type": "uri",
+              "label": "ดูรายละเอียด",
+              "uri": "https://google.com"
+            },
+            "color": "#3A3937"
+          }
+        ],
+        "flex": 0,
+        "margin": "xs"
+      }
+    ],
+    "paddingAll": "xxl"
+  }
+}

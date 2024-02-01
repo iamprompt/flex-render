@@ -60,9 +60,9 @@ export const injectMargin = <T extends Element>(
     const percentMatch = margin.match(FlexElementSizePercentRegex)
     if (pxMatch || percentMatch) {
       if (direction === 'T') {
-        element.setAttribute('marginTop', margin)
+        element.setStyle('marginTop', margin)
       } else if (direction === 'L') {
-        element.setAttribute('marginLeft', margin)
+        element.setStyle('marginLeft', margin)
       }
     }
   }

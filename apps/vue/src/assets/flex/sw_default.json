@@ -1,0 +1,47 @@
+{
+  "type": "bubble",
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "image",
+        "url": "https://bucket.ex10.tech/images/e49bf9e9-a4ce-11ee-97d4-0242ac12000b/originalContentUrl.jpg",
+        "size": "full",
+        "offsetTop": "none",
+        "offsetBottom": "none",
+        "aspectRatio": "16:9",
+        "aspectMode": "cover"
+      }
+    ],
+    "paddingAll": "none"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "สวัสดีปีใหม่ 2024",
+        "weight": "bold",
+        "size": "xl",
+        "color": "#FFFFFF",
+        "align": "center"
+      },
+      {
+        "type": "text",
+        "text": "ในอภิลักขิตสมัยขึ้นปีใหม่ ขออำนาจคุณพระศรีรัตนตรัย และสิ่งศักดิ์สิทธิ์ทั้งหลาย โปรดดลบันดาลให้ท่านและเจ้าหน้าที่ จงประสบแต่ความสุข ความสำเร็จ สมบูรณ์ พูลลาภ ในสิ่งอันพึงปรารถนา ตลอดไป",
+        "margin": "xl",
+        "color": "#FFFFFF",
+        "wrap": true
+      },
+      {
+        "type": "text",
+        "text": "- iamPrompt",
+        "align": "end",
+        "color": "#FFFFFF"
+      }
+    ],
+    "backgroundColor": "#000000"
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip4.jpg",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "20:13",
+            "gravity": "center",
+            "flex": 1
+          }
+        ]
+      }
+    ],
+    "paddingAll": "0px"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Move to Heaven",
+            "size": "xl",
+            "color": "#ffffff",
+            "weight": "bold",
+            "wrap": true
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Trauma Cleaner",
+                "color": "#ffffffcc",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png",
+                "size": "sm"
+              }
+            ],
+            "spacing": "sm"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "contents": [],
+                    "size": "sm",
+                    "wrap": true,
+                    "margin": "lg",
+                    "color": "#ffffffde",
+                    "text": "บริการเก็บกวาดครั้งสุดท้ายแด่ผู้จากไปเพียงลำพัง "
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "Open",
+                        "flex": 1,
+                        "size": "sm",
+                        "color": "#ffffffde",
+                        "margin": "none"
+                      },
+                      {
+                        "type": "text",
+                        "text": "10:00 AM.",
+                        "color": "#ffffffde",
+                        "size": "sm",
+                        "align": "end"
+                      }
+                    ],
+                    "margin": "lg"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "Close",
+                        "color": "#ffffffde",
+                        "size": "sm"
+                      },
+                      {
+                        "type": "text",
+                        "text": "10:00 PM.",
+                        "color": "#ffffffde",
+                        "size": "sm",
+                        "align": "end"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "paddingAll": "13px",
+            "backgroundColor": "#ffffff1A",
+            "cornerRadius": "2px",
+            "margin": "xl"
+          }
+        ]
+      }
+    ],
+    "paddingAll": "20px",
+    "backgroundColor": "#464F69"
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "CONTACT",
+          "uri": "http://linecorp.com/"
+        },
+        "margin": "xl",
+        "style": "secondary"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "LOCATION",
+          "uri": "http://linecorp.com/"
+        },
+        "style": "secondary",
+        "margin": "lg"
+      }
+    ],
+    "backgroundColor": "#464F69"
+  }
+}

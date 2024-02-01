@@ -1,0 +1,128 @@
+{
+  "type": "bubble",
+  "hero": {
+    "type": "image",
+    "url": "https://s.isanook.com/ns/0/rp/rc/w670h402/yatxacm1w0/aHR0cHM6Ly9zLmlzYW5vb2suY29tL25zLzAvdWQvMTc2NC84ODIxNTc0L2xvdHRlcnktMTYtYXByaWwtMjAyMy5qcGc=.jpg",
+    "size": "full",
+    "aspectRatio": "20:13",
+    "aspectMode": "cover",
+    "action": {
+      "type": "uri",
+      "label": "View larger",
+      "uri": "https://example.com/lottery.jpg"
+    }
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "ผลสลากกินแบ่งรัฐบาล",
+        "weight": "bold",
+        "size": "xl",
+        "align": "center",
+        "color": "#000000"
+      },
+      {
+        "type": "text",
+        "text": "16 เมษายน 2566",
+        "align": "center",
+        "color": "#000000"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "margin": "md",
+        "contents": [
+          { "type": "separator", "color": "#000000" },
+          {
+            "type": "text",
+            "text": "First Prize",
+            "size": "sm",
+            "color": "#000000",
+            "margin": "md"
+          },
+          {
+            "type": "text",
+            "text": "123456",
+            "size": "xl",
+            "align": "center",
+            "weight": "bold",
+            "color": "#FF0000"
+          },
+          {
+            "type": "text",
+            "text": "Second Prize",
+            "size": "sm",
+            "color": "#000000"
+          },
+          {
+            "type": "text",
+            "text": "654321",
+            "size": "md",
+            "align": "center",
+            "weight": "bold",
+            "color": "#FF6600"
+          },
+          {
+            "type": "text",
+            "text": "Third Prize",
+            "size": "sm",
+            "color": "#000000"
+          },
+          {
+            "type": "text",
+            "text": "987654",
+            "size": "md",
+            "align": "center",
+            "weight": "bold",
+            "color": "#FF9933"
+          },
+          {
+            "type": "text",
+            "text": "Special Prize",
+            "size": "sm",
+            "color": "#000000"
+          },
+          {
+            "type": "text",
+            "text": "111111, 222222, 333333",
+            "size": "sm",
+            "align": "center",
+            "color": "#AAAAAA"
+          },
+          {
+            "type": "text",
+            "text": "Consolation Prize",
+            "size": "sm",
+            "color": "#000000"
+          },
+          {
+            "type": "text",
+            "text": "444444, 555555, 666666, 777777, 888888, 999999",
+            "size": "sm",
+            "align": "center",
+            "color": "#AAAAAA"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "ดูเพิ่มเติม",
+          "uri": "https://www.sanook.com/news/8821574/"
+        },
+        "style": "primary",
+        "color": "#FF0000"
+      }
+    ]
+  }
+}

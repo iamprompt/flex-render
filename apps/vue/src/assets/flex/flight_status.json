@@ -1,0 +1,182 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      { "type": "text", "text": "สถานะเที่ยวบิน" },
+      { "type": "text", "text": "FD 3186 ", "weight": "bold", "size": "xxl" },
+      { "type": "separator", "margin": "md", "color": "#646464" }
+    ]
+  },
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [{ "type": "text", "text": "พฤ., 30 มี.ค. 2023" }]
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "DMK",
+                "margin": "none",
+                "weight": "regular",
+                "size": "xxl",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "14:45",
+                "align": "center",
+                "color": "#646464"
+              }
+            ],
+            "paddingStart": "none"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.15752-9/346117297_1379618559271902_1388720191250053905_n.png?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeE-GsMaVM6cikEgKpGPF4BWjrEWtr-PSIiOsRa2v49IiJKuifhcUdctNbKD3zkYFXLPVS94IYXdoTHXI1GFvYyb&_nc_ohc=1o8baOCBK_cAX_uQt7d&_nc_ht=scontent.fbkk5-3.fna&oh=03_AdSPBQnKyaD8_myf5kj4eUwU5xZ_XkWfbwWzax3FfBVrPw&oe=648BE840",
+                "aspectMode": "fit",
+                "size": "md",
+                "aspectRatio": "2:1"
+              }
+            ],
+            "margin": "none",
+            "paddingTop": "none"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "NST",
+                "size": "xxl",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "16:05",
+                "align": "center",
+                "color": "#646464"
+              }
+            ],
+            "margin": "md"
+          }
+        ]
+      }
+    ],
+    "margin": "none",
+    "paddingAll": "none",
+    "alignItems": "center"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      { "type": "separator", "color": "#646464" },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              { "type": "text", "text": "เดินทางจาก" },
+              {
+                "type": "text",
+                "text": "ท่าอากาศยานดอนเมือง",
+                "size": "lg",
+                "weight": "bold"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              { "type": "text", "text": "ไป" },
+              {
+                "type": "text",
+                "text": "ท่าอากาศยานนครศรีธรรมราช",
+                "size": "lg",
+                "weight": "bold"
+              }
+            ],
+            "margin": "md"
+          },
+          { "type": "separator", "color": "#646464", "margin": "md" },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              { "type": "text", "text": "ออกเดินทาง" },
+              {
+                "type": "text",
+                "text": "14:45",
+                "size": "lg",
+                "weight": "bold"
+              }
+            ],
+            "margin": "md"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              { "type": "text", "text": "ถึงที่หมาย" },
+              {
+                "type": "text",
+                "text": "16:05",
+                "size": "lg",
+                "weight": "bold"
+              }
+            ],
+            "margin": "md"
+          }
+        ],
+        "spacing": "none",
+        "margin": "md"
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "Booking",
+          "uri": "http://linecorp.com/"
+        },
+        "style": "primary"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "Chang flight",
+          "uri": "http://linecorp.com/"
+        },
+        "height": "sm"
+      }
+    ]
+  }
+}

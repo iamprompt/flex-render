@@ -1,0 +1,168 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      { "type": "text", "text": "เที่ยวบิน" },
+      {
+        "type": "text",
+        "text": "วันศุกร์, 19 พฤษภาคม 2566",
+        "size": "lg",
+        "weight": "bold",
+        "align": "center"
+      },
+      { "type": "separator", "color": "#595959", "margin": "lg" }
+    ]
+  },
+  "hero": {
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "DMK",
+            "align": "center",
+            "size": "xxl",
+            "weight": "bold",
+            "margin": "sm"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.15752-9/346117297_1379618559271902_1388720191250053905_n.png?_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_eui2=AeE-GsMaVM6cikEgKpGPF4BWjrEWtr-PSIiOsRa2v49IiJKuifhcUdctNbKD3zkYFXLPVS94IYXdoTHXI1GFvYyb&_nc_ohc=zOhM6N3aK4wAX_NNgrW&_nc_ht=scontent.fbkk5-3.fna&oh=03_AdSDHpbO2E_DBABN2JX0Dsz4hQxlf8Hs_MB2XSWhK80XnA&oe=648DE280",
+            "aspectRatio": "2:1",
+            "aspectMode": "fit"
+          }
+        ],
+        "alignItems": "center"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "CNX",
+            "align": "center",
+            "size": "xxl",
+            "weight": "bold",
+            "margin": "sm"
+          }
+        ]
+      }
+    ]
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [{ "type": "text", "text": "เวลา", "align": "center" }],
+            "width": "50px"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              { "type": "text", "text": "สายการบิน", "align": "center" }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [{ "type": "text", "text": "ราคา", "align": "center" }],
+            "width": "60px"
+          }
+        ]
+      },
+      { "type": "separator", "color": "#595959", "margin": "sm" },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              { "type": "text", "text": "06:00", "align": "center" },
+              { "type": "text", "text": "11:20", "align": "center" },
+              { "type": "text", "text": "13:40", "align": "center" },
+              { "type": "text", "text": "15:50", "align": "center" },
+              { "type": "text", "text": "20:45", "align": "center" }
+            ],
+            "width": "50px",
+            "spacing": "sm"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              { "type": "text", "text": "Nok air", "align": "center" },
+              { "type": "text", "text": "Lion Air", "align": "center" },
+              { "type": "text", "text": "Thai Smile", "align": "center" },
+              { "type": "text", "text": "Air Asia", "align": "center" },
+              { "type": "text", "text": "Viet Jet", "align": "center" }
+            ],
+            "spacing": "sm"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              { "type": "text", "text": "1,590฿", "align": "center" },
+              { "type": "text", "text": "1,590฿", "align": "center" },
+              { "type": "text", "text": "1,860฿", "align": "center" },
+              { "type": "text", "text": "1,700฿", "align": "center" },
+              { "type": "text", "text": "1,590฿", "align": "center" }
+            ],
+            "width": "60px",
+            "spacing": "sm"
+          }
+        ],
+        "spacing": "none",
+        "margin": "md"
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "More detail",
+          "uri": "http://linecorp.com/"
+        },
+        "style": "primary",
+        "height": "sm"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "Change direction",
+          "uri": "http://linecorp.com/"
+        },
+        "height": "sm"
+      }
+    ]
+  }
+}

@@ -24,6 +24,11 @@
       "import": "./dist/components/react/FlexPreview.js",
       "require": "./dist/components/react/FlexPreview.cjs",
       "types": "./dist/components/react/FlexPreview.d.ts"
+    },
+    "./vue": {
+      "import": "./dist/components/vue/FlexPreview.js",
+      "require": "./dist/components/vue/FlexPreview.cjs",
+      "types": "./dist/components/vue/FlexPreview.d.ts"
     }
   },
   "scripts": {
@@ -43,12 +48,11 @@
     "tsup": "^8.0.1"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "react": "^18.2.0",
+    "typescript": "^5.0.0",
+    "vue": "^3.4.15"
   },
   "publishConfig": {
     "registry": "https://npm.iamprompt.me/"
-  },
-  "dependencies": {
-    "react": "^18.2.0"
   }
 }

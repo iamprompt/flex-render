@@ -1,0 +1,261 @@
+{
+  "type": "bubble",
+  "size": "mega",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          { "type": "text", "text": "Bangkok", "align": "center" },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "30°",
+                "size": "4xl",
+                "weight": "regular",
+                "align": "center",
+                "margin": "20px"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Mostly Cloudy",
+                "align": "center",
+                "size": "14px"
+              },
+              {
+                "type": "text",
+                "text": "H: 30° L: 26°",
+                "size": "14px",
+                "align": "center"
+              }
+            ]
+          },
+          { "type": "separator", "margin": "10px", "color": "#bcbcbc" }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Thunderstorms expected around 20:00",
+        "color": "#b7b7b7",
+        "size": "xxs",
+        "margin": "10px"
+      },
+      { "type": "separator", "margin": "10px", "color": "#bcbcbc" },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          { "type": "text", "text": "Now", "size": "xxs", "align": "center" },
+          { "type": "text", "text": "20", "size": "xxs", "align": "center" },
+          { "type": "text", "text": "21", "size": "xxs", "align": "center" },
+          { "type": "text", "text": "22", "size": "xxs", "align": "center" },
+          { "type": "text", "text": "23", "size": "xxs", "align": "center" }
+        ],
+        "margin": "10px"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://i.ibb.co/J2MTKzr/cloud.png",
+            "size": "xxs",
+            "align": "center"
+          },
+          {
+            "type": "image",
+            "url": "https://i.ibb.co/9wdmqDh/download-1.png",
+            "size": "xxs",
+            "align": "center",
+            "margin": "10px"
+          },
+          {
+            "type": "image",
+            "url": "https://i.ibb.co/9wdmqDh/download-1.png",
+            "size": "xxs",
+            "align": "center",
+            "margin": "10px"
+          },
+          {
+            "type": "image",
+            "url": "https://i.ibb.co/J2MTKzr/cloud.png",
+            "size": "xxs",
+            "align": "center",
+            "margin": "10px"
+          },
+          {
+            "type": "image",
+            "url": "https://i.ibb.co/9wdmqDh/download-1.png",
+            "size": "xxs",
+            "align": "center",
+            "margin": "10px"
+          }
+        ],
+        "margin": "5px"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          { "type": "text", "text": "32°", "align": "center", "size": "xxs" },
+          { "type": "text", "text": "32°", "align": "center", "size": "xxs" },
+          { "type": "text", "text": "31°", "align": "center", "size": "xxs" },
+          { "type": "text", "text": "31°", "align": "center", "size": "xxs" },
+          { "type": "text", "text": "30°", "align": "center", "size": "xxs" }
+        ]
+      },
+      { "type": "separator", "margin": "10px", "color": "#bcbcbc" },
+      {
+        "type": "text",
+        "text": "พยากรณ์อากาศ 10 วัน",
+        "size": "xxs",
+        "color": "#bcbcbc",
+        "margin": "10px"
+      },
+      { "type": "separator", "margin": "10px", "color": "#bcbcbc" },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Today",
+            "size": "sm",
+            "gravity": "center"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              { "type": "image", "url": "https://i.ibb.co/J2MTKzr/cloud.png" },
+              { "type": "text", "text": "50%", "size": "xs", "align": "center" }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "28°",
+            "size": "xxs",
+            "align": "end",
+            "gravity": "center"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [],
+                "cornerRadius": "30px",
+                "backgroundColor": "#F49F28",
+                "width": "70%",
+                "height": "6px"
+              },
+              { "type": "filler" }
+            ],
+            "backgroundColor": "#EBEBEB",
+            "cornerRadius": "10px",
+            "height": "6px",
+            "width": "35%",
+            "offsetTop": "xxl"
+          },
+          {
+            "type": "text",
+            "text": "36°",
+            "size": "xxs",
+            "align": "start",
+            "gravity": "center"
+          }
+        ],
+        "spacing": "lg",
+        "cornerRadius": "30px",
+        "margin": "md"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          { "type": "text", "text": "Mon", "size": "sm", "gravity": "center" },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://i.ibb.co/gyqGJLw/download.png"
+              },
+              { "type": "text", "text": "30%", "size": "xs", "align": "center" }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "26°",
+            "size": "xxs",
+            "align": "end",
+            "gravity": "center"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [],
+                "cornerRadius": "30px",
+                "backgroundColor": "#F49F28",
+                "width": "80%",
+                "height": "6px"
+              },
+              { "type": "filler" }
+            ],
+            "backgroundColor": "#EBEBEB",
+            "cornerRadius": "10px",
+            "height": "6px",
+            "width": "35%",
+            "offsetTop": "xxl",
+            "alignItems": "center"
+          },
+          {
+            "type": "text",
+            "text": "38°",
+            "size": "xxs",
+            "align": "start",
+            "gravity": "center"
+          }
+        ],
+        "spacing": "lg",
+        "cornerRadius": "30px",
+        "margin": "md"
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "see more",
+          "uri": "http://linecorp.com/"
+        },
+        "style": "primary"
+      }
+    ]
+  }
+}

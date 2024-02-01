@@ -1,0 +1,117 @@
+{
+  "type": "bubble",
+  "hero": {
+    "type": "image",
+    "url": "https://cms.dmpcdn.com/food/2022/10/05/152720c0-447d-11ed-adbc-4bcaee0de01b_webp_original.jpg",
+    "size": "full",
+    "aspectMode": "cover",
+    "aspectRatio": "20:13"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Holiday Pastry",
+        "weight": "bold",
+        "size": "xl"
+      },
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "icon",
+            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+          },
+          {
+            "type": "icon",
+            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+          },
+          {
+            "type": "icon",
+            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+          },
+          {
+            "type": "icon",
+            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+          },
+          {
+            "type": "icon",
+            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+          },
+          {
+            "type": "text",
+            "text": "5.0",
+            "size": "sm",
+            "margin": "md",
+            "color": "#999999"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Review",
+                "margin": "none",
+                "size": "md"
+              },
+              {
+                "type": "text",
+                "text": "สุดปังมากแม่กับที่สุดของขนมปังบริยอชเนื้อหนานุ่ม ทั้งฟูทั้งฟิน 🍞🍞🍞 ",
+                "size": "xs",
+                "wrap": true,
+                "color": "#666666",
+                "margin": "xs"
+              },
+              {
+                "type": "text",
+                "text": "อ่านต่อได้ที่ :",
+                "size": "xs",
+                "color": "#666666",
+                "margin": "xs"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "Review",
+          "uri": "https://www.google.co.th/url?sa=i&rct=j&q=&esrc=s&source=web&cd=&ved=0CAIQw7AJahcKEwjo58fK57L_AhUAAAAAHQAAAAAQBA&url=https%3A%2F%2Fwww.wongnai.com%2Frestaurants%2F745169Ev-holiday-pastry-flagship-store&psig=AOvVaw37kpkgoHvjbRnHHSrjiEg2&ust=1686284003878002"
+        },
+        "style": "link",
+        "height": "sm",
+        "margin": "none"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "Google Map",
+          "uri": "https://www.google.co.th/maps/place/HOLIDAY+PASTRY+Flagship+Store/@13.7326796,100.4995206,13z/data=!4m20!1m13!4m12!1m4!2m2!1d100.5633683!2d13.7675384!4e1!1m6!1m2!1s0x30e29992919e8f7f:0x56b4fde27b6b8017!2sholiday+pastry!2m2!1d100.5050805!2d13.7245187!3m5!1s0x30e29992919e8f7f:0x56b4fde27b6b8017!8m2!3d13.7245187!4d100.5050805!16s%2Fg%2F11r9v8210f?hl=th&entry=ttu"
+        },
+        "style": "link",
+        "height": "sm"
+      }
+    ],
+    "spacing": "xs",
+    "flex": 0
+  }
+}

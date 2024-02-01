@@ -1,0 +1,227 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "body": {
+        "contents": [
+          {
+            "action": {
+              "label": "action",
+              "type": "uri",
+              "uri": "https://individual-acknowledgment-214669.framer.app/"
+            },
+            "aspectMode": "cover",
+            "aspectRatio": "1:1",
+            "gravity": "bottom",
+            "size": "full",
+            "type": "image",
+            "url": "https://assets.beartai.com/uploads/2023/04/Botnoi_Cover.png"
+          },
+          {
+            "backgroundColor": "#ffffff",
+            "contents": [
+              {
+                "contents": [
+                  {
+                    "color": "#000000",
+                    "size": "lg",
+                    "text": "BOTNOI OpenAI HackFest",
+                    "type": "text",
+                    "weight": "bold",
+                    "wrap": true
+                  }
+                ],
+                "layout": "baseline",
+                "type": "box"
+              },
+              {
+                "contents": [
+                  {
+                    "type": "icon",
+                    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                  },
+                  {
+                    "color": "#000000",
+                    "flex": 14,
+                    "size": "sm",
+                    "text": "การแข่งหาไอเดียใช้เทคโนโลยี AI เพื่อตอบโจทย์ธุรกิจ สำหรับบุคคลทั่วไป นักเรียน นักศึกษา",
+                    "type": "text",
+                    "wrap": true
+                  }
+                ],
+                "layout": "baseline",
+                "margin": "sm",
+                "spacing": "lg",
+                "type": "box"
+              },
+              {
+                "contents": [
+                  {
+                    "type": "icon",
+                    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                  },
+                  {
+                    "color": "#000000",
+                    "flex": 14,
+                    "size": "sm",
+                    "text": "เปิดรับถึง 23 เมษายน 2566, 23:59 น. หรือถ้ามีผู้แข่งขันส่งไอเดียครบ 500",
+                    "type": "text",
+                    "wrap": true
+                  }
+                ],
+                "layout": "baseline",
+                "margin": "sm",
+                "spacing": "lg",
+                "type": "box"
+              },
+              {
+                "contents": [
+                  {
+                    "color": "#000000",
+                    "flex": 14,
+                    "size": "sm",
+                    "text": "** แข่งขันเงินรางวัลรวม 300,000 บาท ร่วมงานกับบริษัทชั้นนำ เงินลงทุน Start Up",
+                    "type": "text",
+                    "wrap": true
+                  }
+                ],
+                "layout": "baseline",
+                "margin": "sm",
+                "spacing": "lg",
+                "type": "box"
+              },
+              {
+                "contents": [
+                  {
+                    "color": "#000000",
+                    "flex": 14,
+                    "size": "sm",
+                    "text": "** 80 ไอเดียที่ได้คะแนนสูงสุดมีรางวัลเสริม",
+                    "type": "text",
+                    "wrap": true
+                  }
+                ],
+                "layout": "baseline",
+                "margin": "sm",
+                "spacing": "lg",
+                "type": "box"
+              },
+              {
+                "borderColor": "#ffffff",
+                "borderWidth": "1px",
+                "contents": [
+                  { "type": "filler" },
+                  {
+                    "contents": [
+                      { "type": "filler" },
+                      {
+                        "type": "icon",
+                        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip14.png"
+                      },
+                      {
+                        "flex": 0,
+                        "offsetTop": "-2px",
+                        "text": "สมัคร ",
+                        "type": "text",
+                        "color": "#ffffff"
+                      },
+                      { "type": "filler" }
+                    ],
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "type": "box"
+                  },
+                  { "type": "filler" }
+                ],
+                "cornerRadius": "4px",
+                "height": "40px",
+                "layout": "vertical",
+                "margin": "xxl",
+                "spacing": "sm",
+                "type": "box",
+                "backgroundColor": "#01BEFA",
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "https://docs.google.com/forms/d/e/1FAIpQLSdlTzsQm6K4KRaVZxF3nHeN9FKm6ZuiQ58F4Kd8WXHkgXs1_g/viewform"
+                }
+              },
+              {
+                "borderWidth": "1px",
+                "contents": [
+                  { "type": "filler" },
+                  {
+                    "contents": [
+                      { "type": "filler" },
+                      {
+                        "type": "icon",
+                        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                      },
+                      {
+                        "color": "#000000",
+                        "flex": 0,
+                        "offsetTop": "-2px",
+                        "text": "แชร์ ",
+                        "type": "text"
+                      },
+                      { "type": "filler" }
+                    ],
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "type": "box"
+                  },
+                  { "type": "filler" }
+                ],
+                "cornerRadius": "4px",
+                "height": "40px",
+                "layout": "vertical",
+                "margin": "xxl",
+                "spacing": "sm",
+                "type": "box",
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "https://individual-acknowledgment-214669.framer.app/"
+                }
+              }
+            ],
+            "layout": "vertical",
+            "offsetBottom": "0px",
+            "offsetEnd": "0px",
+            "offsetStart": "0px",
+            "paddingAll": "20px",
+            "paddingTop": "18px",
+            "position": "relative",
+            "type": "box"
+          },
+          {
+            "backgroundColor": "#ff334b",
+            "contents": [
+              {
+                "align": "center",
+                "color": "#ffffff",
+                "offsetTop": "3px",
+                "size": "sm",
+                "text": "Award",
+                "type": "text",
+                "weight": "bold"
+              }
+            ],
+            "cornerRadius": "20px",
+            "height": "25px",
+            "layout": "vertical",
+            "offsetStart": "18px",
+            "offsetTop": "18px",
+            "position": "absolute",
+            "type": "box",
+            "width": "59px"
+          }
+        ],
+        "layout": "vertical",
+        "paddingAll": "0px",
+        "type": "box"
+      }
+    }
+  ]
+}

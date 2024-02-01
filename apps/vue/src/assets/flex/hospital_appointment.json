@@ -1,0 +1,178 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "horizontal",
+    "flex": 0,
+    "backgroundColor": "#A7CEDAFF",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "md",
+        "offsetTop": "20%",
+        "offsetStart": "2%",
+        "contents": [
+          {
+            "type": "text",
+            "text": "นัดหมาย",
+            "weight": "bold",
+            "size": "xxl",
+            "color": "#000000FF",
+            "align": "start",
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "คุณ จันทร์เพ็ญ  xxxxx",
+            "size": "sm",
+            "contents": []
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "url": "https://siph-space.sgp1.digitaloceanspaces.com/uploads/mcnair/2020/04/1587439316_โรงพยาบาลศิริราช_ปิยมหาราชการุณย์(SiPH)_800x600.png",
+        "align": "end",
+        "size": "md",
+        "aspectMode": "cover"
+      }
+    ]
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "วันเสาร์ที่ 10 มิถุนายน 2566",
+            "weight": "regular",
+            "size": "lg",
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "เวลา 09:00 น.",
+            "size": "md",
+            "contents": []
+          },
+          { "type": "separator" }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "margin": "lg",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "แพทย์ : ",
+                "size": "sm",
+                "color": "#AAAAAA",
+                "flex": 1,
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "แพทย์หญิง xxxxxxx xxxxxx",
+                "size": "sm",
+                "color": "#666666",
+                "flex": 4,
+                "wrap": true,
+                "contents": []
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "แผนก :",
+                "size": "sm",
+                "color": "#AAAAAA",
+                "flex": 1,
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": " xxxxxxxxxxx",
+                "size": "sm",
+                "color": "#666666",
+                "flex": 4,
+                "wrap": true,
+                "contents": []
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "สถานที่ :",
+                "size": "sm",
+                "color": "#AAAAAA",
+                "flex": 1,
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": " ตึก xxxxxxxxx",
+                "size": "sm",
+                "color": "#666666",
+                "flex": 4,
+                "wrap": true,
+                "contents": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "flex": 0,
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "message",
+          "label": "ยืนยันการนัดหมาย",
+          "text": "คุณได้ยืนยันนัดหมายเรียบร้อยแล้ว"
+        },
+        "color": "#5A9499FF",
+        "height": "sm",
+        "style": "primary"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "message",
+          "label": "ยกเลิก",
+          "text": "กรุณาติดต่อเพื่อนัดหมายครั้งต่อไป"
+        },
+        "height": "sm",
+        "style": "secondary"
+      }
+    ]
+  }
+}

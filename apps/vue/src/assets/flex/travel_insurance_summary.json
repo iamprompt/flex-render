@@ -1,0 +1,210 @@
+{
+  "type": "bubble",
+  "size": "mega",
+  "hero": {
+    "type": "image",
+    "url": "https://emetworks-cigna.s3.ap-southeast-1.amazonaws.com/BotResource/travel-annual-header.png",
+    "size": "full",
+    "aspectMode": "cover",
+    "aspectRatio": "16.6:3.7"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "margin": "lg",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://emetworks-cigna.s3.ap-southeast-1.amazonaws.com/BotResource/travel-bg.png",
+            "size": "full",
+            "align": "center",
+            "margin": "none",
+            "gravity": "top",
+            "aspectMode": "fit",
+            "position": "absolute",
+            "aspectRatio": "15:8"
+          },
+          {
+            "type": "text",
+            "text": "แผนประกันการเดินทางรายปี",
+            "weight": "bold",
+            "size": "md"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "จุดหมายปลายทาง",
+                "size": "xs",
+                "flex": 3,
+                "weight": "regular"
+              },
+              {
+                "type": "text",
+                "text": "เอเซีย",
+                "wrap": true,
+                "size": "sm",
+                "flex": 2,
+                "margin": "xs",
+                "align": "end"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "วันเริ่มต้นกรมธรรม์",
+                "size": "xs",
+                "flex": 3,
+                "weight": "regular"
+              },
+              {
+                "type": "text",
+                "text": "29 ก.พ. 2020",
+                "wrap": true,
+                "size": "sm",
+                "flex": 2,
+                "margin": "xs",
+                "align": "end"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "วันสิ้นสุดกรมธรรม์",
+                "size": "xs",
+                "flex": 3,
+                "weight": "regular"
+              },
+              {
+                "type": "text",
+                "text": "27 ก.พ. 2021",
+                "wrap": true,
+                "size": "sm",
+                "flex": 2,
+                "margin": "xs",
+                "align": "end"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "จำนวนวันเดินทาง/ครั้ง",
+                "size": "xs",
+                "flex": 3,
+                "weight": "regular"
+              },
+              {
+                "type": "text",
+                "text": "120",
+                "wrap": true,
+                "size": "sm",
+                "flex": 2,
+                "margin": "xs",
+                "align": "end"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "จำนวนผู้เอาประกันภัย",
+                "size": "xs",
+                "flex": 3,
+                "weight": "regular"
+              },
+              {
+                "type": "text",
+                "text": "5",
+                "wrap": true,
+                "size": "sm",
+                "flex": 2,
+                "margin": "xs",
+                "align": "end"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "รหัสโปรโมชั่น",
+                "flex": 3,
+                "size": "xs"
+              },
+              {
+                "type": "text",
+                "text": "400LNSB",
+                "wrap": true,
+                "size": "sm",
+                "flex": 2,
+                "margin": "xs",
+                "align": "end"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "separator",
+        "margin": "lg"
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "คำนวณเบี้ยประกัน",
+              "uri": "https://travel.cigna.co.th"
+            },
+            "color": "#ffffff"
+          }
+        ],
+        "backgroundColor": "#f48522"
+      }
+    ],
+    "flex": 0
+  },
+  "styles": {
+    "header": {
+      "backgroundColor": "#3bb349"
+    }
+  }
+}

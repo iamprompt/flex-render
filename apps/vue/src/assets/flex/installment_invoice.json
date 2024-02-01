@@ -1,0 +1,329 @@
+{
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "เลขบัญชี 3912099475",
+        "weight": "bold",
+        "color": "#aaaaaa",
+        "size": "sm",
+        "align": "end",
+        "margin": "none"
+      },
+      { "type": "separator", "margin": "xxl" },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "margin": "lg",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "ค่างวดทั้งหมด",
+                "size": "sm",
+                "color": "#aaaaaa",
+                "flex": 0
+              },
+              {
+                "type": "text",
+                "text": "10,000.00",
+                "size": "sm",
+                "color": "#111111",
+                "align": "end"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "ค่าธรรมเนียมติดตาม",
+                "size": "sm",
+                "color": "#aaaaaa",
+                "flex": 0
+              },
+              {
+                "type": "text",
+                "text": "420.00",
+                "size": "sm",
+                "color": "#111111",
+                "align": "end"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "ค่าปรับชำระล่าช้า",
+                "size": "sm",
+                "color": "#aaaaaa",
+                "flex": 0
+              },
+              {
+                "type": "text",
+                "text": "2,800.00",
+                "size": "sm",
+                "color": "#111111",
+                "align": "end"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "ค่าธรรมเนียมอื่นๆ",
+                "size": "sm",
+                "color": "#aaaaaa",
+                "flex": 0
+              },
+              {
+                "type": "text",
+                "text": "8,780.00",
+                "size": "sm",
+                "color": "#111111",
+                "align": "end"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "ภาษีมูลค่าเพิ่ม",
+                "size": "sm",
+                "color": "#aaaaaa",
+                "flex": 0
+              },
+              {
+                "type": "text",
+                "text": "650.00",
+                "size": "sm",
+                "color": "#111111",
+                "align": "end"
+              }
+            ]
+          },
+          { "type": "separator", "margin": "xxl" },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "margin": "lg",
+            "contents": [
+              {
+                "type": "text",
+                "text": "ยอดที่ต้องชำระ",
+                "size": "sm",
+                "color": "#1DB446",
+                "weight": "bold",
+                "flex": 4,
+                "gravity": "center"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "uri",
+                  "label": "QR Code",
+                  "uri": "http://linecorp.com/"
+                },
+                "margin": "xxl",
+                "position": "relative",
+                "flex": 0,
+                "style": "secondary",
+                "height": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "฿ 15,000.00",
+                "size": "xl",
+                "color": "#555555",
+                "weight": "bold",
+                "flex": 23,
+                "position": "relative",
+                "gravity": "center"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "uri",
+                  "label": "Banking",
+                  "uri": "http://linecorp.com/"
+                },
+                "height": "sm",
+                "style": "primary",
+                "flex": 14
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "ชำระภายใน",
+                "size": "sm",
+                "color": "#aaaaaa",
+                "flex": 3
+              },
+              {
+                "type": "text",
+                "text": "12 เม.ย. 66",
+                "size": "sm",
+                "color": "#111111",
+                "flex": 3,
+                "align": "end",
+                "margin": "none",
+                "style": "normal"
+              }
+            ],
+            "spacing": "none",
+            "margin": "md"
+          }
+        ]
+      },
+      { "type": "separator", "margin": "xxl" },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "margin": "md",
+        "contents": [
+          {
+            "type": "text",
+            "text": "ยอดผ่อนที่ชำระแล้ว",
+            "size": "sm",
+            "color": "#aaaaaa",
+            "flex": 0
+          },
+          {
+            "type": "text",
+            "text": "ยอดผ่อนทั้งหมด",
+            "color": "#aaaaaa",
+            "size": "sm",
+            "align": "end"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "฿ 25,000.00",
+                    "color": "#1DB446",
+                    "size": "sm",
+                    "margin": "none",
+                    "weight": "regular"
+                  },
+                  {
+                    "type": "text",
+                    "text": "฿ 2,500,000.00",
+                    "size": "sm",
+                    "align": "end"
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [{ "type": "filler" }],
+                    "width": "15%",
+                    "backgroundColor": "#1DB446",
+                    "height": "6px"
+                  }
+                ],
+                "backgroundColor": "#aaaaaa",
+                "height": "6px",
+                "margin": "sm"
+              }
+            ],
+            "backgroundColor": "#ffffff",
+            "paddingTop": "19px",
+            "paddingAll": "12px",
+            "paddingBottom": "16px",
+            "offsetEnd": "none"
+          }
+        ],
+        "position": "relative",
+        "spacing": "none"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "คลิกที่นี่เพื่อดูยอดปิดบัญชี",
+            "decoration": "underline",
+            "align": "center",
+            "size": "sm",
+            "color": "#5E7D7E"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "text": "12 เม.ย. 66 09:45 น.",
+            "margin": "none",
+            "size": "sm",
+            "position": "relative",
+            "gravity": "center",
+            "decoration": "none",
+            "color": "#aaaaaa"
+          },
+          {
+            "type": "text",
+            "text": "Thai Bank.",
+            "color": "#aaaaaa",
+            "align": "end",
+            "size": "sm"
+          }
+        ],
+        "margin": "lg",
+        "borderWidth": "none",
+        "spacing": "none",
+        "cornerRadius": "none"
+      }
+    ]
+  },
+  "styles": { "footer": { "separator": true } }
+}

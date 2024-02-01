@@ -1,0 +1,244 @@
+{
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "image",
+        "url": "https://www.eveandboy.com/logoenb1200x630.png",
+        "size": "xs",
+        "offsetStart": "none",
+        "aspectRatio": "4:2",
+        "align": "start"
+      },
+      { "type": "box", "layout": "horizontal", "contents": [] },
+      { "type": "text", "text": "Hello Johnny!", "weight": "bold", "size": "xxl", "margin": "md", "color": "#F61C8F" },
+      { "type": "text", "text": "Your order has been confirmed", "size": "xs", "color": "#aaaaaa", "wrap": true },
+      { "type": "separator", "margin": "md" },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              { "type": "text", "text": "Order Date", "size": "xs", "color": "#C3C3C3", "align": "center" },
+              { "type": "text", "text": "Jun 9, 2023", "size": "xs", "align": "center" }
+            ],
+            "margin": "none",
+            "offsetTop": "md"
+          },
+          { "type": "box", "layout": "vertical", "contents": [], "width": "1px", "backgroundColor": "#E3E3E3" },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              { "type": "text", "text": "Order No.", "size": "xs", "color": "#C3C3C3", "align": "center" },
+              { "type": "text", "text": "EB452125", "size": "xs", "align": "center" }
+            ],
+            "margin": "none",
+            "offsetTop": "md"
+          }
+        ],
+        "height": "50px"
+      },
+      { "type": "separator", "margin": "none" },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://prodenbcdn.azureedge.net/products/4891228305338/main/640/6417e488cd820c9152e25c7c.webp",
+                    "size": "xs",
+                    "offsetTop": "md",
+                    "align": "start"
+                  }
+                ],
+                "width": "70px"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  { "type": "text", "text": "#1", "size": "xs", "color": "#C3C3C3" },
+                  { "type": "text", "text": "BANANA BOAT", "size": "sm", "offsetTop": "sm" },
+                  {
+                    "type": "text",
+                    "text": "Simply Protect Aqua Long Wearing Moisture UV Sunscreen SPF50",
+                    "wrap": true,
+                    "size": "xxs",
+                    "color": "#C3C3C3",
+                    "offsetTop": "sm",
+                    "offsetBottom": "sm"
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  { "type": "text", "text": "Qty 1", "size": "xs", "align": "end", "color": "#C3C3C3" },
+                  { "type": "text", "text": "฿ 217", "align": "end", "size": "sm", "offsetTop": "sm" }
+                ],
+                "width": "50px"
+              }
+            ]
+          }
+        ],
+        "offsetTop": "lg"
+      },
+      { "type": "separator", "margin": "30px" },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://prodenbcdn.azureedge.net/products/8858518026232/main/640/6467081e2bb72026f6555eae.webp",
+                    "size": "xs",
+                    "offsetTop": "md",
+                    "align": "start"
+                  }
+                ],
+                "width": "70px"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  { "type": "text", "text": "#2", "size": "xs", "color": "#C3C3C3" },
+                  { "type": "text", "text": "MELINDA", "size": "sm", "offsetTop": "sm" },
+                  {
+                    "type": "text",
+                    "text": "Water Glowy Tint | No.02 - Orange Tango",
+                    "wrap": true,
+                    "size": "xxs",
+                    "color": "#C3C3C3",
+                    "offsetTop": "sm"
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  { "type": "text", "text": "Qty 1", "size": "xs", "align": "end", "color": "#C3C3C3" },
+                  { "type": "text", "text": "฿ 199", "align": "end", "size": "sm", "offsetTop": "sm" }
+                ],
+                "width": "50px"
+              }
+            ]
+          }
+        ],
+        "offsetTop": "lg"
+      },
+      { "type": "separator", "margin": "30px" },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://prodenbcdn.azureedge.net/products/8851932453660/main/640/6408458dfcc9cca346dd1d34.webp",
+                    "size": "xs",
+                    "offsetTop": "md",
+                    "align": "start"
+                  }
+                ],
+                "width": "70px"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  { "type": "text", "text": "#3", "size": "xs", "color": "#C3C3C3" },
+                  { "type": "text", "text": "VASELINE", "size": "sm", "offsetTop": "sm" },
+                  {
+                    "type": "text",
+                    "text": "Healthy Bright Gluta Hya Serum Burst Sunscreen SPF50 PA+++ Luminous Defense",
+                    "wrap": true,
+                    "size": "xxs",
+                    "color": "#C3C3C3",
+                    "offsetTop": "sm"
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  { "type": "text", "text": "Qty 1", "size": "xs", "align": "end", "color": "#C3C3C3" },
+                  { "type": "text", "text": "฿ 229", "align": "end", "size": "sm", "offsetTop": "sm" }
+                ],
+                "width": "50px"
+              }
+            ]
+          }
+        ],
+        "offsetTop": "lg"
+      },
+      { "type": "separator", "margin": "30px" },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [{ "type": "text", "text": "Total Price", "weight": "bold", "size": "md", "flex": 1 }]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [{ "type": "text", "text": "฿ 645", "align": "end", "flex": 2, "weight": "bold" }]
+          }
+        ],
+        "offsetTop": "md"
+      },
+      { "type": "separator", "margin": "lg" },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Thank you for shopping with us!",
+            "weight": "bold",
+            "color": "#F61C8F",
+            "align": "center"
+          }
+        ],
+        "offsetTop": "lg"
+      }
+    ],
+    "offsetBottom": "sm"
+  },
+  "styles": { "footer": { "separator": true } }
+}

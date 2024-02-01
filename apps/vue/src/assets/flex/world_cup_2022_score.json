@@ -1,0 +1,417 @@
+{
+  "type": "bubble",
+  "size": "giga",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "image",
+        "url": "https://www.matichon.co.th/wp-content/uploads/2022/10/wc-bg.webp",
+        "position": "absolute",
+        "offsetTop": "0px",
+        "size": "full",
+        "aspectMode": "cover",
+        "aspectRatio": "5:7"
+      },
+      {
+        "type": "text",
+        "text": "ผลการแข่งขัน",
+        "weight": "bold",
+        "size": "3xl",
+        "align": "center",
+        "color": "#eeeeee",
+        "margin": "xl"
+      },
+      {
+        "type": "text",
+        "text": "ฟุตบอลโลก กาตาร์ 2022",
+        "weight": "bold",
+        "size": "xl",
+        "align": "center",
+        "color": "#eeeeee"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [],
+            "flex": 0
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "วันที่ 22 พฤศจิกายน 2565",
+                "weight": "bold",
+                "size": "md",
+                "align": "center"
+              }
+            ],
+            "backgroundColor": "#F8D247",
+            "cornerRadius": "lg",
+            "width": "260px",
+            "paddingTop": "8px",
+            "paddingBottom": "8px"
+          }
+        ],
+        "cornerRadius": "lg",
+        "offsetTop": "10px",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://cdn.britannica.com/69/5869-004-7D75CD05/Flag-Argentina.jpg",
+                    "margin": "none",
+                    "size": "sm",
+                    "aspectMode": "fit"
+                  }
+                ],
+                "paddingAll": "0px",
+                "spacing": "none",
+                "margin": "none",
+                "alignItems": "flex-end",
+                "borderWidth": "none"
+              },
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "อาร์เจนติน่า",
+                    "size": "xs",
+                    "margin": "none",
+                    "flex": 1,
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "1-2",
+                    "align": "center",
+                    "margin": "none",
+                    "size": "md",
+                    "weight": "bold",
+                    "flex": 0
+                  },
+                  {
+                    "type": "text",
+                    "text": "ซาอุดิอาระเบีย",
+                    "size": "xs",
+                    "align": "center",
+                    "margin": "none",
+                    "flex": 1
+                  }
+                ],
+                "backgroundColor": "#eeeeee",
+                "maxHeight": "30px",
+                "justifyContent": "center",
+                "alignItems": "center",
+                "paddingAll": "0px",
+                "spacing": "none",
+                "margin": "none",
+                "offsetTop": "25px",
+                "borderWidth": "medium",
+                "borderColor": "#dddddd",
+                "width": "210px"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/640px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png",
+                    "margin": "none",
+                    "size": "sm",
+                    "aspectMode": "fit"
+                  }
+                ],
+                "paddingAll": "0px",
+                "spacing": "none",
+                "margin": "none",
+                "alignItems": "flex-start"
+              }
+            ],
+            "paddingAll": "0px",
+            "height": "70px"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Denmark.svg/800px-Flag_of_Denmark.svg.png",
+                    "margin": "none",
+                    "size": "sm",
+                    "aspectMode": "fit"
+                  }
+                ],
+                "paddingAll": "0px",
+                "spacing": "none",
+                "margin": "none",
+                "alignItems": "flex-end",
+                "borderWidth": "none"
+              },
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "เดนมาร์ก",
+                    "size": "xs",
+                    "margin": "none",
+                    "flex": 1,
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "0-0",
+                    "align": "center",
+                    "margin": "none",
+                    "size": "md",
+                    "weight": "bold",
+                    "flex": 0
+                  },
+                  {
+                    "type": "text",
+                    "text": "ตูนิเซีย",
+                    "size": "xs",
+                    "align": "center",
+                    "flex": 1
+                  }
+                ],
+                "backgroundColor": "#eeeeee",
+                "maxHeight": "30px",
+                "justifyContent": "center",
+                "alignItems": "center",
+                "paddingAll": "0px",
+                "spacing": "none",
+                "margin": "none",
+                "offsetTop": "25px",
+                "borderWidth": "medium",
+                "borderColor": "#dddddd",
+                "width": "210px"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://thumbs.dreamstime.com/b/flag-tunisia-name-icon-official-colors-proportion-correctly-national-216555261.jpg",
+                    "margin": "none",
+                    "size": "sm",
+                    "aspectMode": "fit"
+                  }
+                ],
+                "paddingAll": "0px",
+                "spacing": "none",
+                "margin": "none",
+                "alignItems": "flex-start"
+              }
+            ],
+            "paddingAll": "0px",
+            "height": "70px"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/2560px-Flag_of_Mexico.svg.png",
+                    "margin": "none",
+                    "size": "sm",
+                    "aspectMode": "fit"
+                  }
+                ],
+                "paddingAll": "0px",
+                "spacing": "none",
+                "margin": "none",
+                "alignItems": "flex-end",
+                "borderWidth": "none"
+              },
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "เม็กซิโก",
+                    "size": "xs",
+                    "margin": "none",
+                    "flex": 1,
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "0-0",
+                    "align": "center",
+                    "margin": "none",
+                    "size": "md",
+                    "weight": "bold",
+                    "flex": 0
+                  },
+                  {
+                    "type": "text",
+                    "text": "โปแลนด์",
+                    "size": "xs",
+                    "align": "center",
+                    "flex": 1
+                  }
+                ],
+                "backgroundColor": "#eeeeee",
+                "maxHeight": "30px",
+                "justifyContent": "center",
+                "alignItems": "center",
+                "paddingAll": "0px",
+                "spacing": "none",
+                "margin": "none",
+                "offsetTop": "25px",
+                "borderWidth": "medium",
+                "borderColor": "#dddddd",
+                "width": "210px"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/1200px-Flag_of_Poland.svg.png",
+                    "margin": "none",
+                    "size": "sm",
+                    "aspectMode": "fit"
+                  }
+                ],
+                "paddingAll": "0px",
+                "spacing": "none",
+                "margin": "none",
+                "alignItems": "flex-start"
+              }
+            ],
+            "paddingAll": "0px",
+            "height": "70px"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://seeklogo.com/images/F/france-flag-logo-DBC61B59A7-seeklogo.com.png",
+                    "margin": "none",
+                    "size": "sm",
+                    "aspectMode": "fit"
+                  }
+                ],
+                "paddingAll": "0px",
+                "spacing": "none",
+                "margin": "none",
+                "alignItems": "flex-end",
+                "borderWidth": "none"
+              },
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "ฝรั่งเศส",
+                    "size": "xs",
+                    "margin": "none",
+                    "flex": 1,
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "4-1",
+                    "align": "center",
+                    "margin": "none",
+                    "size": "md",
+                    "weight": "bold",
+                    "flex": 0
+                  },
+                  {
+                    "type": "text",
+                    "text": "ออสเตรเลีย",
+                    "size": "xs",
+                    "align": "center",
+                    "flex": 1
+                  }
+                ],
+                "backgroundColor": "#eeeeee",
+                "maxHeight": "30px",
+                "justifyContent": "center",
+                "alignItems": "center",
+                "paddingAll": "0px",
+                "spacing": "none",
+                "margin": "none",
+                "offsetTop": "25px",
+                "borderWidth": "medium",
+                "borderColor": "#dddddd",
+                "width": "210px"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/2560px-Flag_of_Australia.svg.png",
+                    "margin": "none",
+                    "size": "sm",
+                    "aspectMode": "fit"
+                  }
+                ],
+                "paddingAll": "0px",
+                "spacing": "none",
+                "margin": "none",
+                "alignItems": "flex-start"
+              }
+            ],
+            "paddingAll": "0px",
+            "height": "70px"
+          }
+        ],
+        "spacing": "none",
+        "margin": "xl",
+        "paddingBottom": "25px"
+      }
+    ],
+    "paddingAll": "0px"
+  }
+}

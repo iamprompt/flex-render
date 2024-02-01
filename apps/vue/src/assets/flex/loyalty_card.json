@@ -1,0 +1,145 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "flex": 0,
+    "backgroundColor": "#926868FF",
+    "contents": [
+      {
+        "type": "text",
+        "text": "สะสมแต้ม",
+        "size": "xxl",
+        "color": "#F5F3F3FF",
+        "contents": []
+      },
+      {
+        "type": "text",
+        "text": "ร้าน Fruit Bakery",
+        "size": "sm",
+        "color": "#E9D2D2FF",
+        "contents": []
+      }
+    ]
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "md",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "md",
+        "contents": [
+          {
+            "type": "text",
+            "text": "กรุณาแสดงคิวอาร์โค้ดเพื่อรับแต้ม",
+            "size": "sm",
+            "color": "#555555FF",
+            "align": "center",
+            "contents": []
+          },
+          {
+            "type": "image",
+            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/linecorp_code_withborder.png",
+            "margin": "lg",
+            "size": "xl",
+            "aspectMode": "cover"
+          },
+          {
+            "type": "text",
+            "text": "You can accumulate your points \nto use for discounts.",
+            "size": "xs",
+            "color": "#AAAAAA",
+            "align": "center",
+            "margin": "lg",
+            "wrap": true,
+            "contents": []
+          }
+        ]
+      },
+      { "type": "separator" },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "margin": "lg",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "รหัสสมาชิก :",
+                "size": "sm",
+                "color": "#AAAAAA",
+                "flex": 1,
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "xxxxxxxxxxx",
+                "size": "sm",
+                "color": "#666666",
+                "flex": 2,
+                "wrap": true,
+                "contents": []
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "ชื่อ :",
+                "size": "sm",
+                "color": "#AAAAAA",
+                "flex": 1,
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "xxxxx  xxxxxxx",
+                "size": "sm",
+                "color": "#666666",
+                "flex": 7,
+                "wrap": true,
+                "contents": []
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "เบอร์ :",
+                "size": "sm",
+                "color": "#AAAAAA",
+                "flex": 1,
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "065-xxx-xxxx",
+                "size": "sm",
+                "color": "#666666",
+                "flex": 5,
+                "wrap": true,
+                "contents": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
