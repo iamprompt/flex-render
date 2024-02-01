@@ -1,6 +1,6 @@
+import type { FlexContainer } from '@line/bot-sdk'
 import express from 'express'
 import { render } from 'flex-render'
-import type { FlexContainer } from '@line/bot-sdk'
 
 const app = express()
 
