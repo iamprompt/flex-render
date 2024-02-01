@@ -1,5 +1,6 @@
 import { Code2, X } from 'lucide-react'
-import { TooltipTrigger, Tooltip, Button, OverlayArrow, DialogTrigger, Dialog, Modal } from 'react-aria-components'
+import { Button, Dialog, DialogTrigger, Modal, OverlayArrow, Tooltip, TooltipTrigger } from 'react-aria-components'
+
 import CopyButton from './CopyButton'
 
 interface ViewJSONButtonProps {

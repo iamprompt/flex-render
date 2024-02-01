@@ -12,20 +12,23 @@ const project = resolve(process.cwd(), 'tsconfig.json')
  */
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-  // extends: [
-  //   '@vercel/style-guide/eslint/browser',
-  //   '@vercel/style-guide/eslint/typescript',
-  //   '@vercel/style-guide/eslint/react',
-  // ].map(require.resolve),
-  extends: ['plugin:prettier/recommended'],
-  parserOptions: {
-    project,
-  },
+  extends: ['eslint:recommended', 'turbo', 'plugin:prettier/recommended'],
+  plugins: ['only-warn', 'unused-imports', 'simple-import-sort', 'import'],
   parser: '@typescript-eslint/parser',
   globals: {
+    React: true,
     JSX: true,
   },
-  plugins: ['only-warn', 'unused-imports', 'simple-import-sort', 'import'],
+  env: {
+    node: true,
+  },
+  settings: {
+    'import/resolver': {
+      typescript: {
+        project,
+      },
+    },
+  },
   rules: {
     '@typescript-eslint/no-unused-vars': 'off',
     'unused-imports/no-unused-imports': 'error',
@@ -63,16 +66,16 @@ module.exports = {
     'import/newline-after-import': 'error',
     'import/no-duplicates': 'error',
   },
-  settings: {
-    'import/resolver': {
-      typescript: {
-        project,
-      },
+  ignorePatterns: [
+    // Ignore dotfiles
+    '.*.js',
+    'node_modules/',
+    'dist/',
+    '.turbo/',
+  ],
+  overrides: [
+    {
+      files: ['*.js?(x)', '*.ts?(x)'],
     },
-  },
-  ignorePatterns: ['node_modules/', 'dist/', '.eslintrc.js', '**/*.css'],
-  // add rules configurations here
-  rules: {
-    'import/no-default-export': 'off',
-  },
+  ],
 }

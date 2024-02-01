@@ -1,3 +1,3 @@
-import './main.scss'
+import './scss/main.scss'
 
-export { render } from './render'
+export { render } from './utils/render'

@@ -21,8 +21,7 @@ import {
   FlexBubbleSizeClassName,
   FlexElementClassName,
   FlexSectionClassName,
-} from './className'
-import { Element } from './dom'
+} from '@/constants/className'
 import {
   injectAction,
   injectAlign,
@@ -52,7 +51,9 @@ import {
   isHorizontalLayout,
   isSizeKeyword,
   isSizeValue,
-} from './utils'
+} from '@/utils/utils'
+
+import { Element } from './dom'
 
 export const render = (flexJSON: FlexContainer) => {
   const preview = new Element('div')

@@ -1,8 +1,11 @@
 import '@/styles/globals.css'
+import 'flex-render/css'
+
+import FlexPreview from 'flex-render/react'
+
+import { FlexModules } from '@/utils/flex'
 
 import ViewJSONButton from './components/ViewJSONButton'
-import { FlexModules } from '@/utils/flex'
-import FlexPreview from '@/components/FlexPreview'
 
 function App() {
   return (

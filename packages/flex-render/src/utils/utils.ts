@@ -25,7 +25,8 @@ import {
   FlexTextDecorationClassName,
   FlexTextStylesClassName,
   FlexTextWeightClassName,
-} from './className'
+} from '@/constants/className'
+
 import { Element } from './dom'
 import { renderSeparator } from './render'
 

@@ -19,6 +19,11 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs",
       "types": "./dist/index.d.ts"
+    },
+    "./react": {
+      "import": "./dist/components/react/FlexPreview.js",
+      "require": "./dist/components/react/FlexPreview.cjs",
+      "types": "./dist/components/react/FlexPreview.d.ts"
     }
   },
   "scripts": {
@@ -33,6 +38,7 @@
     "@iamprompt/eslint-config": "workspace:^",
     "@iamprompt/typescript-config": "workspace:^",
     "@line/bot-sdk": "^8.2.0",
+    "@types/react": "^18.2.48",
     "esbuild-sass-plugin": "^3.0.0",
     "tsup": "^8.0.1"
   },
@@ -41,5 +47,8 @@
   },
   "publishConfig": {
     "registry": "https://npm.iamprompt.me/"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
   }
 }
