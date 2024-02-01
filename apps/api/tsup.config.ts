@@ -7,7 +7,6 @@ export default defineConfig((options: Options) => ({
     entry: 'src/index.ts',
     resolve: true,
   },
-  onSuccess: 'node dist/index.js',
   minify: true,
   clean: true,
   ...options,
