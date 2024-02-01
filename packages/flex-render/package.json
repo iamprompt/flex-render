@@ -9,14 +9,17 @@
   "sideEffects": false,
   "type": "module",
   "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
     "dist/**"
   ],
   "exports": {
     "./css": "./dist/index.css",
-    ".": "./dist/index.js"
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
   },
   "scripts": {
     "dev": "tsup --watch --dts --sourcemap --clean",
