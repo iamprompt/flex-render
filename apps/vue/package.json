@@ -11,7 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "flex-render": "workspace:^",
+    "@iamprompt/flex-render": "workspace:^",
     "vue": "^3.3.11"
   },
   "devDependencies": {

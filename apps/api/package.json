@@ -20,6 +20,6 @@
   },
   "dependencies": {
     "express": "^4.18.2",
-    "flex-render": "workspace:^"
+    "@iamprompt/flex-render": "workspace:^"
   }
 }

@@ -20,12 +20,12 @@ importers:
 
   apps/api:
     dependencies:
+      '@iamprompt/flex-render':
+        specifier: workspace:^
+        version: link:../../packages/flex-render
       express:
         specifier: ^4.18.2
         version: 4.18.2
-      flex-render:
-        specifier: workspace:^
-        version: link:../../packages/flex-render
     devDependencies:
       '@iamprompt/eslint-config':
         specifier: workspace:^
@@ -48,7 +48,7 @@ importers:
 
   apps/react:
     dependencies:
-      flex-render:
+      '@iamprompt/flex-render':
         specifier: workspace:^
         version: link:../../packages/flex-render
       lucide-react:
@@ -103,7 +103,7 @@ importers:
 
   apps/vue:
     dependencies:
-      flex-render:
+      '@iamprompt/flex-render':
         specifier: workspace:^
         version: link:../../packages/flex-render
       vue:
