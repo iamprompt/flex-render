@@ -1,6 +1,7 @@
 {
   "name": "@iamprompt/flex-render",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "description": "Utility to render LINE Flex Bubble / Carousel JSON for displaying in website.",
   "homepage": "https://github.com/iamprompt/flex-render",
   "bugs": {
     "url": "https://github.com/iamprompt/flex-render/issues",
