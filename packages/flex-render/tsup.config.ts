@@ -5,7 +5,7 @@ export default defineConfig((options: Options) => ({
   entry: ['src/index.ts', 'src/components/react/FlexPreview.tsx'],
   format: ['esm', 'cjs'],
   dts: {
-    entry: 'src/index.ts',
+    entry: ['src/index.ts', 'src/components/react/FlexPreview.tsx'],
     resolve: true,
   },
   treeshake: true,

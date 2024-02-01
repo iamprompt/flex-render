@@ -1,5 +1,11 @@
 # flex-render
 
+## 0.1.2
+
+### Patch Changes
+
+- Add types react component
+
 ## 0.1.1
 
 ### Patch Changes
