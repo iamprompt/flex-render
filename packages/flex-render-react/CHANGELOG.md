@@ -1,5 +1,11 @@
 # flex-render-react
 
+## 0.1.1
+
+### Patch Changes
+
+- Fix typo on package description
+
 ## 0.1.0
 
 ### Minor Changes

@@ -1,7 +1,7 @@
 {
   "name": "flex-render-react",
-  "version": "0.1.0",
-  "description": "Vue 3 components for rendering LINE Flex Message",
+  "version": "0.1.1",
+  "description": "React components for rendering LINE Flex Message",
   "keywords": [
     "LINE",
     "Flex Message",
