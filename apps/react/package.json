@@ -1,7 +1,7 @@
 {
-  "name": "react",
+  "name": "flex-render-react-example",
   "private": true,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,7 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@flex-render/react": "workspace:^",
+    "flex-render-react": "workspace:^",
     "lucide-react": "^0.316.0",
     "react": "^18.2.0",
     "react-aria-components": "^1.0.1",

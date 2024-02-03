@@ -1,5 +1,11 @@
 # @iamprompt/flex-render
 
+## 0.1.3
+
+### Patch Changes
+
+- Separate FlexPreview Component to another packages
+
 ## 0.1.2
 
 ### Patch Changes

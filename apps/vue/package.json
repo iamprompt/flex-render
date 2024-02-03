@@ -1,7 +1,7 @@
 {
-  "name": "vue",
+  "name": "flex-render-vue-example",
   "private": true,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,7 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@flex-render/vue": "workspace:^",
+    "flex-render-vue": "workspace:^",
     "vue": "^3.3.11"
   },
   "devDependencies": {

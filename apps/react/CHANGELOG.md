@@ -1,5 +1,13 @@
 # @iamprompt/flex-render-react
 
+## 0.0.4
+
+### Patch Changes
+
+- Updated dependencies
+  - flex-render-react@0.1.0
+  - react@0.0.4
+
 ## 0.0.3
 
 ### Patch Changes

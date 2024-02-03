@@ -1,7 +1,6 @@
 {
-  "name": "@flex-render/vue",
-  "version": "0.0.0",
-  "private": true,
+  "name": "flex-render-vue",
+  "version": "0.1.0",
   "description": "Vue 3 components for rendering LINE Flex Message",
   "keywords": [
     "LINE",
@@ -62,5 +61,8 @@
   },
   "peerDependencies": {
     "vue": "^3.4.15"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

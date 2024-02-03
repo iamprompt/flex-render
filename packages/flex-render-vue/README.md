@@ -5,15 +5,17 @@ Utility to render LINE Flex Bubble / Carousel JSON for displaying in website.
 ## Installation
 
 ```bash
-pnpm add flex-render
+pnpm add flex-render-vue
 ```
 
 ## Usage
 
-You can input Flex Bubble / Carousel JSON from [Flex Message Simulator](https://developers.line.biz/flex-simulator) directly to `render` function.
+You can input Flex Bubble / Carousel JSON from [Flex Message Simulator](https://developers.line.biz/flex-simulator) directly to `FlexPreview` component.
 
-```ts
-import { render } from "@iamprompt/flex-render";
+```vue
+import "@iamprompt/flex-render/vue/css";
+
+import { FlexPreview } from "@iamprompt/flex-render/vue";
 
 const flexJSON = {
   "type": "bubble",
@@ -31,10 +33,8 @@ const flexJSON = {
   }
 }
 
-render(flexJSON)
+<FlexPreview :json="flexJSON" />
 ```
-
-**Remark:** Then output of `render` function can be used to render in any framework like React, Vue, Angular, etc. but importantly you need to import CSS file `flex-render/css` in your application.
 
 You can see the example in [apps](../../apps/) directory.
 

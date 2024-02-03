@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import '@flex-render/vue/css'
+import 'flex-render-vue/css'
 
-import { FlexPreview } from '@flex-render/vue'
+import { FlexPreview } from 'flex-render-vue'
 
 import { FlexModules } from './utils/flex'
 </script>

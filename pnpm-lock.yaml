@@ -48,7 +48,7 @@ importers:
 
   apps/react:
     dependencies:
-      '@flex-render/react':
+      flex-render-react:
         specifier: workspace:^
         version: link:../../packages/flex-render-react
       lucide-react:
@@ -103,7 +103,7 @@ importers:
 
   apps/vue:
     dependencies:
-      '@flex-render/vue':
+      flex-render-vue:
         specifier: workspace:^
         version: link:../../packages/flex-render-vue
       vue:
@@ -181,15 +181,9 @@ importers:
 
   packages/flex-render:
     dependencies:
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
       typescript:
         specifier: ^5.0.0
         version: 5.3.3
-      vue:
-        specifier: ^3.4.15
-        version: 3.4.15(typescript@5.3.3)
     devDependencies:
       '@iamprompt/eslint-config':
         specifier: workspace:^
@@ -200,9 +194,6 @@ importers:
       '@line/bot-sdk':
         specifier: ^8.2.0
         version: 8.2.0
-      '@types/react':
-        specifier: ^18.2.48
-        version: 18.2.48
       esbuild-sass-plugin:
         specifier: ^3.0.0
         version: 3.0.0(esbuild@0.20.0)

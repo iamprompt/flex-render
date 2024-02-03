@@ -1,7 +1,7 @@
 {
-  "name": "api",
+  "name": "flex-render-api-example",
   "private": true,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "dev": "tsup --watch --clean --onSuccess 'node dist/index.js'",
     "build": "tsup",
