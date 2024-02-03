@@ -1,0 +1,67 @@
+{
+  "name": "@flex-render/react",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Vue 3 components for rendering LINE Flex Message",
+  "keywords": [
+    "LINE",
+    "Flex Message",
+    "LINE Messaging API"
+  ],
+  "homepage": "https://github.com/iamprompt/flex-render",
+  "bugs": {
+    "url": "https://github.com/iamprompt/flex-render/issues",
+    "email": "osissue@iamprompt.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https//github.com/iamprompt/flex-render.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Supakarn Laorattanakul",
+    "email": "opensource@iamprompt.me",
+    "url": "https://github.com/iamprompt"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/flex-preview.js",
+      "require": "./dist/flex-preview.umd.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "main": "./dist/flex-preview.umd.cjs",
+  "module": "./dist/flex-preview.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "pnpm type-check && vite build",
+    "dev": "vite build --watch",
+    "lint": "eslint . --ext ts,tsx",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "flex-render": "workspace:^"
+  },
+  "devDependencies": {
+    "@iamprompt/eslint-config": "workspace:^",
+    "@iamprompt/typescript-config": "workspace:^",
+    "@types/react": "^18.2.52",
+    "@vitejs/plugin-react-swc": "^3.6.0",
+    "react": "^18.2.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "vite-plugin-dts": "^3.7.2"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "typescript": "^5.3.3"
+  }
+}

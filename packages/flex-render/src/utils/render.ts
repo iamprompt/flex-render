@@ -9,11 +9,10 @@ import type {
   FlexIcon,
   FlexImage,
   FlexSeparator,
-  FlexSpacer,
   FlexSpan,
   FlexText,
   FlexVideo,
-} from '@line/bot-sdk'
+} from '../types'
 
 import {
   FlexBoxLayoutClassName,
@@ -54,16 +53,17 @@ import {
 } from '@/utils/utils'
 
 import { Element } from './dom'
+import { FlexSpacer } from '@line/bot-sdk'
 
 export const render = (flexJSON: FlexContainer) => {
   const preview = new Element('div')
   preview.addClassNames('flex-preview')
 
   if (flexJSON.type === 'carousel') {
-    const carousel = renderCarousel(flexJSON)
+    const carousel = renderCarousel(flexJSON as FlexCarousel)
     preview.appendChild(carousel)
   } else {
-    const bubble = renderBubble(flexJSON)
+    const bubble = renderBubble(flexJSON as FlexBubble)
     preview.appendChild(bubble)
   }
 
@@ -100,7 +100,7 @@ export const renderBubble = (flexJSON: FlexBubble) => {
   }
 
   if (flexJSON.hero) {
-    let hero = renderHero(flexJSON.hero)
+    let hero = renderHero(flexJSON.hero as FlexBox | FlexImage | FlexVideo)
     const [heroWithStyle, heroBubbleStyled] = injectSectionStyle(hero, flexJSON.styles?.hero, 'hero', bubble)
     hero = heroWithStyle
     bubble = heroBubbleStyled
@@ -187,28 +187,28 @@ export const renderBox = (boxJSON: FlexBox, parent?: FlexComponent) => {
   return box
 }
 
-export const renderContent = (contentJSON: FlexBox['contents'][number], parent?: FlexComponent) => {
+export const renderContent = (contentJSON: FlexComponent, parent?: FlexComponent) => {
   switch (contentJSON.type) {
     case 'box':
-      return renderBox(contentJSON, parent)
+      return renderBox(contentJSON as FlexBox, parent)
     case 'button':
-      return renderButton(contentJSON, parent)
+      return renderButton(contentJSON as FlexButton, parent)
     case 'image':
-      return renderImage(contentJSON, parent)
+      return renderImage(contentJSON as FlexImage, parent)
     case 'video':
-      return renderVideo(contentJSON, parent)
+      return renderVideo(contentJSON as FlexVideo, parent)
     case 'icon':
-      return renderIcon(contentJSON, parent)
+      return renderIcon(contentJSON as FlexIcon, parent)
     case 'text':
-      return renderText(contentJSON, parent)
+      return renderText(contentJSON as FlexText, parent)
     case 'span':
-      return renderSpan(contentJSON, parent)
+      return renderSpan(contentJSON as FlexSpan, parent)
     case 'separator':
-      return renderSeparator(contentJSON, parent)
+      return renderSeparator(contentJSON as FlexSeparator, parent)
     case 'filler':
-      return renderFiller(contentJSON, parent)
+      return renderFiller(contentJSON as FlexFiller, parent)
     case 'spacer':
-      return renderSpacer(contentJSON, parent)
+      return renderSpacer(contentJSON as FlexSpacer, parent)
     default:
       return null
   }

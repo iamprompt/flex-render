@@ -1,0 +1,4 @@
+{
+  "extends": "@iamprompt/typescript-config/vite.json",
+  "include": ["src"],
+}

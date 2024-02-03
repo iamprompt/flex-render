@@ -1,6 +1,6 @@
-import { render } from '@iamprompt/flex-render'
 import type { FlexContainer } from '@line/bot-sdk'
 import express from 'express'
+import { render } from 'flex-render'
 
 const app = express()
 

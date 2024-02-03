@@ -6,8 +6,13 @@ import type {
   FlexIcon,
   FlexImage,
   FlexText,
-  Offset,
-} from '@line/bot-sdk'
+  FlexOffset,
+  FlexBoxBackground,
+  FlexBoxLinearGradient,
+  Action,
+  MessageAction,
+  PostbackAction,
+} from '../types'
 
 import {
   FlexBoxAlignItemsClassName,
@@ -29,6 +34,7 @@ import {
 
 import { Element } from './dom'
 import { renderSeparator } from './render'
+import { URIAction } from '@line/bot-sdk'
 
 export const FlexElementSizeKeyword = ['none', 'xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl', '3xl', '4xl', '5xl', 'full']
 export const FlexElementSizePxRegex = /^(-?[\d\.]+)px$/
@@ -171,7 +177,12 @@ export const injectJustifyContent = <T extends Element>(element: T, justifyConte
 
 export const injectOffset = <T extends Element>(
   element: T,
-  { offsetBottom, offsetEnd, offsetStart, offsetTop }: Offset,
+  {
+    offsetBottom,
+    offsetEnd,
+    offsetStart,
+    offsetTop,
+  }: { offsetBottom?: string; offsetEnd?: string; offsetStart?: string; offsetTop?: string },
 ) => {
   if (!offsetBottom && !offsetEnd && !offsetStart && !offsetTop) return element
 
@@ -331,10 +342,10 @@ export const injectColor = <T extends Element>(
   return element
 }
 
-export const injectBackground = <T extends Element>(element: T, background?: FlexBox['background']) => {
+export const injectBackground = <T extends Element>(element: T, background?: FlexBoxBackground) => {
   if (!background) return element
-  const { type, angle, startColor, endColor, centerColor, centerPosition } = background
-  if (type === 'linearGradient') {
+  if (background.type === 'linearGradient') {
+    const { angle, startColor, endColor, centerColor, centerPosition } = background as FlexBoxLinearGradient
     const matchAngle = angle?.match(/^(\d+)deg$/)
     const matchStartColor = startColor?.match(colorRegex)
     const matchEndColor = endColor?.match(colorRegex)
@@ -440,27 +451,25 @@ export const injectSectionStyle = <T extends Element, U extends Element | undefi
   return [element, parentHTMLElement]
 }
 
-export const injectAction = <T extends Element>(element: T, action?: FlexImage['action']) => {
+export const injectAction = <T extends Element>(element: T, action?: Action) => {
   if (!action) return element
   switch (action.type) {
     case 'uri':
       element.setAttribute('target', '_blank')
-      element.setAttribute('href', action.uri)
+      element.setAttribute('href', (action as URIAction).uri)
       break
     case 'message':
-      element.setAttribute('onclick', `alert('Send Message: ${action.text} to chatroom')`)
+      element.setAttribute('onclick', `alert('Send Message: ${(action as MessageAction).text} to chatroom')`)
       break
     case 'postback':
-      element.setAttribute('onclick', `alert('Send Postback: ${action.data}')`)
+      element.setAttribute('onclick', `alert('Send Postback: ${(action as PostbackAction).data}')`)
       break
     case 'datetimepicker':
       element.setAttribute('onclick', `alert('Open Datepicker')`)
       break
-    // @ts-expect-error New action type: clipboard
     case 'clipboard':
       element.setAttribute(
         'onclick',
-        // @ts-expect-error New action type clipboard data
         `window.navigator.clipboard.writeText('${action.clipboardText}').then(() => alert('Copied to Clipboard: ${action.clipboardText}'))`,
       )
       break

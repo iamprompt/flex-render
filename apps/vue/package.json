@@ -1,5 +1,5 @@
 {
-  "name": "@iampromt/flex-render-vue",
+  "name": "vue",
   "private": true,
   "version": "0.0.3",
   "type": "module",
@@ -11,7 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@iamprompt/flex-render": "workspace:^",
+    "@flex-render/vue": "workspace:^",
     "vue": "^3.3.11"
   },
   "devDependencies": {

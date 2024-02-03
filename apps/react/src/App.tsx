@@ -1,7 +1,7 @@
 import '@/styles/globals.css'
-import '@iamprompt/flex-render/css'
+import '@flex-render/react/css'
 
-import FlexPreview from '@iamprompt/flex-render/react'
+import { FlexPreview } from '@flex-render/react'
 
 import { FlexModules } from '@/utils/flex'
 

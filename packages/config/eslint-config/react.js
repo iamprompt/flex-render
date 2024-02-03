@@ -49,6 +49,8 @@ module.exports = {
           ['^\\u0000'],
           // Node.js builtins prefixed with `node:`.
           ['^node:'],
+          // ViteJS Packages
+          ['^vite', '^@vitejs/', '^react'],
           // Packages.
           // Things that start with a letter (or digit or underscore), or `@` followed by a letter.
           ['^@?\\w'],

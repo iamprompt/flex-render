@@ -1,15 +1,16 @@
 import { sassPlugin } from 'esbuild-sass-plugin'
-import { defineConfig, type Options } from 'tsup'
+import { defineConfig } from 'tsup'
 
-export default defineConfig((options: Options) => ({
-  entry: ['src/index.ts', 'src/components/react/FlexPreview.tsx', 'src/components/vue/FlexPreview.tsx'],
+export default defineConfig((options) => ({
+  entry: ['src/index.ts'],
   format: ['esm', 'cjs'],
   dts: {
-    entry: ['src/index.ts', 'src/components/react/FlexPreview.tsx', 'src/components/vue/FlexPreview.tsx'],
+    entry: ['src/index.ts'],
     resolve: true,
   },
   treeshake: true,
-  minify: true,
+  minify: !options.watch,
+  sourcemap: !!options.watch,
   clean: true,
   esbuildPlugins: [
     sassPlugin({

@@ -28,8 +28,8 @@ export class Element {
     return this.tagName
   }
 
-  public setTextContent(textContent: string): void {
-    this.textContent = textContent
+  public setTextContent(textContent?: string): void {
+    this.textContent = textContent || undefined
   }
 
   public getTextContent(): string | undefined {

@@ -1,5 +1,5 @@
 {
-  "name": "@iamprompt/flex-render-react",
+  "name": "react",
   "private": true,
   "version": "0.0.3",
   "type": "module",
@@ -11,7 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@iamprompt/flex-render": "workspace:^",
+    "@flex-render/react": "workspace:^",
     "lucide-react": "^0.316.0",
     "react": "^18.2.0",
     "react-aria-components": "^1.0.1",
