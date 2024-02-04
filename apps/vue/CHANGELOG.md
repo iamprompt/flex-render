@@ -1,5 +1,11 @@
 # @iampromt/flex-render-vue
 
+## 0.0.5
+
+### Patch Changes
+
+- flex-render-vue@0.1.1
+
 ## 0.0.4
 
 ### Patch Changes

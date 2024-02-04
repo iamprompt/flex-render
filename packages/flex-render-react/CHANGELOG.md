@@ -1,5 +1,12 @@
 # flex-render-react
 
+## 0.1.2
+
+### Patch Changes
+
+- Updated dependencies
+  - flex-render@0.1.4
+
 ## 0.1.1
 
 ### Patch Changes

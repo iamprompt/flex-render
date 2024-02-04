@@ -1,5 +1,11 @@
 # @iamprompt/flex-render
 
+## 0.1.4
+
+### Patch Changes
+
+- Fix Linting
+
 ## 0.1.3
 
 ### Patch Changes
