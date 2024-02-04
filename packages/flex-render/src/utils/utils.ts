@@ -1,19 +1,3 @@
-import type {
-  FlexBlockStyle,
-  FlexBox,
-  FlexButton,
-  FlexComponent,
-  FlexIcon,
-  FlexImage,
-  FlexText,
-  FlexOffset,
-  FlexBoxBackground,
-  FlexBoxLinearGradient,
-  Action,
-  MessageAction,
-  PostbackAction,
-} from '../types'
-
 import {
   FlexBoxAlignItemsClassName,
   FlexBoxBorderWidthClassName,
@@ -32,9 +16,23 @@ import {
   FlexTextWeightClassName,
 } from '@/constants/className'
 
+import type {
+  Action,
+  FlexBlockStyle,
+  FlexBox,
+  FlexBoxBackground,
+  FlexBoxLinearGradient,
+  FlexButton,
+  FlexComponent,
+  FlexIcon,
+  FlexImage,
+  FlexText,
+  MessageAction,
+  PostbackAction,
+  URIAction,
+} from '../types'
 import { Element } from './dom'
 import { renderSeparator } from './render'
-import { URIAction } from '@line/bot-sdk'
 
 export const FlexElementSizeKeyword = ['none', 'xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl', '3xl', '4xl', '5xl', 'full']
 export const FlexElementSizePxRegex = /^(-?[\d\.]+)px$/
@@ -456,7 +454,7 @@ export const injectAction = <T extends Element>(element: T, action?: Action) => 
   switch (action.type) {
     case 'uri':
       element.setAttribute('target', '_blank')
-      element.setAttribute('href', (action as URIAction).uri)
+      element.setAttribute('href', (action as URIAction).uri || '')
       break
     case 'message':
       element.setAttribute('onclick', `alert('Send Message: ${(action as MessageAction).text} to chatroom')`)

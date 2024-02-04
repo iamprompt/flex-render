@@ -1,18 +1,4 @@
-import type {
-  FlexBox,
-  FlexBubble,
-  FlexButton,
-  FlexCarousel,
-  FlexComponent,
-  FlexContainer,
-  FlexFiller,
-  FlexIcon,
-  FlexImage,
-  FlexSeparator,
-  FlexSpan,
-  FlexText,
-  FlexVideo,
-} from '../types'
+import { FlexSpacer } from '@line/bot-sdk'
 
 import {
   FlexBoxLayoutClassName,
@@ -52,8 +38,22 @@ import {
   isSizeValue,
 } from '@/utils/utils'
 
+import type {
+  FlexBox,
+  FlexBubble,
+  FlexButton,
+  FlexCarousel,
+  FlexComponent,
+  FlexContainer,
+  FlexFiller,
+  FlexIcon,
+  FlexImage,
+  FlexSeparator,
+  FlexSpan,
+  FlexText,
+  FlexVideo,
+} from '../types'
 import { Element } from './dom'
-import { FlexSpacer } from '@line/bot-sdk'
 
 export const render = (flexJSON: FlexContainer) => {
   const preview = new Element('div')
