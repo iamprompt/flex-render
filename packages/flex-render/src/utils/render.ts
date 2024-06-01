@@ -309,7 +309,9 @@ export const renderText = (textJSON: FlexText, parent?: FlexComponent) => {
     for (const contentJSON of textJSON.contents) {
       const content = renderContent(contentJSON, textJSON)
       if (!content) continue
-      text.appendChild(content)
+      const textContent = new Element('p')
+      textContent.appendChild(content)
+      text.appendChild(textContent)
     }
   } else if (textJSON.text) {
     const textContent = new Element('p')
