@@ -304,12 +304,13 @@ export const renderIcon = (iconJSON: FlexIcon, parent?: FlexComponent) => {
 export const renderText = (textJSON: FlexText, parent?: FlexComponent) => {
   let text = new Element('div')
   text.addClassNames(FlexElementClassName.text)
-
   if (textJSON.contents && textJSON.contents.length > 0) {
     for (const contentJSON of textJSON.contents) {
       const content = renderContent(contentJSON, textJSON)
       if (!content) continue
-      text.appendChild(content)
+      const textContent = new Element('p')
+      textContent.appendChild(content)
+      text.appendChild(textContent)
     }
   } else if (textJSON.text) {
     const textContent = new Element('p')
@@ -351,7 +352,6 @@ export const renderSpan = (spanJSON: FlexSpan, parent?: FlexComponent) => {
   span = injectWeight(span, spanJSON.weight)
   span = injectFontStyle(span, spanJSON.style)
   span = injectFontDecoration(span, spanJSON.decoration)
-
   return span
 }
 
