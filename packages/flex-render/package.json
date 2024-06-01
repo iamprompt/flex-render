@@ -1,6 +1,6 @@
 {
   "name": "flex-render",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Utility to render LINE Flex Bubble / Carousel JSON for displaying in website.",
   "keywords": [
     "LINE",

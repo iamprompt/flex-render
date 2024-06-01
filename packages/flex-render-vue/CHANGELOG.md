@@ -1,5 +1,13 @@
 # flex-render-vue
 
+## 0.1.2
+
+### Patch Changes
+
+- Fix span in text component
+- Updated dependencies
+  - flex-render@0.1.5
+
 ## 0.1.1
 
 ### Patch Changes
