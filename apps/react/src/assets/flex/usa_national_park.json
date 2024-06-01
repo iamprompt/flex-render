@@ -1,0 +1,245 @@
+{
+  "type": "bubble",
+  "size": "giga",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "USA National Parks",
+                "color": "#ffffff",
+                "weight": "bold",
+                "align": "center",
+                "size": "xl",
+                "maxLines": 1
+              }
+            ],
+            "paddingBottom": "25px",
+            "paddingTop": "25px"
+          }
+        ],
+        "backgroundColor": "#222222",
+        "paddingStart": "10px",
+        "paddingEnd": "10px"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "filler"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "image",
+                        "size": "full",
+                        "aspectRatio": "1:1",
+                        "aspectMode": "fit",
+                        "url": "https://images.unsplash.com/photo-1604542031658-5799ca5d7936?q=80"
+                      }
+                    ],
+                    "height": "100px",
+                    "cornerRadius": "5px",
+                    "action": {
+                      "type": "uri",
+                      "label": "compactMelody",
+                      "uri": "https://liff.line-beta.me/compact/melody/2538?utm_source=line&utm_medium=share_FMS&utm_campaign=showcase"
+                    }
+                  },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "color": "#353535",
+                        "weight": "bold",
+                        "size": "md",
+                        "wrap": false,
+                        "align": "center",
+                        "contents": [
+                          {
+                            "type": "span",
+                            "text": "Yosemite National Park",
+                            "size": "sm"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "text": "California",
+                        "size": "xs",
+                        "wrap": false,
+                        "color": "#353535",
+                        "align": "center"
+                      }
+                    ],
+                    "width": "100px"
+                  }
+                ],
+                "width": "100px",
+                "spacing": "sm"
+              },
+              {
+                "type": "filler"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "image",
+                        "url": "https://images.unsplash.com/photo-1615551043360-33de8b5f410c?q=80",
+                        "size": "full",
+                        "aspectRatio": "1:1",
+                        "aspectMode": "fit"
+                      }
+                    ],
+                    "height": "100px",
+                    "cornerRadius": "5px",
+                    "action": {
+                      "type": "uri",
+                      "label": "compactMelody",
+                      "uri": "https://liff.line-beta.me/compact/melody/2535?utm_source=line&utm_medium=share_FMS&utm_campaign=showcase"
+                    }
+                  },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "color": "#353535",
+                        "weight": "bold",
+                        "size": "md",
+                        "wrap": false,
+                        "align": "center",
+                        "contents": [
+                          {
+                            "type": "span",
+                            "text": "Grand Canyon",
+                            "size": "sm"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "text": "Arizona",
+                        "size": "xs",
+                        "wrap": false,
+                        "color": "#353535",
+                        "align": "center"
+                      }
+                    ],
+                    "width": "100px"
+                  }
+                ],
+                "width": "100px",
+                "spacing": "sm"
+              },
+              {
+                "type": "filler"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "image",
+                        "url": "https://images.unsplash.com/photo-1606516397986-1eeb79e8c052?q=80",
+                        "size": "full",
+                        "aspectRatio": "1:1",
+                        "aspectMode": "fit"
+                      }
+                    ],
+                    "height": "100px",
+                    "cornerRadius": "5px",
+                    "action": {
+                      "type": "uri",
+                      "label": "compactMelody",
+                      "uri": "https://liff.line-beta.me/compact/melody/2533?utm_source=line&utm_medium=share_FMS&utm_campaign=showcase"
+                    }
+                  },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "color": "#353535",
+                        "weight": "bold",
+                        "size": "md",
+                        "wrap": false,
+                        "align": "center",
+                        "contents": [
+                          {
+                            "type": "span",
+                            "text": "Niagara Falls",
+                            "size": "sm"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "text": "New York",
+                        "size": "xs",
+                        "wrap": false,
+                        "color": "#353535",
+                        "align": "center"
+                      }
+                    ],
+                    "width": "100px"
+                  }
+                ],
+                "width": "100px",
+                "spacing": "sm"
+              },
+              {
+                "type": "filler"
+              }
+            ],
+            "paddingTop": "10px",
+            "paddingBottom": "20px"
+          }
+        ],
+        "paddingTop": "5px",
+        "backgroundColor": "#ffffff"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [],
+        "backgroundColor": "#07B53B"
+      }
+    ],
+    "paddingAll": "0px"
+  }
+}
