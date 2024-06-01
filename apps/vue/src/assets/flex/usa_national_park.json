@@ -59,12 +59,7 @@
                       }
                     ],
                     "height": "100px",
-                    "cornerRadius": "5px",
-                    "action": {
-                      "type": "uri",
-                      "label": "compactMelody",
-                      "uri": "https://liff.line-beta.me/compact/melody/2538?utm_source=line&utm_medium=share_FMS&utm_campaign=showcase"
-                    }
+                    "cornerRadius": "5px"
                   },
                   {
                     "type": "box",
@@ -120,12 +115,7 @@
                       }
                     ],
                     "height": "100px",
-                    "cornerRadius": "5px",
-                    "action": {
-                      "type": "uri",
-                      "label": "compactMelody",
-                      "uri": "https://liff.line-beta.me/compact/melody/2535?utm_source=line&utm_medium=share_FMS&utm_campaign=showcase"
-                    }
+                    "cornerRadius": "5px"
                   },
                   {
                     "type": "box",
@@ -181,12 +171,7 @@
                       }
                     ],
                     "height": "100px",
-                    "cornerRadius": "5px",
-                    "action": {
-                      "type": "uri",
-                      "label": "compactMelody",
-                      "uri": "https://liff.line-beta.me/compact/melody/2533?utm_source=line&utm_medium=share_FMS&utm_campaign=showcase"
-                    }
+                    "cornerRadius": "5px"
                   },
                   {
                     "type": "box",
