@@ -93,7 +93,12 @@
                   }
                 ],
                 "width": "100px",
-                "spacing": "sm"
+                "spacing": "sm",
+                "action": {
+                  "type": "uri",
+                  "label": "yosemite",
+                  "uri": "https://www.nps.gov/yose/index.htm"
+                }
               },
               {
                 "type": "filler"
@@ -149,7 +154,12 @@
                   }
                 ],
                 "width": "100px",
-                "spacing": "sm"
+                "spacing": "sm",
+                "action": {
+                  "type": "message",
+                  "label": "action",
+                  "text": "hello from grand-canyon"
+                }
               },
               {
                 "type": "filler"
@@ -205,7 +215,12 @@
                   }
                 ],
                 "width": "100px",
-                "spacing": "sm"
+                "spacing": "sm",
+                "action": {
+                  "type": "postback",
+                  "label": "niagara-postback",
+                  "data": "hello from niagara-postback"
+                }
               },
               {
                 "type": "filler"

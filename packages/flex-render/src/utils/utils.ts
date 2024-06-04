@@ -455,6 +455,7 @@ export const injectAction = <T extends Element>(element: T, action?: Action) => 
     case 'uri':
       element.setAttribute('target', '_blank')
       element.setAttribute('href', (action as URIAction).uri || '')
+      element.setAttribute('onclick', `window.open('${(action as URIAction).uri || ''}')`)
       break
     case 'message':
       element.setAttribute('onclick', `alert('Send Message: ${(action as MessageAction).text} to chatroom')`)

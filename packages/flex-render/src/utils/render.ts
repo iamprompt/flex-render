@@ -155,7 +155,6 @@ export const renderHero = (heroJSON: FlexBox | FlexImage | FlexVideo) => {
 
 export const renderBox = (boxJSON: FlexBox, parent?: FlexComponent) => {
   let box = new Element('div')
-
   if (boxJSON.contents) {
     for (const contentJSON of boxJSON.contents) {
       const content = renderContent(contentJSON, boxJSON)
@@ -183,7 +182,9 @@ export const renderBox = (boxJSON: FlexBox, parent?: FlexComponent) => {
   box = injectOffset(box, boxJSON)
   box = injectPadding(box, boxJSON)
   box = injectBackground(box, boxJSON.background)
-
+  if (boxJSON.action) {
+    box = injectAction(box, boxJSON.action)
+  }
   return box
 }
 
