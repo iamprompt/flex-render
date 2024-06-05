@@ -50,9 +50,9 @@
   "devDependencies": {
     "@iamprompt/eslint-config": "workspace:^",
     "@iamprompt/typescript-config": "workspace:^",
-    "@line/bot-sdk": "^8.2.0",
-    "esbuild-sass-plugin": "^3.0.0",
-    "tsup": "^8.0.1"
+    "@line/bot-sdk": "^8.4.1",
+    "esbuild-sass-plugin": "^3.3.0",
+    "tsup": "^8.1.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"

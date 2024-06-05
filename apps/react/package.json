@@ -12,23 +12,23 @@
   },
   "dependencies": {
     "flex-render-react": "workspace:^",
-    "lucide-react": "^0.316.0",
-    "react": "^18.2.0",
-    "react-aria-components": "^1.0.1",
-    "react-dom": "^18.2.0"
+    "lucide-react": "^0.383.0",
+    "react": "^18.3.1",
+    "react-aria-components": "^1.2.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@iamprompt/eslint-config": "workspace:^",
     "@iamprompt/typescript-config": "workspace:^",
-    "@types/node": "^20.11.15",
-    "@types/react": "^18.2.48",
-    "@types/react-dom": "^18.2.18",
-    "@vitejs/plugin-react-swc": "^3.5.0",
-    "autoprefixer": "^10.4.17",
-    "eslint": "^8.56.0",
-    "postcss": "^8.4.33",
-    "tailwindcss": "3.4.1",
-    "typescript": "^5.3.3",
-    "vite": "^5.0.12"
+    "@types/node": "^20.14.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react-swc": "^3.7.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "postcss": "^8.4.38",
+    "tailwindcss": "3.4.3",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.12"
   }
 }
