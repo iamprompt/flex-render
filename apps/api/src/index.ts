@@ -1,5 +1,5 @@
 import express from 'express'
-import { render, type FlexContainer } from 'flex-render'
+import { type FlexContainer, render } from 'flex-render'
 
 const app = express()
 
