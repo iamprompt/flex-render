@@ -1,5 +1,11 @@
 # @iamprompt/flex-render
 
+## 0.1.6
+
+### Patch Changes
+
+- Add Flex Box Action
+
 ## 0.1.5
 
 ### Patch Changes
