@@ -1,5 +1,11 @@
 # @iamprompt/flex-render
 
+## 0.1.7
+
+### Patch Changes
+
+- Fix Style Separator
+
 ## 0.1.6
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # flex-render-react
 
+## 0.1.5
+
+### Patch Changes
+
+- Fix Style Separator
+- Updated dependencies
+  - flex-render@0.1.7
+
 ## 0.1.4
 
 ### Patch Changes

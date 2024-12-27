@@ -1,5 +1,13 @@
 # flex-render-vue
 
+## 0.1.4
+
+### Patch Changes
+
+- Fix Style Separator
+- Updated dependencies
+  - flex-render@0.1.7
+
 ## 0.1.3
 
 ### Patch Changes
