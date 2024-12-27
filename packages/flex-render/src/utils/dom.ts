@@ -90,10 +90,7 @@ export class Element {
       .join(' ')
     const className = this.className.join(' ')
     const style = Object.entries(this.style)
-      .map(
-        ([key, value]) =>
-          `${camelCaseToKebabCase(key)}:${value.replace(/"/g, '').replace(/,/g, ';').replace(/\//g, '/')}`,
-      )
+      .map(([key, value]) => `${camelCaseToKebabCase(key)}:${value.replace(/"/g, '').replace(/\//g, '/')}`)
       .join(';')
 
     const tagAttributes = `${attributes !== '' ? attributes : ''} ${

@@ -351,13 +351,13 @@ export const injectBackground = <T extends Element>(element: T, background?: Fle
     const matchCenterPosition = centerPosition?.match(/^([\d.]+)%$/)
     if (!centerColor || !centerPosition) {
       if (matchAngle && matchStartColor && matchEndColor) {
-        element.setStyle('background', `linear-gradient(${angle}deg, ${startColor}, ${endColor})`)
+        element.setStyle('background', `linear-gradient(${angle}, ${startColor} 0%, ${endColor} 100%)`)
       }
     } else {
       if (matchAngle && matchStartColor && matchCenterColor && matchCenterPosition && matchEndColor) {
         element.setStyle(
           'background',
-          `linear-gradient(${angle}deg, ${startColor} 0%, ${centerColor} ${centerPosition}, ${endColor} 100%)`,
+          `linear-gradient(${angle}, ${startColor} 0%, ${centerColor} ${centerPosition}, ${endColor} 100%)`,
         )
       }
     }
