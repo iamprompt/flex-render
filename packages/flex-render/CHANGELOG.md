@@ -1,5 +1,11 @@
 # @iamprompt/flex-render
 
+## 0.1.8
+
+### Patch Changes
+
+- edd783a: Update Dependencies
+
 ## 0.1.7
 
 ### Patch Changes

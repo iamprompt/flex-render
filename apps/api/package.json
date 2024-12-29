@@ -8,17 +8,17 @@
     "prepublish": "tsup",
     "clean": "rm -rf dist",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint src/"
+    "lint": "eslint ./src"
   },
   "devDependencies": {
     "@iamprompt/eslint-config": "workspace:^",
     "@iamprompt/typescript-config": "workspace:^",
-    "@types/express": "^4.17.21",
-    "tsup": "^8.1.0",
-    "typescript": "^5.4.5"
+    "@types/express": "^5.0.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
   },
   "dependencies": {
-    "express": "^4.19.2",
+    "express": "^4.21.2",
     "flex-render": "workspace:^"
   }
 }

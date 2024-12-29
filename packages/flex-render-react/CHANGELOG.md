@@ -1,5 +1,13 @@
 # flex-render-react
 
+## 0.1.6
+
+### Patch Changes
+
+- edd783a: Update Dependencies
+- Updated dependencies [edd783a]
+  - flex-render@0.1.8
+
 ## 0.1.5
 
 ### Patch Changes

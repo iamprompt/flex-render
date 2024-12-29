@@ -1,6 +1,6 @@
 {
   "name": "flex-render-vue",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Vue 3 components for rendering LINE Flex Message",
   "keywords": [
     "LINE",
@@ -23,20 +23,20 @@
     "url": "https://github.com/iamprompt"
   },
   "type": "module",
-  "exports": {
-    ".": {
-      "import": "./dist/flex-preview.js",
-      "require": "./dist/flex-preview.umd.cjs",
-      "types": "./dist/index.d.ts"
-    },
-    "./css": {
-      "import": "./dist/style.css",
-      "require": "./dist/style.css"
-    }
-  },
   "main": "./dist/flex-preview.umd.cjs",
   "module": "./dist/flex-preview.js",
   "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/flex-preview.js",
+      "require": "./dist/flex-preview.umd.cjs"
+    },
+    "./css": {
+      "import": "./dist/flex-preview.css",
+      "require": "./dist/flex-preview.css"
+    }
+  },
   "files": [
     "dist/**"
   ],
@@ -44,7 +44,7 @@
     "build": "pnpm type-check && vite build",
     "clean": "rm -rf dist",
     "dev": "vite build --watch",
-    "lint": "eslint . --ext .ts,.vue",
+    "lint": "eslint .",
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
@@ -53,11 +53,11 @@
   "devDependencies": {
     "@iamprompt/eslint-config": "workspace:^",
     "@iamprompt/typescript-config": "workspace:^",
-    "@vitejs/plugin-vue": "^5.0.5",
-    "typescript": "^5.4.5",
-    "vite": "^5.2.12",
-    "vite-plugin-dts": "^3.9.1",
-    "vue-tsc": "^1.8.27"
+    "@vitejs/plugin-vue": "^5.2.1",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.6",
+    "vite-plugin-dts": "^4.4.0",
+    "vue-tsc": "^2.2.0"
   },
   "peerDependencies": {
     "vue": "^3.4.15"

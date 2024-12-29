@@ -1,6 +1,6 @@
 {
   "name": "flex-render",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Utility to render LINE Flex Bubble / Carousel JSON for displaying in website.",
   "keywords": [
     "LINE",
@@ -24,35 +24,35 @@
   },
   "sideEffects": false,
   "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     "./css": {
       "import": "./dist/index.css",
       "require": "./dist/index.css"
     },
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
-      "require": "./dist/index.cjs",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.cjs"
     }
   },
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "files": [
     "dist/**"
   ],
   "scripts": {
     "build": "tsup",
     "clean": "rm -rf dist",
-    "dev": "tsup --watch --dts --sourcemap --clean",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "dev": "tsup --watch --dts --sourcemap",
+    "lint": "eslint .",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@iamprompt/eslint-config": "workspace:^",
     "@iamprompt/typescript-config": "workspace:^",
     "@line/bot-sdk": "^8.4.1",
-    "esbuild-sass-plugin": "^3.3.0",
-    "tsup": "^8.1.0"
+    "esbuild-sass-plugin": "^3.3.1",
+    "tsup": "^8.3.5"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"

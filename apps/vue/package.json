@@ -7,23 +7,23 @@
     "dev": "vite",
     "build": "vite build",
     "typecheck": "vue-tsc",
-    "lint": "eslint . --ext ts,tsx,vue",
+    "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "flex-render-vue": "workspace:^",
-    "vue": "^3.4.27"
+    "vue": "^3.5.13"
   },
   "devDependencies": {
     "@iamprompt/eslint-config": "workspace:^",
     "@iamprompt/typescript-config": "workspace:^",
-    "@vitejs/plugin-vue": "^5.0.5",
-    "autoprefixer": "^10.4.19",
-    "eslint": "^8.57.0",
-    "postcss": "^8.4.38",
-    "tailwindcss": "3.4.3",
-    "typescript": "^5.4.5",
-    "vite": "^5.2.12",
-    "vue-tsc": "^2.0.19"
+    "@vitejs/plugin-vue": "^5.2.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.17.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "3.4.17",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.6",
+    "vue-tsc": "^2.2.0"
   }
 }
