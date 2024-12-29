@@ -35,8 +35,8 @@ import { Element } from './dom'
 import { renderSeparator } from './render'
 
 export const FlexElementSizeKeyword = ['none', 'xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl', '3xl', '4xl', '5xl', 'full']
-export const FlexElementSizePxRegex = /^(-?[\d\.]+)px$/
-export const FlexElementSizePercentRegex = /^(-?[\d\.]+)%$/
+export const FlexElementSizePxRegex = /^(-?[\d.]+)px$/
+export const FlexElementSizePercentRegex = /^(-?[\d.]+)%$/
 
 export const injectSpacing = <T extends Element>(element: T, spacing: FlexBox['spacing']) => {
   if (!spacing || spacing === 'none') return element
@@ -77,7 +77,9 @@ export const injectMargin = <T extends Element>(
 export const injectAspectMode = <T extends Element>(element: T, aspectMode: FlexImage['aspectMode']) => {
   if (!aspectMode) return element
   const className = FlexImageAspectModeClassName[aspectMode] || undefined
-  className && element.addClassNames(className)
+  if (className) {
+    element.addClassNames(className)
+  }
 
   return element
 }
@@ -105,7 +107,9 @@ export const injectSize = <T extends Element>(
 export const injectWeight = <T extends Element>(element: T, weight?: string) => {
   if (!weight) return element
   const className = FlexTextWeightClassName[weight] || undefined
-  className && element.addClassNames(className)
+  if (className) {
+    element.addClassNames(className)
+  }
   return element
 }
 
@@ -322,7 +326,9 @@ export const injectFlex = <T extends Element>(element: T, flex: FlexBox['flex'])
 export const injectButtonStyle = <T extends Element>(element: T, style: FlexButton['style']) => {
   if (!style) return element
   const className = FlexButtonStyleClassName[style] || undefined
-  className && element.addClassNames(className)
+  if (className) {
+    element.addClassNames(className)
+  }
   return element
 }
 
@@ -418,14 +424,18 @@ export const injectIconAspectRatio = <T extends Element>(element: T, aspectRatio
 export const injectFontStyle = <T extends Element>(element: T, fontStyle: FlexText['style']) => {
   if (!fontStyle) return element
   const className = FlexTextStylesClassName[fontStyle] || undefined
-  className && element.addClassNames(className)
+  if (className) {
+    element.addClassNames(className)
+  }
   return element
 }
 
 export const injectFontDecoration = <T extends Element>(element: T, decoration: FlexText['decoration']) => {
   if (!decoration) return element
   const className = FlexTextDecorationClassName[decoration] || undefined
-  className && element.addClassNames(className)
+  if (className) {
+    element.addClassNames(className)
+  }
   return element
 }
 

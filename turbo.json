@@ -15,7 +15,23 @@
       "cache": false
     },
     "build": {
-      "dependsOn": ["^build"]
+      "outputs": ["dist/**"],
+      "dependsOn": ["^clean", "^lint"]
+    },
+    "flex-render-vue#build": {
+      "dependsOn": ["^flex-render#build"]
+    },
+    "flex-render-react#build": {
+      "dependsOn": ["^flex-render#build"]
+    },
+    "flex-render-api-example#build": {
+      "dependsOn": ["^flex-render#build"]
+    },
+    "flex-render-vue-example#build": {
+      "dependsOn": ["^flex-render-vue#build"]
+    },
+    "flex-render-react-example#build": {
+      "dependsOn": ["^flex-render-react#build"]
     }
   }
 }

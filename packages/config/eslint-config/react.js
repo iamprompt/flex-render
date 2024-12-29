@@ -1,83 +1,36 @@
-const { resolve } = require('node:path')
+import pluginReact from 'eslint-plugin-react'
+import pluginReactHooks from 'eslint-plugin-react-hooks'
+import globals from 'globals'
 
-const project = resolve(process.cwd(), 'tsconfig.json')
+import { config as baseConfig } from './index.js'
 
-/*
- * This is a custom ESLint configuration for use a library
- * that utilizes React.
+/**
+ * A custom ESLint configuration for libraries that use React.
  *
- * This config extends the Vercel Engineering Style Guide.
- * For more information, see https://github.com/vercel/style-guide
- *
- */
-/** @type {import("eslint").Linter.Config} */
-module.exports = {
-  extends: ['eslint:recommended', 'turbo', 'plugin:prettier/recommended'],
-  plugins: ['only-warn', 'unused-imports', 'simple-import-sort', 'import'],
-  parser: '@typescript-eslint/parser',
-  globals: {
-    React: true,
-    JSX: true,
-  },
-  env: {
-    node: true,
-  },
-  settings: {
-    'import/resolver': {
-      typescript: {
-        project,
+ * @type {import("eslint").Linter.Config[]} */
+export const config = [
+  ...baseConfig,
+  // @ts-expect-error Flat configs exist.
+  pluginReact.configs.flat.recommended,
+  {
+    languageOptions: {
+      // @ts-expect-error Flat configs exist.
+      ...pluginReact.configs.flat.recommended.languageOptions,
+      globals: {
+        ...globals.serviceworker,
+        ...globals.browser,
       },
     },
   },
-  rules: {
-    '@typescript-eslint/no-unused-vars': 'off',
-    'unused-imports/no-unused-imports': 'error',
-    'unused-imports/no-unused-vars': [
-      'warn',
-      {
-        vars: 'all',
-        varsIgnorePattern: '^_',
-        args: 'after-used',
-        argsIgnorePattern: '^_',
-      },
-    ],
-    'simple-import-sort/imports': [
-      'error',
-      {
-        groups: [
-          // Side effect imports.
-          ['^\\u0000'],
-          // Node.js builtins prefixed with `node:`.
-          ['^node:'],
-          // ViteJS Packages
-          ['^vite', '^@vitejs/', '^react'],
-          // Packages.
-          // Things that start with a letter (or digit or underscore), or `@` followed by a letter.
-          ['^@?\\w'],
-          // Absolute imports and other imports such as Vue-style `@/foo`.
-          // Anything not matched in another group.
-          ['^'],
-          // Relative imports.
-          // Anything that starts with a dot.
-          ['^\\.'],
-        ],
-      },
-    ],
-    'simple-import-sort/exports': 'error',
-    'import/first': 'error',
-    'import/newline-after-import': 'error',
-    'import/no-duplicates': 'error',
-  },
-  ignorePatterns: [
-    // Ignore dotfiles
-    '.*.js',
-    'node_modules/',
-    'dist/',
-    '.turbo/',
-  ],
-  overrides: [
-    {
-      files: ['*.js?(x)', '*.ts?(x)'],
+  {
+    plugins: {
+      'react-hooks': pluginReactHooks,
     },
-  ],
-}
+    settings: { react: { version: 'detect' } },
+    rules: {
+      ...pluginReactHooks.configs.recommended.rules,
+      // React scope no longer necessary with new JSX transform.
+      'react/react-in-jsx-scope': 'off',
+    },
+  },
+]

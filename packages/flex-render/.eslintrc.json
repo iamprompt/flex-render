@@ -1,7 +1,0 @@
-{
-  "extends": ["@iamprompt/eslint-config"],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "project": true
-  }
-}

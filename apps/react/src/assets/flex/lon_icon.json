@@ -1,0 +1,441 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "image",
+        "url": "https://vos.line-scdn.net/lon-msg-dsgn/lon-logo-white.png",
+        "size": "80%",
+        "gravity": "center",
+        "align": "center",
+        "flex": 2
+      },
+      {
+        "type": "text",
+        "weight": "regular",
+        "color": "#ffffffff",
+        "align": "center",
+        "size": "14px",
+        "flex": 20,
+        "wrap": true,
+        "gravity": "center",
+        "position": "relative",
+        "contents": [
+          {
+            "type": "span",
+            "text": "OFFICIAL NOTIFICATION"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "powered by",
+        "flex": 7,
+        "align": "end",
+        "color": "#ffffffff",
+        "gravity": "center",
+        "contents": [
+          {
+            "type": "span",
+            "text": "powered by",
+            "style": "italic",
+            "size": "10px",
+            "weight": "regular"
+          }
+        ],
+        "wrap": true,
+        "offsetTop": "0.3px"
+      },
+      {
+        "type": "text",
+        "text": "powered by",
+        "flex": 4,
+        "align": "center",
+        "color": "#ffffffff",
+        "gravity": "center",
+        "wrap": true,
+        "contents": [
+          {
+            "type": "span",
+            "text": " LINE",
+            "weight": "bold",
+            "size": "12px"
+          }
+        ]
+      }
+    ],
+    "offsetTop": "none",
+    "paddingAll": "none",
+    "paddingTop": "md",
+    "paddingBottom": "md",
+    "paddingStart": "lg",
+    "paddingEnd": "lg"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "image",
+        "url": "https://vos.line-scdn.net/lon-msg-icons/plane-departure_bold.png",
+        "size": "65px"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "weight": "bold",
+            "size": "lg",
+            "wrap": true,
+            "contents": [
+              {
+                "type": "span",
+                "text": "Flight Confirmation"
+              }
+            ],
+            "align": "center"
+          }
+        ],
+        "paddingTop": "none",
+        "offsetTop": "none",
+        "offsetBottom": "none"
+      },
+      {
+        "type": "separator",
+        "margin": "md"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Flight Number:",
+                "flex": 3,
+                "color": "#aaaaaa",
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": "LA1234567",
+                "flex": 5,
+                "size": "sm",
+                "color": "#666666",
+                "wrap": true,
+                "offsetStart": "md"
+              }
+            ],
+            "spacing": "sm"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Departure:",
+                "flex": 3,
+                "color": "#aaaaaa",
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": "14/04/2023 01:20",
+                "flex": 5,
+                "size": "sm",
+                "color": "#666666",
+                "wrap": true,
+                "offsetStart": "md"
+              }
+            ],
+            "spacing": "sm"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Origin:",
+                "flex": 3,
+                "color": "#aaaaaa",
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": "Suvarnabhumi Airport (BKK)",
+                "flex": 5,
+                "size": "sm",
+                "color": "#666666",
+                "wrap": true,
+                "offsetStart": "md"
+              }
+            ],
+            "spacing": "sm"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Arrival:",
+                "flex": 3,
+                "color": "#aaaaaa",
+                "size": "sm",
+                "wrap": true
+              },
+              {
+                "type": "text",
+                "text": "14/04/2023 07:00",
+                "flex": 5,
+                "size": "sm",
+                "color": "#666666",
+                "wrap": true,
+                "offsetStart": "md"
+              }
+            ],
+            "spacing": "sm"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Destination:",
+                "flex": 3,
+                "color": "#aaaaaa",
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": "Barcelona-El Prat Airport (BCN)",
+                "flex": 5,
+                "size": "sm",
+                "color": "#666666",
+                "wrap": true,
+                "offsetStart": "md"
+              }
+            ],
+            "spacing": "sm"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Status:",
+                "flex": 3,
+                "color": "#aaaaaa",
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": "Confirmed",
+                "flex": 5,
+                "size": "sm",
+                "color": "#666666",
+                "wrap": true,
+                "offsetStart": "md"
+              }
+            ],
+            "spacing": "sm"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Paid Amount:",
+                "flex": 3,
+                "color": "#aaaaaa",
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": "32,890.00 THB",
+                "flex": 5,
+                "size": "sm",
+                "color": "#666666",
+                "wrap": true,
+                "offsetStart": "md"
+              }
+            ],
+            "spacing": "sm"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Reference:",
+                "flex": 3,
+                "color": "#aaaaaa",
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": "MDV66N",
+                "flex": 5,
+                "size": "sm",
+                "color": "#666666",
+                "wrap": true,
+                "offsetStart": "md"
+              }
+            ],
+            "spacing": "sm"
+          }
+        ],
+        "margin": "lg"
+      },
+      {
+        "type": "separator",
+        "margin": "md"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "text",
+            "contents": [
+              {
+                "type": "span",
+                "text": "Thank you for flying with LINE Airways. We are pleased to inform that your flight booking has been confirmed."
+              }
+            ],
+            "wrap": true,
+            "offsetTop": "none"
+          }
+        ],
+        "paddingTop": "lg"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "secondary",
+            "height": "sm",
+            "action": {
+              "type": "uri",
+              "label": "View E-Ticket",
+              "uri": "https://linecorp.com"
+            },
+            "color": "#eeeeee",
+            "offsetTop": "none",
+            "offsetBottom": "none",
+            "offsetStart": "none",
+            "offsetEnd": "none",
+            "gravity": "bottom",
+            "margin": "none"
+          }
+        ],
+        "flex": 0,
+        "borderColor": "#F6F6F6",
+        "offsetBottom": "none",
+        "paddingBottom": "sm",
+        "paddingTop": "lg",
+        "offsetTop": "none",
+        "offsetStart": "none"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "secondary",
+            "height": "sm",
+            "action": {
+              "type": "uri",
+              "label": "Manage Booking",
+              "uri": "https://linecorp.com"
+            },
+            "color": "#eeeeee",
+            "offsetTop": "none",
+            "offsetBottom": "none",
+            "offsetStart": "none",
+            "offsetEnd": "none",
+            "gravity": "bottom",
+            "margin": "none"
+          }
+        ],
+        "flex": 0,
+        "borderColor": "#F6F6F6",
+        "offsetBottom": "none",
+        "paddingBottom": "sm",
+        "paddingTop": "lg",
+        "offsetTop": "none",
+        "offsetStart": "none"
+      }
+    ],
+    "paddingAll": "none",
+    "paddingTop": "lg",
+    "paddingBottom": "lg",
+    "paddingStart": "xxl",
+    "paddingEnd": "xxl"
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "text",
+        "contents": [
+          {
+            "type": "span",
+            "text": "Learn more about LINE Official Notification ",
+            "color": "#BDBDBD"
+          },
+          {
+            "type": "span",
+            "text": "here",
+            "decoration": "underline",
+            "color": "#00b4ff"
+          },
+          {
+            "type": "span",
+            "text": ".",
+            "color": "#BDBDBD"
+          }
+        ],
+        "wrap": true,
+        "size": "10px",
+        "align": "center"
+      }
+    ],
+    "margin": "none",
+    "borderWidth": "none",
+    "paddingTop": "sm",
+    "paddingBottom": "md",
+    "action": {
+      "type": "uri",
+      "label": "action",
+      "uri": "https://today.line.me/th/v2/article/PGjoaWV"
+    }
+  },
+  "styles": {
+    "header": {
+      "backgroundColor": "#06C755"
+    },
+    "footer": {
+      "backgroundColor": "#EEEEEE"
+    }
+  }
+}

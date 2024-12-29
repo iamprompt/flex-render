@@ -33,7 +33,6 @@ import {
   injectSpacing,
   injectWeight,
   injectWrap,
-  isHorizontalLayout,
   isSizeKeyword,
   isSizeValue,
 } from '@/utils/utils'
@@ -109,7 +108,11 @@ export const renderBubble = (flexJSON: FlexBubble) => {
 
   if (flexJSON.body) {
     let body = renderSection('body', flexJSON.body)
-    flexJSON.footer && body.addClassNames('ExHasFooter')
+
+    if (flexJSON.footer) {
+      body.addClassNames('ExHasFooter')
+    }
+
     const [bodyWithStyle, bodyBubbleStyled] = injectSectionStyle(body, flexJSON.styles?.body, 'body', bubble)
     body = bodyWithStyle
     bubble = bodyBubbleStyled
@@ -271,7 +274,7 @@ export const renderImage = (imageJSON: FlexImage, parent?: FlexComponent) => {
 
   let imageWrapper = new Element('div')
   if (isSizeValue(imageJSON.size || 'md')) {
-    imageWrapper = injectSize(imageWrapper, imageJSON.size, isHorizontalLayout(parent) ? 'width' : 'height')
+    imageWrapper = injectSize(imageWrapper, imageJSON.size, 'width')
   }
   imageWrapper.appendChild(imageInner)
   image.appendChild(imageWrapper)
@@ -295,7 +298,7 @@ export const renderIcon = (iconJSON: FlexIcon, parent?: FlexComponent) => {
   icon = injectOffset(icon, iconJSON)
   icon = injectFlex(icon, 0)
 
-  let iconInner = new Element('div')
+  const iconInner = new Element('div')
   iconInner.appendChild(iconContent)
   icon.appendChild(iconInner)
 
@@ -307,13 +310,13 @@ export const renderText = (textJSON: FlexText, parent?: FlexComponent) => {
   text.addClassNames(FlexElementClassName.text)
 
   if (textJSON.contents && textJSON.contents.length > 0) {
+    const textContent = new Element('p')
     for (const contentJSON of textJSON.contents) {
       const content = renderContent(contentJSON, textJSON)
       if (!content) continue
-      const textContent = new Element('p')
       textContent.appendChild(content)
-      text.appendChild(textContent)
     }
+    text.appendChild(textContent)
   } else if (textJSON.text) {
     const textContent = new Element('p')
     textContent.setTextContent(textJSON.text)

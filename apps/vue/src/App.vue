@@ -8,14 +8,19 @@ import { FlexModules } from './utils/flex'
 
 <template>
   <div class="m-8">
-    <div v-for="item in FlexModules" :key="item.id">
+    <div v-for="item in FlexModules"
+:key="item.id">
       <div class="flex mt-8 mb-4 flex-col sm:flex-row sm:items-baseline">
         <div class="flex flex-row space-x-4">
-          <h2 class="font-bold text-3xl text-white">{{ item.title || item.id }}</h2>
+          <h2 class="font-bold text-3xl text-white">
+            {{ item.title || item.id }}
+          </h2>
         </div>
-        <span v-if="item.author" class="sm:ml-4 text-white text-sm">
+        <span v-if="item.author"
+class="sm:ml-4 text-white text-sm">
           (By
-          <a :href="item.authorUrl || '#'" rel="noreferrer" target="_blank"> {{ item.author }} </a>)
+          <a :href="item.authorUrl || '#'"
+rel="noreferrer" target="_blank"> {{ item.author }} </a>)
         </span>
       </div>
       <FlexPreview :json="item.json" />

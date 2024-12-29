@@ -1,6 +1,5 @@
-import { useEffect, useState } from 'react'
-
 import { Check, Copy } from 'lucide-react'
+import { useEffect, useState } from 'react'
 
 function CopyButton({ text }: { text: string }) {
   const [copied, setCopied] = useState(false)

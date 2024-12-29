@@ -1,6 +1,5 @@
-import { Button, Dialog, DialogTrigger, Modal, OverlayArrow, Tooltip, TooltipTrigger } from 'react-aria-components'
-
 import { Code2, X } from 'lucide-react'
+import { Button, Dialog, DialogTrigger, Modal, OverlayArrow, Tooltip, TooltipTrigger } from 'react-aria-components'
 
 import CopyButton from './CopyButton'
 
