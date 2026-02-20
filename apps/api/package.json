@@ -13,12 +13,12 @@
   "devDependencies": {
     "@iamprompt/eslint-config": "workspace:^",
     "@iamprompt/typescript-config": "workspace:^",
-    "@types/express": "^5.0.0",
-    "tsup": "^8.3.5",
-    "typescript": "^5.7.2"
+    "@types/express": "^5.0.6",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
   },
   "dependencies": {
-    "express": "^4.21.2",
+    "express": "^5.2.1",
     "flex-render": "workspace:^"
   }
 }

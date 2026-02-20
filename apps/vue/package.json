@@ -12,18 +12,20 @@
   },
   "dependencies": {
     "flex-render-vue": "workspace:^",
-    "vue": "^3.5.13"
+    "vue": "^3.5.28"
   },
   "devDependencies": {
     "@iamprompt/eslint-config": "workspace:^",
     "@iamprompt/typescript-config": "workspace:^",
-    "@vitejs/plugin-vue": "^5.2.1",
-    "autoprefixer": "^10.4.20",
-    "eslint": "^9.17.0",
-    "postcss": "^8.4.49",
-    "tailwindcss": "3.4.17",
-    "typescript": "^5.7.2",
-    "vite": "^6.0.6",
-    "vue-tsc": "^2.2.0"
+    "@tailwindcss/postcss": "^4.2.0",
+    "@tailwindcss/vite": "^4.2.0",
+    "@vitejs/plugin-vue": "^6.0.4",
+    "autoprefixer": "^10.4.24",
+    "eslint": "^10.0.1",
+    "postcss": "^8.5.6",
+    "tailwindcss": "4.2.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vue-tsc": "^3.2.4"
   }
 }

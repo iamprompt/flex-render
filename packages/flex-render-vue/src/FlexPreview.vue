@@ -2,7 +2,6 @@
 import 'flex-render/css'
 
 import { type FlexContainer, render } from 'flex-render'
-import { defineProps } from 'vue'
 
 defineProps<{ json: FlexContainer }>()
 </script>

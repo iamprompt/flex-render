@@ -1,5 +1,3 @@
-import { FlexSpacer } from '@line/bot-sdk'
-
 import {
   FlexBoxLayoutClassName,
   FlexBubbleDirectionClassName,
@@ -48,6 +46,7 @@ import type {
   FlexIcon,
   FlexImage,
   FlexSeparator,
+  FlexSpacer,
   FlexSpan,
   FlexText,
   FlexVideo,
@@ -194,25 +193,25 @@ export const renderBox = (boxJSON: FlexBox, parent?: FlexComponent) => {
 export const renderContent = (contentJSON: FlexComponent, parent?: FlexComponent) => {
   switch (contentJSON.type) {
     case 'box':
-      return renderBox(contentJSON as FlexBox, parent)
+      return renderBox(contentJSON, parent)
     case 'button':
-      return renderButton(contentJSON as FlexButton, parent)
+      return renderButton(contentJSON, parent)
     case 'image':
-      return renderImage(contentJSON as FlexImage, parent)
+      return renderImage(contentJSON, parent)
     case 'video':
-      return renderVideo(contentJSON as FlexVideo, parent)
+      return renderVideo(contentJSON, parent)
     case 'icon':
-      return renderIcon(contentJSON as FlexIcon, parent)
+      return renderIcon(contentJSON, parent)
     case 'text':
-      return renderText(contentJSON as FlexText, parent)
+      return renderText(contentJSON, parent)
     case 'span':
-      return renderSpan(contentJSON as FlexSpan, parent)
+      return renderSpan(contentJSON, parent)
     case 'separator':
-      return renderSeparator(contentJSON as FlexSeparator, parent)
+      return renderSeparator(contentJSON, parent)
     case 'filler':
-      return renderFiller(contentJSON as FlexFiller, parent)
+      return renderFiller(contentJSON, parent)
     case 'spacer':
-      return renderSpacer(contentJSON as FlexSpacer, parent)
+      return renderSpacer(contentJSON, parent)
     default:
       return null
   }
@@ -278,8 +277,6 @@ export const renderImage = (imageJSON: FlexImage, parent?: FlexComponent) => {
   }
   imageWrapper.appendChild(imageInner)
   image.appendChild(imageWrapper)
-
-  // console.log(image)
 
   return image
 }

@@ -1,4 +1,4 @@
-export const FlexBubbleSizeClassName = {
+export const FlexBubbleSizeClassName: Record<string, string> = {
   giga: 'LyGi',
   mega: 'LyMe',
   kilo: 'LyKi',
@@ -8,19 +8,19 @@ export const FlexBubbleSizeClassName = {
   nano: 'LyNa',
 }
 
-export const FlexBubbleDirectionClassName = {
+export const FlexBubbleDirectionClassName: Record<string, string> = {
   ltr: 'fxLTR',
   rtl: 'fxRTL',
 }
 
-export const FlexSectionClassName = {
+export const FlexSectionClassName: Record<string, string> = {
   header: 't1Header',
   hero: 't1Hero',
   body: 't1Body',
   footer: 't1Footer',
 }
 
-export const FlexElementClassName = {
+export const FlexElementClassName: Record<string, string> = {
   box: 'MdBx',
   text: 'MdTxt',
   icon: 'MdIco',
@@ -33,13 +33,13 @@ export const FlexElementClassName = {
   spacer: 'mdBxSpacer',
 }
 
-export const FlexBoxLayoutClassName = {
+export const FlexBoxLayoutClassName: Record<string, string> = {
   vertical: 'vr',
   horizontal: 'hr',
   baseline: 'hr bl',
 }
 
-export const FlexElementPositionClassName = {
+export const FlexElementPositionClassName: Record<string, string> = {
   relative: '',
   absolute: 'ExAbs',
 }
@@ -64,7 +64,7 @@ export const FlexElementMarginClassName: Record<string, string> = {
   xxl: 'ExMgnTXXl',
 }
 
-export const FlexButtonStyleClassName = {
+export const FlexButtonStyleClassName: Record<string, string> = {
   link: 'ExBtnL',
   primary: 'ExBtn1',
   secondary: 'ExBtn2',
@@ -89,19 +89,19 @@ export const FlexImageSizeClassName: Record<string, string> = {
   full: 'ExFull',
 }
 
-export const FlexElementAlignClassName = {
+export const FlexElementAlignClassName: Record<string, string> = {
   start: 'ExAlgS',
   end: 'ExAlgE',
   center: 'ExAlgC',
 }
 
-export const FlexElementGravityClassName = {
+export const FlexElementGravityClassName: Record<string, string> = {
   top: '',
   bottom: 'grvB',
   center: 'grvC',
 }
 
-export const FlexBoxJustifyContentClassName = {
+export const FlexBoxJustifyContentClassName: Record<string, string> = {
   center: 'itms-jfcC',
   'flex-start': 'itms-jfcS',
   'flex-end': 'itms-jfcE',
@@ -110,7 +110,7 @@ export const FlexBoxJustifyContentClassName = {
   'space-evenly': 'itms-jfcSE',
 }
 
-export const FlexBoxAlignItemsClassName = {
+export const FlexBoxAlignItemsClassName: Record<string, string> = {
   center: 'itms-algC',
   'flex-start': 'itms-algS',
   'flex-end': 'itms-algE',
