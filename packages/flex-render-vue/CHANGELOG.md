@@ -1,5 +1,13 @@
 # flex-render-vue
 
+## 0.1.6
+
+### Patch Changes
+
+- chore: remove unused dependencies and update versions
+- Updated dependencies
+  - flex-render@0.1.9
+
 ## 0.1.5
 
 ### Patch Changes
