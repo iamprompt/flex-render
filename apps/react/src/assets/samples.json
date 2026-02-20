@@ -2,6 +2,8 @@
   {
     "id": "restaurant",
     "title": "Restaurant",
+    "category": "Food & Dining",
+    "icon": "restaurant",
     "pictureUrl": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/captcha1.png",
     "author": "LINE",
     "authorUrl": "https://developers.line.biz/flex-simulator/"
@@ -9,6 +11,8 @@
   {
     "id": "apparel",
     "title": "Apparel",
+    "category": "E-Commerce",
+    "icon": "checkroom",
     "pictureUrl": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/captcha13.png",
     "author": "LINE",
     "authorUrl": "https://developers.line.biz/flex-simulator/"
@@ -16,6 +20,8 @@
   {
     "id": "hotel",
     "title": "Hotel",
+    "category": "Bookings",
+    "icon": "hotel",
     "pictureUrl": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/captcha8.png",
     "author": "LINE",
     "authorUrl": "https://developers.line.biz/flex-simulator/"
@@ -23,6 +29,8 @@
   {
     "id": "localsearch",
     "title": "Local Search",
+    "category": "Utility",
+    "icon": "location_on",
     "pictureUrl": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/captcha12.png",
     "author": "LINE",
     "authorUrl": "https://developers.line.biz/flex-simulator/"
@@ -30,6 +38,8 @@
   {
     "id": "realestate",
     "title": "Real Estate",
+    "category": "E-Commerce",
+    "icon": "home",
     "pictureUrl": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/captcha11.png",
     "author": "LINE",
     "authorUrl": "https://developers.line.biz/flex-simulator/"
@@ -37,13 +47,17 @@
   {
     "id": "social",
     "title": "Social",
+    "category": "Social",
+    "icon": "group",
     "pictureUrl": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/captcha10.png",
     "author": "LINE",
     "authorUrl": "https://developers.line.biz/flex-simulator/"
   },
   {
     "id": "todoapp",
-    "title": "TODO app",
+    "title": "TODO App",
+    "category": "Utility",
+    "icon": "checklist",
     "pictureUrl": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/captcha7.png",
     "author": "LINE",
     "authorUrl": "https://developers.line.biz/flex-simulator/"
@@ -51,6 +65,8 @@
   {
     "id": "transit",
     "title": "Transit",
+    "category": "Travel",
+    "icon": "directions_transit",
     "pictureUrl": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/captcha9.png",
     "author": "LINE",
     "authorUrl": "https://developers.line.biz/flex-simulator/"
@@ -58,6 +74,8 @@
   {
     "id": "receipt",
     "title": "Receipt",
+    "category": "E-Commerce",
+    "icon": "receipt_long",
     "pictureUrl": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/captcha3.png",
     "author": "LINE",
     "authorUrl": "https://developers.line.biz/flex-simulator/"
@@ -65,6 +83,8 @@
   {
     "id": "shopping",
     "title": "Shopping",
+    "category": "E-Commerce",
+    "icon": "shopping_cart",
     "pictureUrl": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/captcha4.png",
     "author": "LINE",
     "authorUrl": "https://developers.line.biz/flex-simulator/"
@@ -72,6 +92,8 @@
   {
     "id": "menu",
     "title": "Menu",
+    "category": "Food & Dining",
+    "icon": "restaurant_menu",
     "pictureUrl": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/captcha5.png",
     "author": "LINE",
     "authorUrl": "https://developers.line.biz/flex-simulator/"
@@ -79,6 +101,8 @@
   {
     "id": "ticket",
     "title": "Ticket",
+    "category": "Events & Entertainment",
+    "icon": "confirmation_number",
     "pictureUrl": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/captcha6.png",
     "author": "LINE",
     "authorUrl": "https://developers.line.biz/flex-simulator/"
@@ -86,276 +110,360 @@
   {
     "id": "betask",
     "title": "BeTask",
+    "category": "Utility",
+    "icon": "task_alt",
     "author": "Pamorn Trivorrarat",
     "authorUrl": "https://www.facebook.com/pamornt"
   },
   {
     "id": "license_plate",
     "title": "License Plate",
+    "category": "Utility",
+    "icon": "directions_car",
     "author": "Pamorn Trivorrarat",
     "authorUrl": "https://www.facebook.com/pamornt"
   },
   {
     "id": "boarding_pass",
     "title": "Boarding Pass",
+    "category": "Bookings",
+    "icon": "flight",
     "author": "Siratee Kittiwitchaowakul",
     "authorUrl": "https://www.facebook.com/sirateek"
   },
   {
     "id": "gas_price",
     "title": "Gas Price",
+    "category": "Utility",
+    "icon": "local_gas_station",
     "author": "Wasupak Charoensin",
     "authorUrl": "https://www.facebook.com/wasupak"
   },
   {
     "id": "sw_default",
     "title": "Sawasdee Studio - Default",
+    "category": "Design",
+    "icon": "palette",
     "author": "Supakarn Laorattanakul",
     "authorUrl": "https://www.facebook.com/wearedprompt"
   },
   {
     "id": "sw_simple",
     "title": "Sawasdee Studio - Simple",
+    "category": "Design",
+    "icon": "palette",
     "author": "Supakarn Laorattanakul",
     "authorUrl": "https://www.facebook.com/wearedprompt"
   },
   {
     "id": "sw_square",
     "title": "Sawasdee Studio - Square",
+    "category": "Design",
+    "icon": "palette",
     "author": "Pichasamon Phairod",
     "authorUrl": "https://www.facebook.com/nutto.phairod"
   },
   {
     "id": "post_tracking",
     "title": "Post Tracking",
+    "category": "Utility",
+    "icon": "local_shipping",
     "author": "Pamorn Trivorrarat",
     "authorUrl": "https://www.facebook.com/pamornt"
   },
   {
     "id": "world_cup_2022_score",
     "title": "World Cup 2022 Score",
+    "category": "Sports",
+    "icon": "sports_soccer",
     "author": "Pamorn Trivorrarat",
     "authorUrl": "https://www.facebook.com/pamornt"
   },
   {
     "id": "bar_chart",
     "title": "Bar Chart",
+    "category": "Utility",
+    "icon": "bar_chart",
     "author": "Pamorn Trivorrarat",
     "authorUrl": "https://www.facebook.com/pamornt"
   },
   {
     "id": "restaurant_queue",
     "title": "Restaurant Queue",
+    "category": "Food & Dining",
+    "icon": "queue",
     "author": "Siratee Kittiwitchaowakul",
     "authorUrl": "https://www.facebook.com/sirateek"
   },
   {
     "id": "world_cup_2018_table",
     "title": "World Cup 2018 Table",
+    "category": "Sports",
+    "icon": "sports_soccer",
     "author": "Sitthi Thiammekha",
     "authorUrl": "https://www.facebook.com/sitthi.thiammekha"
   },
   {
     "id": "world_cup_2018_stats",
     "title": "World Cup 2018 Stats",
+    "category": "Sports",
+    "icon": "analytics",
     "author": "Sitthi Thiammekha",
     "authorUrl": "https://www.facebook.com/sitthi.thiammekha"
   },
   {
     "id": "world_cup_2018_schedule",
     "title": "World Cup 2018 Schedule",
+    "category": "Sports",
+    "icon": "calendar_month",
     "author": "Sitthi Thiammekha",
     "authorUrl": "https://www.facebook.com/sitthi.thiammekha"
   },
   {
     "id": "world_cup_2018_menu",
     "title": "World Cup 2018 Menu",
+    "category": "Sports",
+    "icon": "sports_soccer",
     "author": "Sitthi Thiammekha",
     "authorUrl": "https://www.facebook.com/sitthi.thiammekha"
   },
   {
     "id": "world_cup_2018_match",
     "title": "World Cup 2018 Match",
+    "category": "Sports",
+    "icon": "sports_score",
     "author": "Sitthi Thiammekha",
     "authorUrl": "https://www.facebook.com/sitthi.thiammekha"
   },
   {
     "id": "world_cup_2018_h2h",
     "title": "World Cup 2018 Head to Head",
+    "category": "Sports",
+    "icon": "compare_arrows",
     "author": "Sitthi Thiammekha",
     "authorUrl": "https://www.facebook.com/sitthi.thiammekha"
   },
   {
     "id": "travel_insurance_summary",
     "title": "Travel Insurance Summary",
+    "category": "Finance & Payments",
+    "icon": "shield",
     "author": "Sitthi Thiammekha",
     "authorUrl": "https://www.facebook.com/sitthi.thiammekha"
   },
   {
     "id": "boarding_pass_1",
     "title": "Boarding Pass",
+    "category": "Bookings",
+    "icon": "flight",
     "author": "Aomsin",
     "authorUrl": ""
   },
   {
     "id": "order_confirm",
     "title": "Order Confirm",
+    "category": "E-Commerce",
+    "icon": "check_circle",
     "author": "Aomsin",
     "authorUrl": ""
   },
   {
     "id": "music_album",
     "title": "Music Album",
+    "category": "Events & Entertainment",
+    "icon": "album",
     "author": "Bom",
     "authorUrl": ""
   },
   {
     "id": "loyalty_card",
     "title": "Loyalty Card",
+    "category": "E-Commerce",
+    "icon": "loyalty",
     "author": "Cartoon",
     "authorUrl": ""
   },
   {
     "id": "profile",
     "title": "Profile",
+    "category": "Social",
+    "icon": "person",
     "author": "Champoo",
     "authorUrl": ""
   },
   {
     "id": "wedding_agenda",
     "title": "Wedding Agenda",
+    "category": "Events & Entertainment",
+    "icon": "favorite",
     "author": "Champoo",
     "authorUrl": ""
   },
   {
     "id": "alarm_clock",
     "title": "Alarm Clock",
+    "category": "Utility",
+    "icon": "alarm",
     "author": "Clear",
     "authorUrl": ""
   },
   {
     "id": "rating",
     "title": "Rating",
+    "category": "Social",
+    "icon": "star",
     "author": "Clear",
     "authorUrl": ""
   },
   {
     "id": "flight_price",
     "title": "Flight Price",
+    "category": "Travel",
+    "icon": "flight",
     "author": "Clear",
     "authorUrl": ""
   },
   {
     "id": "flight_status",
     "title": "Flight Status",
+    "category": "Travel",
+    "icon": "flight_takeoff",
     "author": "Clear",
     "authorUrl": ""
   },
   {
     "id": "my_playlist",
     "title": "My Playlist",
+    "category": "Events & Entertainment",
+    "icon": "queue_music",
     "author": "Clear",
     "authorUrl": ""
   },
   {
     "id": "event_promotion",
     "title": "Event Promotion",
+    "category": "Events & Entertainment",
+    "icon": "celebration",
     "author": "Clear",
     "authorUrl": ""
   },
   {
     "id": "installment_invoice",
     "title": "Installment Invoice",
+    "category": "Finance & Payments",
+    "icon": "receipt",
     "author": "Green",
     "authorUrl": ""
   },
   {
     "id": "lottery_result",
     "title": "Lottery Result",
+    "category": "Events & Entertainment",
+    "icon": "casino",
     "author": "Guy",
     "authorUrl": ""
   },
   {
     "id": "product_display",
     "title": "Product Display",
+    "category": "E-Commerce",
+    "icon": "shopping_bag",
     "author": "Iew",
     "authorUrl": ""
   },
   {
     "id": "store_review",
     "title": "Store Review",
+    "category": "E-Commerce",
+    "icon": "storefront",
     "author": "Bam",
     "authorUrl": ""
   },
   {
     "id": "food_payment",
     "title": "Food Payment",
+    "category": "Food & Dining",
+    "icon": "payments",
     "author": "Bam",
     "authorUrl": ""
   },
   {
     "id": "weather_forecast",
     "title": "Weather Forecast",
+    "category": "Utility",
+    "icon": "cloud",
     "author": "Bom",
     "authorUrl": ""
   },
   {
     "id": "hospital_appointment",
     "title": "Hospital Appointment",
+    "category": "Bookings",
+    "icon": "local_hospital",
     "author": "Cartoon",
     "authorUrl": ""
   },
   {
     "id": "flight_itinerary",
     "title": "Flight Itinerary",
+    "category": "Travel",
+    "icon": "flight",
     "author": "Champoo",
     "authorUrl": ""
   },
   {
     "id": "election_result",
     "title": "Election Result",
+    "category": "Utility",
+    "icon": "how_to_vote",
     "author": "Champoo",
     "authorUrl": ""
   },
   {
     "id": "product_display_1",
     "title": "Product Display",
+    "category": "E-Commerce",
+    "icon": "shopping_bag",
     "author": "Champoo",
     "authorUrl": ""
   },
   {
     "id": "property_listing",
     "title": "Property Listing",
+    "category": "E-Commerce",
+    "icon": "apartment",
     "author": "Champoo",
     "authorUrl": ""
   },
   {
     "id": "cny_agenda",
     "title": "Chinese New Year Agenda",
-    "author": "Champoo",
-    "authorUrl": ""
-  },
-  {
-    "id": "flight_itinerary",
-    "title": "Flight Itinerary",
+    "category": "Events & Entertainment",
+    "icon": "event",
     "author": "Champoo",
     "authorUrl": ""
   },
   {
     "id": "kerry_tracking",
     "title": "Kerry Tracking",
+    "category": "Utility",
+    "icon": "local_shipping",
     "author": "Supakarn Laorattanakul",
     "authorUrl": "https://www.facebook.com/wearedprompt"
   },
   {
     "id": "usa_national_park",
     "title": "USA National Park",
+    "category": "Travel",
+    "icon": "park",
     "author": "Traitanit Huangsri",
     "authorUrl": "https://www.facebook.com/nottyo"
   },
   {
     "id": "lon_icon",
     "title": "LON - Icon",
+    "category": "Design",
+    "icon": "palette",
     "author": "LINE Thailand",
     "authorUrl": "https://line.me"
   }

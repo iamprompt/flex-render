@@ -1,5 +1,63 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@theme {
+  --color-primary: #13ec5b;
+  --color-primary-dark: #0fd44f;
+  --color-bg-dark: #102214;
+  --color-bg-darker: #0b0f0c;
+  --color-surface-dark: #111813;
+  --color-surface-dark-2: #1a261e;
+  --color-border-dark: #28392e;
+  --color-border-dark-hover: #3d5646;
+  --color-text-muted: #9db9a6;
+  --color-text-dim: #6b8a73;
+  --font-display: 'Inter', sans-serif;
+  --font-mono: 'Fira Code', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
 body {
-  @apply bg-[#849ebf];
+  font-family: var(--font-display);
+  background-color: var(--color-bg-dark);
+  color: #e2e8f0;
+}
+
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-border-dark);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--color-border-dark-hover);
+}
+
+/* Material Symbols sizing */
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
 }

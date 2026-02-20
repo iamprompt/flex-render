@@ -6,31 +6,31 @@ function CopyButton({ text }: { text: string }) {
 
   useEffect(() => {
     if (copied) {
-      setTimeout(() => {
-        setCopied(false)
-      }, 1000)
+      const timer = setTimeout(() => setCopied(false), 1500)
+      return () => clearTimeout(timer)
     }
   }, [copied])
 
   return (
-    <div className="group z-10 relative">
-      <button
-        className="h-7 w-7 flex items-center justify-center rounded-md"
-        onClick={async () => {
-          await navigator.clipboard.writeText(text)
-          setCopied(true)
-        }}
-      >
-        {!copied ? (
-          <Copy className="text-gray-700 group-hover:text-gray-400" size={16} />
-        ) : (
-          <Check className="text-green-400" size={16} />
-        )}
-      </button>
-      <div className="absolute top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden group-hover:block text-white rounded-lg px-1.5 py-0.5 text-xs bg-primary-dark">
-        {copied ? 'Copied!' : 'Copy'}
-      </div>
-    </div>
+    <button
+      className="flex items-center gap-2 bg-primary hover:bg-primary-dark text-[#111813] px-3 py-1.5 rounded text-xs font-bold transition-colors shrink-0 cursor-pointer"
+      onClick={async () => {
+        await navigator.clipboard.writeText(text)
+        setCopied(true)
+      }}
+    >
+      {!copied ? (
+        <>
+          <Copy size={14} />
+          Copy
+        </>
+      ) : (
+        <>
+          <Check size={14} />
+          Copied!
+        </>
+      )}
+    </button>
   )
 }
 
