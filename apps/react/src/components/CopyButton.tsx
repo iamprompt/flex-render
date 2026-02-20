@@ -13,7 +13,7 @@ function CopyButton({ text }: { text: string }) {
 
   return (
     <button
-      className="flex items-center gap-2 bg-primary hover:bg-primary-dark text-[#111813] px-3 py-1.5 rounded text-xs font-bold transition-colors shrink-0 cursor-pointer"
+      className="flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-3 py-1.5 rounded text-xs font-bold transition-colors shrink-0 cursor-pointer"
       onClick={async () => {
         await navigator.clipboard.writeText(text)
         setCopied(true)

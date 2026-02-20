@@ -38,17 +38,17 @@ function ViewJSONButton({ id, title, json }: ViewJSONButtonProps) {
               <div className="mt-4">
                 <div className="flex flex-col gap-8">
                   <div className="gap-8 flex-col block">
-                    <div className="not-prose bg-[#0F1117] dark:bg-codeblock rounded-xl dark:ring-1 dark:ring-gray-800/50 relative">
+                    <div className="not-prose bg-white dark:bg-codeblock rounded-xl dark:ring-1 dark:ring-gray-800/50 relative">
                       <div
                         aria-orientation="horizontal"
-                        className="flex text-xs bg-black/40 leading-6 rounded-t-xl border-b border-gray-900/80"
+                        className="flex text-xs bg-green-100 leading-6 rounded-t-xl border-b border-gray-900/80"
                         role="tablist"
                       >
                         <div className="flex overflow-x-auto">
                           <button
                             aria-controls="headlessui-tabs-panel-:rh:"
                             aria-selected="true"
-                            className="group flex items-center relative px-2 pt-2.5 pb-2 text-gray-400 outline-none whitespace-nowrap font-medium text-primary-light"
+                            className="group flex items-center relative px-2 pt-2.5 pb-2 text-slate-600 outline-none whitespace-nowrap font-medium text-primary-dark"
                             data-headlessui-state="selected"
                             id="headlessui-tabs-tab-:rg:"
                             role="tab"
@@ -67,7 +67,7 @@ function ViewJSONButton({ id, title, json }: ViewJSONButtonProps) {
                       <div className="flex overflow-auto max-h-96">
                         <div
                           aria-labelledby="headlessui-tabs-tab-:rg:"
-                          className="flex-none text-gray-50 p-5 min-w-full overflow-x-auto text-xs leading-[1.35rem]"
+                          className="flex-none text-slate-900 p-5 min-w-full overflow-x-auto text-xs leading-[1.35rem]"
                           data-headlessui-state="selected"
                           id="headlessui-tabs-panel-:rh:"
                           role="tabpanel"

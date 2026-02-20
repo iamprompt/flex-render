@@ -13,7 +13,7 @@ function App() {
   const [selected, setSelected] = useState<FlexModule>(FlexModules[0])
 
   return (
-    <div className="h-screen flex flex-col overflow-hidden bg-bg-dark text-slate-100 font-display">
+    <div className="h-screen flex flex-col overflow-hidden bg-bg-light text-slate-900 font-display">
       <Header />
       <main className="flex flex-1 overflow-hidden">
         <Sidebar

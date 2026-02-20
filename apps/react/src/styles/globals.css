@@ -1,16 +1,16 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-primary: #13ec5b;
-  --color-primary-dark: #0fd44f;
-  --color-bg-dark: #102214;
-  --color-bg-darker: #0b0f0c;
-  --color-surface-dark: #111813;
-  --color-surface-dark-2: #1a261e;
-  --color-border-dark: #28392e;
-  --color-border-dark-hover: #3d5646;
-  --color-text-muted: #9db9a6;
-  --color-text-dim: #6b8a73;
+  --color-primary: #10b981;
+  --color-primary-dark: #059669;
+  --color-bg-light: #f0fdf4;
+  --color-bg-lighter: #dcfce7;
+  --color-surface-light: #ffffff;
+  --color-surface-light-2: #f8fafc;
+  --color-border-light: #bbf7d0;
+  --color-border-light-hover: #86efac;
+  --color-text-muted: #166534;
+  --color-text-dim: #15803d;
   --font-display: 'Inter', sans-serif;
   --font-mono: 'Fira Code', monospace;
 }
@@ -30,8 +30,8 @@ body,
 
 body {
   font-family: var(--font-display);
-  background-color: var(--color-bg-dark);
-  color: #e2e8f0;
+  background-color: var(--color-bg-light);
+  color: #0f172a;
 }
 
 /* Custom scrollbar */
@@ -45,12 +45,12 @@ body {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: var(--color-border-dark);
+  background: var(--color-border-light);
   border-radius: 3px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: var(--color-border-dark-hover);
+  background: var(--color-border-light-hover);
 }
 
 /* Material Symbols sizing */

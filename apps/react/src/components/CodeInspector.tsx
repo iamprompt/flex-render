@@ -36,7 +36,7 @@ function colorLine(line: string): JSX.Element {
       <span>
         {indent}
         <span className="text-primary">"{key}"</span>
-        <span className="text-white">: </span>
+        <span className="text-slate-900">: </span>
         {colorValue(rest)}
       </span>
     )
@@ -63,8 +63,8 @@ function colorValue(value: string): JSX.Element {
   if (strMatch) {
     return (
       <span>
-        <span className="text-sky-300">"{strMatch[1]}"</span>
-        <span className="text-white">{strMatch[2]}</span>
+        <span className="text-blue-600">"{strMatch[1]}"</span>
+        <span className="text-slate-900">{strMatch[2]}</span>
       </span>
     )
   }
@@ -74,8 +74,8 @@ function colorValue(value: string): JSX.Element {
   if (numMatch) {
     return (
       <span>
-        <span className="text-orange-300">{numMatch[1]}</span>
-        <span className="text-white">{numMatch[2]}</span>
+        <span className="text-orange-600">{numMatch[1]}</span>
+        <span className="text-slate-900">{numMatch[2]}</span>
       </span>
     )
   }
@@ -85,8 +85,8 @@ function colorValue(value: string): JSX.Element {
   if (boolMatch) {
     return (
       <span>
-        <span className="text-purple-400">{boolMatch[1]}</span>
-        <span className="text-white">{boolMatch[2]}</span>
+        <span className="text-purple-600">{boolMatch[1]}</span>
+        <span className="text-slate-900">{boolMatch[2]}</span>
       </span>
     )
   }
@@ -97,18 +97,18 @@ function colorValue(value: string): JSX.Element {
       {[...value].map((ch, i) => {
         if (ch === '{' || ch === '}')
           return (
-            <span key={i} className="text-yellow-300">
+            <span key={i} className="text-amber-600">
               {ch}
             </span>
           )
         if (ch === '[' || ch === ']')
           return (
-            <span key={i} className="text-purple-400">
+            <span key={i} className="text-purple-600">
               {ch}
             </span>
           )
         return (
-          <span key={i} className="text-white">
+          <span key={i} className="text-slate-900">
             {ch}
           </span>
         )
@@ -124,12 +124,12 @@ function CodeInspector({ title, json }: CodeInspectorProps) {
   const highlighted = useMemo(() => highlightJson(json), [json])
 
   return (
-    <aside className="w-80 xl:w-96 flex flex-col border-l border-border-dark bg-[#0d120e] text-slate-300 shrink-0">
+    <aside className="w-80 xl:w-96 flex flex-col border-l border-border-light bg-green-50 text-slate-600 shrink-0">
       {/* Header */}
-      <div className="h-14 flex items-center justify-between px-4 border-b border-border-dark bg-surface-dark shrink-0">
+      <div className="h-14 flex items-center justify-between px-4 border-b border-border-light bg-surface-light shrink-0">
         <div className="flex items-center gap-2 min-w-0">
           <span className="material-symbols-outlined text-primary text-[20px] shrink-0">data_object</span>
-          <span className="text-sm font-medium text-white truncate">
+          <span className="text-sm font-medium text-slate-900 truncate">
             {title.toLowerCase().replace(/\s+/g, '_')}.json
           </span>
         </div>
@@ -140,7 +140,7 @@ function CodeInspector({ title, json }: CodeInspectorProps) {
       <div className="flex-1 overflow-auto custom-scrollbar p-4 font-mono relative group">{highlighted}</div>
 
       {/* Footer stats */}
-      <div className="h-10 border-t border-border-dark bg-surface-dark flex items-center justify-between px-4 text-[10px] text-text-dim shrink-0">
+      <div className="h-10 border-t border-border-light bg-surface-light flex items-center justify-between px-4 text-[10px] text-text-dim shrink-0">
         <span>JSON</span>
         <span>
           {lineCount} lines • {charCount} chars

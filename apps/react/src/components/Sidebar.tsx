@@ -26,15 +26,15 @@ function Sidebar({ modules, selectedId, onSelect }: SidebarProps) {
   const groups = useMemo(() => groupByCategory(filtered), [filtered])
 
   return (
-    <aside className="w-72 xl:w-80 flex flex-col border-r border-border-dark bg-surface-dark shrink-0">
+    <aside className="w-72 xl:w-80 flex flex-col border-r border-border-light bg-surface-light shrink-0">
       {/* Search */}
-      <div className="p-4 border-b border-border-dark">
+      <div className="p-4 border-b border-border-light">
         <div className="relative group">
           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-text-dim group-focus-within:text-primary transition-colors">
             <span className="material-symbols-outlined text-[20px]">search</span>
           </div>
           <input
-            className="block w-full pl-10 pr-3 py-2.5 border-none rounded-lg bg-border-dark text-sm placeholder-text-dim text-white focus:ring-2 focus:ring-primary focus:outline-none transition-all"
+            className="block w-full pl-10 pr-3 py-2.5 border-none rounded-lg bg-border-light text-sm placeholder-text-dim text-slate-900 focus:ring-2 focus:ring-primary focus:outline-none transition-all"
             placeholder="Search templates..."
             type="text"
             value={search}
@@ -45,16 +45,10 @@ function Sidebar({ modules, selectedId, onSelect }: SidebarProps) {
 
       {/* Category list */}
       <div className="flex-1 overflow-y-auto custom-scrollbar p-3 space-y-6">
-        {groups.length === 0 && (
-          <div className="text-center py-8 text-text-dim text-sm">
-            No templates found
-          </div>
-        )}
+        {groups.length === 0 && <div className="text-center py-8 text-text-dim text-sm">No templates found</div>}
         {groups.map((group) => (
           <div key={group.name}>
-            <h3 className="px-3 text-xs font-semibold text-text-muted uppercase tracking-wider mb-2">
-              {group.name}
-            </h3>
+            <h3 className="px-3 text-xs font-semibold text-text-muted uppercase tracking-wider mb-2">{group.name}</h3>
             <div className="space-y-1">
               {group.items.map((item) => {
                 const isActive = item.id === selectedId
@@ -65,7 +59,7 @@ function Sidebar({ modules, selectedId, onSelect }: SidebarProps) {
                     className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all text-left ${
                       isActive
                         ? 'bg-primary/10 border border-primary/20 text-primary'
-                        : 'hover:bg-border-dark text-slate-300 border border-transparent'
+                        : 'hover:bg-border-light text-slate-600 border border-transparent'
                     }`}
                   >
                     <span
