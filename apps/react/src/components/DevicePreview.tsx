@@ -43,7 +43,7 @@ function DevicePreview({ json }: DevicePreviewProps) {
             {/* Avatar */}
             <Avatar className="ml-2" />
 
-            <FlexPreview json={json} />
+            <FlexPreview json={json} className="w-fit" />
             {/* Time */}
             <div className="text-[10px] text-white/90 shrink-0 tracking-wide font-medium text-right mr-2">
               {currentTime}
@@ -55,7 +55,7 @@ function DevicePreview({ json }: DevicePreviewProps) {
             <Avatar className="ml-2" />
 
             <div className="flex flex-1 items-end min-w-0">
-              <FlexPreview json={json} />
+              <FlexPreview json={json} className="w-fit" />
 
               {/* Time */}
               <div className="text-[10px] text-white/90 shrink-0 tracking-wide font-medium ml-3 -mb-1">
