@@ -23,11 +23,11 @@ function DevicePreview({ json }: DevicePreviewProps) {
   }, [])
 
   return (
-    <section className="flex-1 flex flex-col bg-[#8bacd9] relative min-w-[320px]">
+    <section className="flex-1 flex flex-col bg-slate-200 relative min-w-[320px] shadow-inner">
       {/* Toolbar */}
-      <div className="h-14 border-b border-border-light flex items-center justify-between px-6 bg-surface-light shrink-0 relative z-10 w-full">
+      <div className="h-14 border-b border-slate-200 flex items-center justify-between px-6 bg-white shrink-0 relative z-10 w-full">
         <div className="flex items-center gap-2">
-          <span className="text-xs font-semibold uppercase tracking-wider text-text-muted">Device Preview</span>
+          <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-slate-500">Device Preview</span>
         </div>
       </div>
 
