@@ -62,7 +62,5 @@ export function groupByCategory(modules: FlexModule[]): CategoryGroup[] {
     map.get(cat)!.push(mod)
   }
 
-  return CATEGORY_ORDER
-    .filter((cat) => map.has(cat))
-    .map((cat) => ({ name: cat, items: map.get(cat)! }))
+  return CATEGORY_ORDER.filter((cat) => map.has(cat)).map((cat) => ({ name: cat, items: map.get(cat)! }))
 }

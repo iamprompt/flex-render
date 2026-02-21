@@ -13,22 +13,22 @@ pnpm add flex-render
 You can input Flex Bubble / Carousel JSON from [Flex Message Simulator](https://developers.line.biz/flex-simulator) directly to `render` function.
 
 ```ts
-import { render } from "@iamprompt/flex-render";
+import { render } from '@iamprompt/flex-render'
 
 const flexJSON = {
-  "type": "bubble",
-  "body": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
+  type: 'bubble',
+  body: {
+    type: 'box',
+    layout: 'vertical',
+    contents: [
       {
-        "type": "text",
-        "text": "Brown Cafe",
-        "weight": "bold",
-        "size": "xl"
-      }
-    ]
-  }
+        type: 'text',
+        text: 'Brown Cafe',
+        weight: 'bold',
+        size: 'xl',
+      },
+    ],
+  },
 }
 
 render(flexJSON)

@@ -1,5 +1,7 @@
 import { useMemo, useState } from 'react'
 
+import { Input } from '@/components/ui/input'
+import { ScrollArea } from '@/components/ui/scroll-area'
 import { type FlexModule, groupByCategory } from '@/utils/flex'
 
 interface SidebarProps {
@@ -30,11 +32,11 @@ function Sidebar({ modules, selectedId, onSelect }: SidebarProps) {
       {/* Search */}
       <div className="p-4 border-b border-border-light">
         <div className="relative group">
-          <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-text-dim group-focus-within:text-primary transition-colors">
+          <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-text-dim group-focus-within:text-foreground transition-colors z-10">
             <span className="material-symbols-outlined text-[20px]">search</span>
           </div>
-          <input
-            className="block w-full pl-10 pr-3 py-2.5 border-none rounded-lg bg-border-light text-sm placeholder-text-dim text-slate-900 focus:ring-2 focus:ring-primary focus:outline-none transition-all"
+          <Input
+            className="pl-10"
             placeholder="Search templates..."
             type="text"
             value={search}
@@ -44,39 +46,45 @@ function Sidebar({ modules, selectedId, onSelect }: SidebarProps) {
       </div>
 
       {/* Category list */}
-      <div className="flex-1 overflow-y-auto custom-scrollbar p-3 space-y-6">
-        {groups.length === 0 && <div className="text-center py-8 text-text-dim text-sm">No templates found</div>}
-        {groups.map((group) => (
-          <div key={group.name}>
-            <h3 className="px-3 text-xs font-semibold text-text-muted uppercase tracking-wider mb-2">{group.name}</h3>
-            <div className="space-y-1">
-              {group.items.map((item) => {
-                const isActive = item.id === selectedId
-                return (
-                  <button
-                    key={item.id}
-                    onClick={() => onSelect(item)}
-                    className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all text-left ${
-                      isActive
-                        ? 'bg-primary/10 border border-primary/20 text-primary'
-                        : 'hover:bg-border-light text-slate-600 border border-transparent'
-                    }`}
-                  >
-                    <span
-                      className={`material-symbols-outlined text-[20px] ${
-                        isActive ? 'text-primary' : 'text-text-dim group-hover:text-primary'
-                      } transition-colors`}
+      <ScrollArea className="flex-1 w-full">
+        <div className="p-3 space-y-6">
+          {groups.length === 0 && (
+            <div className="text-center py-8 text-muted-foreground text-sm">No templates found</div>
+          )}
+          {groups.map((group) => (
+            <div key={group.name}>
+              <h3 className="px-3 text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">
+                {group.name}
+              </h3>
+              <div className="space-y-1">
+                {group.items.map((item) => {
+                  const isActive = item.id === selectedId
+                  return (
+                    <button
+                      key={item.id}
+                      onClick={() => onSelect(item)}
+                      className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all text-left ${
+                        isActive
+                          ? 'bg-primary/10 border border-primary/20 text-primary'
+                          : 'hover:bg-accent text-accent-foreground border border-transparent'
+                      }`}
                     >
-                      {item.icon}
-                    </span>
-                    <span className="text-sm font-medium truncate">{item.title}</span>
-                  </button>
-                )
-              })}
+                      <span
+                        className={`material-symbols-outlined text-[20px] ${
+                          isActive ? 'text-primary' : 'text-muted-foreground group-hover:text-primary'
+                        } transition-colors`}
+                      >
+                        {item.icon}
+                      </span>
+                      <span className="text-sm font-medium truncate">{item.title}</span>
+                    </button>
+                  )
+                })}
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      </ScrollArea>
     </aside>
   )
 }

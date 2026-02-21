@@ -14,26 +14,26 @@ You can input Flex Bubble / Carousel JSON from [Flex Message Simulator](https://
 
 ```ts
 const flexJSON = {
-  "type": "bubble",
-  "body": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
+  type: 'bubble',
+  body: {
+    type: 'box',
+    layout: 'vertical',
+    contents: [
       {
-        "type": "text",
-        "text": "Brown Cafe",
-        "weight": "bold",
-        "size": "xl"
-      }
-    ]
-  }
+        type: 'text',
+        text: 'Brown Cafe',
+        weight: 'bold',
+        size: 'xl',
+      },
+    ],
+  },
 }
 ```
 
 ### Node.js
 
 ```ts
-import { render } from '@iamprompt/flex-render';
+import { render } from '@iamprompt/flex-render'
 
 render(flexJSON)
 ```
@@ -41,9 +41,9 @@ render(flexJSON)
 ### React
 
 ```tsx
-import { FlexPreview } from '@iamprompt/flex-render/react';
+import { FlexPreview } from '@iamprompt/flex-render/react'
 
-<FlexPreview json={flexJSON} />
+;<FlexPreview json={flexJSON} />
 ```
 
 ### Vue

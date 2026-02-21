@@ -1,5 +1,7 @@
 import { JSX, useMemo } from 'react'
 
+import { ScrollArea } from '@/components/ui/scroll-area'
+
 import CopyButton from './CopyButton'
 
 interface CodeInspectorProps {
@@ -137,7 +139,9 @@ function CodeInspector({ title, json }: CodeInspectorProps) {
       </div>
 
       {/* Code area */}
-      <div className="flex-1 overflow-auto custom-scrollbar p-4 font-mono relative group">{highlighted}</div>
+      <ScrollArea className="flex-1 w-full">
+        <div className="p-4 font-mono relative group">{highlighted}</div>
+      </ScrollArea>
 
       {/* Footer stats */}
       <div className="h-10 border-t border-border-light bg-surface-light flex items-center justify-between px-4 text-[10px] text-text-dim shrink-0">

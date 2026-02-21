@@ -1,3 +1,6 @@
+import { Avatar, AvatarFallback } from '@/components/ui/avatar'
+import { Button } from '@/components/ui/button'
+
 function Header() {
   return (
     <header className="flex items-center justify-between whitespace-nowrap border-b border-border-light bg-surface-light px-6 py-3 shrink-0 z-20">
@@ -27,12 +30,14 @@ function Header() {
           </a>
         </nav>
         <div className="flex items-center gap-3">
-          <button className="bg-border-light text-slate-900 rounded-lg p-2 hover:bg-border-light-hover transition-colors">
+          <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
             <span className="material-symbols-outlined text-[20px]">notifications</span>
-          </button>
-          <div className="size-9 bg-border-light rounded-full border border-border-light-hover flex items-center justify-center">
-            <span className="material-symbols-outlined text-text-muted text-[20px]">person</span>
-          </div>
+          </Button>
+          <Avatar className="size-9 border border-border-light-hover">
+            <AvatarFallback className="bg-border-light text-text-muted cursor-pointer">
+              <span className="material-symbols-outlined text-[20px]">person</span>
+            </AvatarFallback>
+          </Avatar>
         </div>
       </div>
     </header>
