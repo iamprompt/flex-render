@@ -489,6 +489,15 @@ export const injectAction = <T extends Element>(element: T, action?: Action) => 
   return element
 }
 
+export const injectMaxLines = <T extends Element>(element: T, maxLines?: number) => {
+  if (!maxLines) return element
+  element.setStyle('display', '-webkit-box')
+  element.setStyle('-webkit-line-clamp', maxLines.toString())
+  element.setStyle('-webkit-box-orient', 'vertical')
+  element.setStyle('overflow', 'hidden')
+  return element
+}
+
 export const isSizeKeyword = (size?: string) => {
   return size && FlexElementSizeKeyword.includes(size)
 }

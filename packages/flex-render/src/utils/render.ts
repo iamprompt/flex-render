@@ -23,6 +23,7 @@ import {
   injectIconAspectRatio,
   injectJustifyContent,
   injectMargin,
+  injectMaxLines,
   injectOffset,
   injectPadding,
   injectPosition,
@@ -168,7 +169,7 @@ export const renderBox = (boxJSON: FlexBox, parent?: FlexComponent) => {
   box.addClassNames(FlexElementClassName.box, ...FlexBoxLayoutClassName[boxJSON.layout || 'vertical'].split(' '))
 
   box = injectPosition(box, boxJSON.position)
-  box = boxJSON.height || boxJSON.width ? injectFlex(box, 0) : injectFlex(box, boxJSON.flex)
+  box = injectFlex(box, boxJSON.flex)
   box = injectSpacing(box, boxJSON.spacing)
   box = injectMargin(box, boxJSON.margin, parent)
   box = injectSize(box, boxJSON.width, 'width')
@@ -315,8 +316,9 @@ export const renderText = (textJSON: FlexText, parent?: FlexComponent) => {
     }
     text.appendChild(textContent)
   } else if (textJSON.text) {
-    const textContent = new Element('p')
+    let textContent = new Element('p')
     textContent.setTextContent(textJSON.text)
+    textContent = injectMaxLines(textContent, textJSON.maxLines)
     if (textJSON.action) {
       let actionWrapper = new Element('a')
       actionWrapper = injectAction(actionWrapper, textJSON.action)
