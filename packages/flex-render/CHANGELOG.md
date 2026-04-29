@@ -1,5 +1,11 @@
 # @iamprompt/flex-render
 
+## 0.1.10
+
+### Patch Changes
+
+- a9fb91c: update flex message injection
+
 ## 0.1.9
 
 ### Patch Changes

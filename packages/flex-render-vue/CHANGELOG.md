@@ -1,5 +1,13 @@
 # flex-render-vue
 
+## 0.1.7
+
+### Patch Changes
+
+- a9fb91c: update flex message injection
+- Updated dependencies [a9fb91c]
+  - flex-render@0.1.10
+
 ## 0.1.6
 
 ### Patch Changes
